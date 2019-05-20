@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="90" viewBox="0 0 91 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h91v90H0z"/>
+        <g transform="translate(7.078)">
+            <path stroke="#DADADA" stroke-width="4" d="M2 88h72.844V4.5a2.5 2.5 0 0 0-2.5-2.5H4.5A2.5 2.5 0 0 0 2 4.5V88z"/>
+            <path fill="#DADADA" d="M0 18h76.844v4H0z"/>
+            <ellipse cx="11.122" cy="11" stroke="#DADADA" stroke-width="4" rx="3.056" ry="3"/>
+            <path stroke="#DADADA" stroke-width="4" d="M32.333 8h36.444v6H32.333z"/>
+            <path stroke="#DADADA" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M20.222 8.5h4.045M20.222 14h4.045"/>
+            <ellipse cx="38.88" cy="53.55" stroke="#DADADA" stroke-width="4" rx="24.987" ry="24.55"/>
+            <path stroke="#DADADA" stroke-width="4" d="M52.602 42.532a17.084 17.084 0 0 0-3.946 10.93c0 4.051 1.418 7.878 3.946 10.932a17.084 17.084 0 0 0 3.946-10.931c0-4.05-1.418-7.878-3.946-10.931z"/>
+            <ellipse cx="38.88" cy="53.55" stroke="#DADADA" stroke-width="4" rx="17.669" ry="17.35"/>
+        </g>
+    </g>
+</svg>

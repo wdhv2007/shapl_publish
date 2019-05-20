@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <script src="../../js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div style="padding:40px;">
+            <div style="margin-top:40px;margin-bottom: 120px;">
+                <h2 style="font-size: 32px;">input 모음</h2>
+            </div>
+            <div class="input-field-container">
+                <!--<label class="left-label">제목</label>-->
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box">
+                        <input type="text" placeholder="input text 기본">
+                    </div>
+                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                        <p>경고문구</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <label class="left-label center">라벨</label>
+                <div class="input-field-container-push right-input-150">
+                    <div class="input-field-input-box">
+                        <input type="text" placeholder="라벨 소유 padding left 150">
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <!--<label class="left-label">제목</label>-->
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box">
+                        <input class="warning" type="text" placeholder="경고"> <!-- 빨간 테두리 -->
+                    </div>
+                    <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->
+                        <p>경고문구</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="2등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="2등분">
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="3등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="3등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="3등분">
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="n등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="n등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="n등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="n등분">
+                    </div>
+                    <div class="input-field-input-box input-has col">
+                        <input type="text" placeholder="n등분">
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container has-nice-select">
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box">
+                        <select class="input-field-select policy">
+                            <option>Select box</option>
+                            <option>nice-select.js 이용</option>
+                            <option>해당 javascript 필요</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                            <option>scroll</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <div class="input-field-container-push">
+                    <div class="input-field-input-box">
+                        <textarea placeholder="textarea"></textarea>
+                    </div>
+                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                        <p>경고문구</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <label class="left-label">라벨</label>
+                <div class="input-field-container-push right-input-150">
+                    <div class="input-field-input-box">
+                        <textarea placeholder="textarea 라벨 소유 padding left 150"></textarea>
+                    </div>
+                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                        <p>경고문구</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="input-field-container">
+                    <label class="input-button-btn input-button-round input-button-tiny input-button-blue">파일 선택<input class="upload-image in-label extra-file" type="file"></label>
+                </div>
+                <div class="input-content-box inline-block is-file-info file-value-div" style="display: none;">
+                    <p class="file-value"></p>
+                    <span class="close-btn in-file-info" onclick="emptyFile()"></span>
+                </div>
+            </div>
+            <div class="input-upload">
+                <div class="input-upload-container detail">
+                    <div class="input-upload-box">
+                        <div class="input-upload-holder"></div>
+                        <p>드래그 &amp; 드롭 또는</p>
+                        <label class="input-button-btn input-button-round input-button-tiny input-button-blue">파일 선택<input class="upload-image in-label form-upload" type="file"></label>
+                        <span class="close-btn"></span>
+                    </div>
+                    <!-- 미리보기 이미지 영역 -->
+                    <div class="preview-img">
+                        <div class="preview-box">
+                            <img src=""/>
+                            <span class="close-btn" onclick="designUpload.removeUploadImage(this)"></span> <!-- 삭제 버튼 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field-container">
+                <label class="checkbox-label inline-block has-right">
+                    <div>
+                        <input type="checkbox" class="check-box" checked/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="checkbox-txt">
+                        <p><span>1번</span></p>
+                    </div>
+                </label>
+                <label class="checkbox-label inline-block has-right">
+                    <div>
+                        <input type="checkbox" class="check-box"/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="checkbox-txt">
+                        <p><span>2번</span></p>
+                    </div>
+                </label>
+                <label class="checkbox-label inline-block has-right">
+                    <div>
+                        <input type="checkbox" class="check-box"/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="checkbox-txt">
+                        <p><span>3번</span></p>
+                    </div>
+                </label>
+                <label class="checkbox-label inline-block has-right">
+                    <div>
+                        <input type="checkbox" class="check-box"/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="checkbox-txt">
+                        <p><span>4번</span></p>
+                    </div>
+                </label>
+                <label class="checkbox-label inline-block has-right">
+                    <div>
+                        <input type="checkbox" class="check-box"/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="checkbox-txt">
+                        <p><span>5번</span></p>
+                    </div>
+                </label>
+            </div>
+            <div class="input-field-radio-label">
+                <label><input type="checkbox" name="category" class="in-label" checked/><span>1번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>2번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>3번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>4번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>5번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>6번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>7번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>8번 checkbox</span></label>
+                <label><input type="checkbox" name="category" class="in-label"/><span>9번 checkbox</span></label>
+            </div>
+            <div class="input-field-container">
+                <label class="radio-label inline-block has-right">
+                    <div>
+                        <input type="radio" name="radio-input" class="radio" checked/>
+                        <span class="radiomark"></span>
+                    </div>
+                    <div class="radio-txt">
+                        <p><span>1번</span></p>
+                    </div>
+                </label>
+                <label class="radio-label inline-block has-right">
+                    <div>
+                        <input type="radio" name="radio-input" class="radio"/>
+                        <span class="radiomark"></span>
+                    </div>
+                    <div class="radio-txt">
+                        <p><span>2번</span></p>
+                    </div>
+                </label>
+                <label class="radio-label inline-block has-right">
+                    <div>
+                        <input type="radio" name="radio-input" class="radio"/>
+                        <span class="radiomark"></span>
+                    </div>
+                    <div class="radio-txt">
+                        <p><span>3번</span></p>
+                    </div>
+                </label>
+                <label class="radio-label inline-block has-right">
+                    <div>
+                        <input type="radio" name="radio-input" class="radio"/>
+                        <span class="radiomark"></span>
+                    </div>
+                    <div class="radio-txt">
+                        <p><span>4번</span></p>
+                    </div>
+                </label>
+                <label class="radio-label inline-block has-right">
+                    <div>
+                        <input type="radio" name="radio-input" class="radio"/>
+                        <span class="radiomark"></span>
+                    </div>
+                    <div class="radio-txt">
+                        <p><span>5번</span></p>
+                    </div>
+                </label>
+            </div>
+            <div class="input-field-radio-label">
+                <label><input type="radio" name="radio-rabel" class="in-label" checked/><span>1번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>2번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>3번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>4번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>5번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>6번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>7번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>8번 radio</span></label>
+                <label><input type="radio" name="radio-rabel" class="in-label"/><span>9번 radio</span></label>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.nice-select.js"></script>
+    <script>
+        $(function(){
+            $(".input-field-select").niceSelect();//nice-select 선언
+
+            checkboxCheck();
+            radioCheck();
+        })
+
+        $("input[type=checkbox]").click(function(){
+            checkboxCheck();
+        })
+
+        //checkbox -> label의 css 조절
+        function checkboxCheck(){
+            $("input[type=checkbox]").each(function(){
+                if($(this).is(":checked") ){
+                    $(this).closest('label').addClass('checked');
+                } else {
+                    $(this).closest('label').removeClass('checked');
+                }
+            })
+        }
+
+        $("input[type=radio]").click(function(){
+            radioCheck();
+        })
+
+        //radiobox -> label의 css 조절
+        function radioCheck(){
+            $("input[type=radio]").each(function(){
+                if($(this).is(":checked") ){
+                    $(this).closest('label').addClass('checked');
+                } else {
+                    $(this).closest('label').removeClass('checked');
+                }
+            })
+        }
+
+        $(".extra-file").change(function(){
+            let fileName = $(this)[0].files[0].name;
+
+            if(fileName !== "") {
+                $(".file-value").text(fileName);
+                $(".file-value-div").show();
+            } else {
+                $(".file-value").empty();
+                $(".file-value-div").hide();
+            }
+        })
+
+        function emptyFile() {
+            $(".file-value").empty();
+            $(".file-value-div").hide();
+            $(".extra-file").val("");
+        }
+
+        $(document).on('change', '.form-upload', function () {
+            let $div = $(this).closest('.input-upload');
+
+            designUpload.startUpload($(this)[0].files[0], $div);
+        });
+
+        $(document).on('drop', '.input-upload', function(event) {
+            event.preventDefault();
+
+            let $div = $(this);
+            let image = event.originalEvent.dataTransfer.files[0];
+            let $input = $div.find('input[type=file]');
+            $input.val("");
+
+
+            designUpload.startUpload(image, $div);
+        });
+
+        $(document).on('dragover', '.input-upload', function (event) {
+            $(this).addClass("blue");
+            event.preventDefault();
+        });
+
+        $(document).on('dragleave', '.input-upload', function (event) {
+            $(this).removeClass("blue");
+            event.preventDefault();
+        });
+
+        var designUpload = {
+            startUpload: function(image, div) {
+                let imageType = ['image/png', 'image/jpeg'];
+
+                if ($.inArray(image.type, imageType) === -1) {
+                    return ;
+                }
+
+                let uploadArea = div;
+                let uploadBox = $(uploadArea).find(".input-upload-box");
+                let previewArea = $(uploadArea).find('.preview-img');
+                let previewBox = $(previewArea).find('.preview-box');
+                let previewImg = $(previewBox).find('img');
+
+                let reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $(previewImg).attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(image);
+
+                $(previewBox).show();
+                $(uploadBox).hide();
+                $(uploadArea).removeClass("blue");
+
+            },
+            removeUploadImage: function(el) {
+                let $div = $(el).closest('div');
+                let $input = $div.closest('.input-upload').find('input[type=file]');
+                $input.val("");
+                let $parents = $div.closest('.input-upload');
+
+                $div.find('img').attr('src', '');
+                $div.hide();
+                $parents.find('.input-upload-box').show();
+                $($parents).removeClass("blue");
+            }
+        };
+
+    </script>
+</body>
+</html>

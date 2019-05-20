@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h90v90H0z"/>
+        <g transform="translate(11)">
+            <ellipse cx="34.052" cy="5.4" stroke="#DADADA" stroke-width="4" rx="3.377" ry="3.4"/>
+            <path stroke="#DADADA" stroke-width="4" d="M54.87 34.56a6.1 6.1 0 0 0 4.065-5.76 6.1 6.1 0 0 0-4.065-5.76v11.52zM13.234 34.56a6.1 6.1 0 0 1-4.065-5.76 6.1 6.1 0 0 1 4.065-5.76v11.52z"/>
+            <ellipse cx="25.091" cy="26.1" stroke="#DADADA" stroke-width="4" rx="4.273" ry="4.3"/>
+            <ellipse cx="43.013" cy="26.1" stroke="#DADADA" stroke-width="4" rx="4.273" ry="4.3"/>
+            <rect width="37.221" height="28.4" x="15.442" y="15.5" stroke="#DADADA" stroke-width="4" rx="9"/>
+            <ellipse cx="6.273" cy="48.6" stroke="#DADADA" stroke-width="4" rx="4.273" ry="4.3"/>
+            <ellipse cx="62.727" cy="48.6" stroke="#DADADA" stroke-width="4" rx="4.273" ry="4.3"/>
+            <path stroke="#DADADA" stroke-width="4" d="M51.766 50.6H16.338v19.6c0 9.833 7.933 17.8 17.714 17.8 9.781 0 17.714-7.967 17.714-17.8V50.6zM9.65 73.948H2.895v-2.871a3.377 3.377 0 1 1 6.753 0v2.87zM66.104 73.948H59.35v-2.871a3.377 3.377 0 1 1 6.753 0v2.87z"/>
+            <path stroke="#DADADA" stroke-linecap="square" stroke-width="4" d="M6.273 67.05V53.106M34.052 14.765V9.006"/>
+            <path stroke="#DADADA" stroke-linecap="square" stroke-width="3.6" d="M16.13 51.3L11.2 48.6"/>
+            <path stroke="#DADADA" stroke-linecap="square" stroke-width="4" d="M51.974 51.3l4.929-2.7M62.727 67.05V53.106"/>
+            <path stroke="#DADADA" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M37.205 57L30 64.704h7.205L30 73.138"/>
+            <rect width="17.922" height="4" x="24.195" y="36" fill="#DADADA" rx="2"/>
+        </g>
+    </g>
+</svg>

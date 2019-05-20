@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <circle id="a" cx="7" cy="7" r="7"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#ED2939" xlink:href="#a"/>
+        <circle cx="7" cy="7" r="7.1" stroke="#AAA" stroke-width=".2"/>
+        <g mask="url(#b)">
+            <path fill="#ED2939" fill-rule="nonzero" d="M0 1h21v7H0z"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M0 8h21v7H0zM7.203 4.5a2.632 2.632 0 1 1-5.265 0 2.632 2.632 0 0 1 5.265 0z"/>
+            <path fill="#ED2939" fill-rule="nonzero" d="M8.03 4.5a2.488 2.488 0 1 1-4.975 0 2.488 2.488 0 0 1 4.975 0z"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M4.896 4.564l-.357-.275-.358.275.138-.443-.36-.272h.444l.135-.442.136.443.443-.002-.359.273zM7.702 4.564l-.358-.275-.357.275.137-.443-.358-.272h.442l.136-.442.136.443.443-.002-.359.273zM6.3 3.522l-.357-.274-.358.274.138-.442-.359-.273.443.001.136-.443.136.443h.442l-.358.272zM5.421 6.23l-.358-.275-.357.275.138-.443-.36-.272h.444l.135-.442.136.443.443-.001-.359.272zM7.177 6.23l-.358-.275-.357.275.137-.443-.358-.272h.442l.136-.442.136.443.443-.001-.359.272z"/>
+        </g>
+    </g>
+</svg>

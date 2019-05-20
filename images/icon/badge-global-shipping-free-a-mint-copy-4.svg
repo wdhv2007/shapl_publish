@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="210" viewBox="0 0 38 210">
+    <defs>
+        <path id="a" d="M0 0h210v37.849H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="rotate(90 18.5 18.5)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" fill-opacity="0" xlink:href="#a"/>
+            <rect width="208.779" height="50.058" x="1.221" fill="#BDDED6" mask="url(#b)" rx="13"/>
+        </g>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" transform="rotate(90 18.5 18.5)">
+            <tspan x="43.331" y="26.756">GLOBAL SHIPPING FREE</tspan>
+        </text>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="19" font-weight="bold" transform="rotate(90 8.5 20.5)">
+            <tspan x="9.481" y="18">i</tspan>
+        </text>
+        <circle cx="12" cy="12" r="11" stroke="#FFF" stroke-width="2" transform="rotate(90 8.5 20.5)"/>
+    </g>
+</svg>

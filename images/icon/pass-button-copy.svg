@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <circle id="b" cx="36" cy="33" r="30"/>
+        <filter id="a" width="135%" height="135%" x="-17.5%" y="-12.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <linearGradient id="c" x1="92.976%" x2="-10.213%" y1="93.135%" y2="-54.544%">
+            <stop offset="0%" stop-color="#466DFF"/>
+            <stop offset="100%" stop-color="#7E2AB8"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" fill-opacity=".7" xlink:href="#b"/>
+        </g>
+        <text fill="#466DFF" font-family="Roboto-Bold, Roboto" font-size="14.005" font-weight="bold" transform="translate(9.711 19.701)">
+            <tspan x="11.533" y="29.094">PASS</tspan>
+        </text>
+        <path d="M20.845 27.742v11.134H9.711V27.742z"/>
+        <path stroke="url(#c)" stroke-width=".617" d="M7.3 2.815v6.372h.62V2.815H7.3z" transform="rotate(135 5.148 22.175)"/>
+        <path stroke="url(#c)" stroke-width=".617" d="M3.24 2.824v6.31h.619v-6.31h-.62z" transform="rotate(45 -21.347 32.296)"/>
+        <g stroke="url(#c)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.161" transform="matrix(-1 0 0 1 44.97 19.701)">
+            <path d="M4.948 12.99H1.98C.887 12.99 0 12.285 0 11.415v-5.51c0-.87.887-1.575 1.98-1.575h2.968v8.66zM20.025 2.49c.897 0 1.624.736 1.624 1.644 0 .908-.727 1.644-1.624 1.644H16.1L15.053 11.6c-.14.805-.944 1.398-1.884 1.389h-8.22V4.007L6.79.91c.822-1.393 4.137-1.09 4.137.264l.618 1.317h8.479z"/>
+        </g>
+    </g>
+</svg>

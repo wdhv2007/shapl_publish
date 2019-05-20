@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="30" viewBox="0 0 68 30">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#464646" fill-opacity=".2" fill-rule="nonzero" stroke="#BEBEBE" d="M.5.5h67v29H.5z"/>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold">
+            <tspan x="32" y="19">EDIT</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.62 13H11v9h9v-3.6"/>
+            <path fill="#FFF" d="M22.046 8.885l2.221 2.3-6.787 6.468-2.7.569.48-2.869zM24.15 7l2.221 2.3-1.15 1.11L23 8.11z"/>
+        </g>
+    </g>
+</svg>

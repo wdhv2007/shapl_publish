@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h90v90H0z"/>
+        <g transform="translate(9)">
+            <rect width="24" height="56" x="2" y="32" stroke="#DADADA" stroke-width="4" rx="6"/>
+            <path stroke="#DADADA" stroke-width="4" d="M2 44h24v12H2z"/>
+            <rect width="16" height="6" x="7" y="26" stroke="#DADADA" stroke-width="4" rx="1.8"/>
+            <rect width="18" height="6" x="43" y="16" stroke="#DADADA" stroke-width="4" rx="1.8"/>
+            <path stroke="#DADADA" stroke-width="4" d="M48 8h8v8h-8z"/>
+            <rect width="10" height="14" x="10" y="12" stroke="#DADADA" stroke-width="4" rx="1.8"/>
+            <rect width="36" height="66" x="34" y="22" stroke="#DADADA" stroke-width="4" rx="8.1"/>
+            <path stroke="#DADADA" stroke-width="4" d="M43 2v6h25.556L59.07 2H43z"/>
+            <rect width="18" height="24" x="43" y="43" stroke="#DADADA" stroke-width="4" rx="9"/>
+            <circle cx="15" cy="17" r="2" fill="#DADADA"/>
+        </g>
+    </g>
+</svg>

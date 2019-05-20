@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-bag</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="loading" transform="translate(-1114.000000, -411.000000)" fill-rule="nonzero">
+            <g id="icn-bag-copy" transform="translate(1114.000000, 411.000000)">
+                <rect id="Rectangle-Copy-22" x="0" y="0" width="60" height="60"></rect>
+                <path d="M4.8,17 C3.2536027,17 2,18.2536027 2,19.8 L2,50.2 C2,51.7463973 3.2536027,53 4.8,53 L55.2,53 C56.7463973,53 58,51.7463973 58,50.2 L58,19.8 C58,18.2536027 56.7463973,17 55.2,17 L4.8,17 Z M4.8,15 L55.2,15 C57.8509668,15 60,17.1490332 60,19.8 L60,50.2 C60,52.8509668 57.8509668,55 55.2,55 L4.8,55 C2.1490332,55 1.21282822e-15,52.8509668 8.8817842e-16,50.2 L0,19.8 C-3.24649801e-16,17.1490332 2.1490332,15 4.8,15 Z" id="Rectangle-Copy-23" fill="#FFFFFF"></path>
+                <path d="M26,35 L26,37 L34,37 L34,35 L50.7002538,35 L57.8113649,19 L60,19 L52,37 L40,37 L40,40.8 C40,43.1195959 38.1195959,45 35.8,45 L24.2,45 C21.8804041,45 20,43.1195959 20,40.8 L20,37 L8,37 L0,19 L2.18863507,19 L9.29974618,35 L26,35 Z M38,37 L22,37 L22,40.8 C22,42.0150264 22.9849736,43 24.2,43 L35.8,43 C37.0150264,43 38,42.0150264 38,40.8 L38,37 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M19,15 L41,15 L41,9.2 C41,7.98497355 40.0150264,7 38.8,7 L21.2,7 C19.9849736,7 19,7.98497355 19,9.2 L19,15 Z M21.2,5 L38.8,5 C41.1195959,5 43,6.88040405 43,9.2 L43,17 L17,17 L17,9.2 C17,6.88040405 18.8804041,5 21.2,5 Z" id="Rectangle-Copy-24" fill="#FFFFFF"></path>
+                <path d="M23,11 L23,15 L37,15 L37,11 L23,11 Z M22.2,9 L37.8,9 C38.4627417,9 39,9.5372583 39,10.2 L39,17 L21,17 L21,10.2 C21,9.5372583 21.5372583,9 22.2,9 Z" id="Rectangle-Copy-25" fill="#FFFFFF"></path>
+                <path d="M26,35 L26,39 L34,39 L34,35 L26,35 Z M24,33 L36,33 L36,41 L24,41 L24,33 Z" id="Rectangle-Copy-27" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

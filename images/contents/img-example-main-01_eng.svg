@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="186" viewBox="0 0 520 186">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="nonzero" stroke="#DADADA" d="M.5.5h519v185H.5z"/>
+        <path fill="#F46064" fill-rule="nonzero" d="M189 130h1v15h-1z"/>
+        <path stroke="#F46064" d="M118.5 100.5h283v29h-283z"/>
+        <text fill="#8D8C8C" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="126.277" y="121">Uploadable image size limit exceeded</tspan>
+        </text>
+        <text fill="#F46064" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold">
+            <tspan x="198" y="152">A cause of the failure</tspan>
+        </text>
+        <circle cx="189.5" cy="146.5" r="2.5" fill="#F46064" fill-rule="nonzero"/>
+        <text fill="#464646" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold">
+            <tspan x="180.771" y="52">Upload is failed.</tspan> <tspan x="177.871" y="83">Please try again. </tspan>
+        </text>
+    </g>
+</svg>

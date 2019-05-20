@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <script src="../../js/main.js"></script>
+
+</head>
+<body class="main">
+<div id="wrapper">
+    <main class="contents version-kr">
+        <div class="l-wrapper l-wrapper-narrow">
+            <div class="log">
+                <div class="log-title">
+                    <h1>회원가입</h1>
+                </div>
+                <div class="m-toast m-toast-error" style="display: none;">
+                    일부 입력값이 잘못되었습니다. 다시 시도해주세요.
+                </div>
+
+                <form class="m-field m-field-kr">
+                    <h2>계정 생성</h2>
+                    <fieldset>
+                        <div class="m-field-group">
+                            <label class="v-block required">이메일</label>
+                            <div class="m-field-input-wrapper">
+                                <p class="m-valid-error sign-field-email">이메일 주소를 정확히 입력해주세요</p>
+                                <input type="email" name="email" id="email" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="m-field-group">
+                            <label class="v-block required">사용자 이름</label>
+                            <div class="m-field-input-wrapper">
+                                <p class="m-valid-error sign-field-username">이름을 입력해주세요.</p>
+                                <input type="text" name="user_name" id="username">
+                            </div>
+                        </div>
+                        <div class="m-field-group">
+                            <label class="v-block required">보안 코드</label>
+                            <div class="m-field-input-wrapper">
+                                <p class="m-valid-error sign-field-security_code">보안 코드를 입력해주세요.</p>
+                                <input type="text" name="security_code" id="security_code">
+                            </div>
+                            <div class="m-field-input-wrapper">
+                                <p class="m-button-description m-button-description-kr">
+                                    아래 주소로 6자리 코드가 전송됨:<br>
+                                    josh@shapl.com<br>
+                                    <a href="#" class="resend-code-email-inpage">보안 코드 재 전송하기</a><br>
+                                    *먼저 스팸 메일함을 확인해보세요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="m-field-group">
+                            <label class="v-block required">비밀번호</label>
+                            <div class="m-field-input-wrapper">
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div class="m-field-input-wrapper">
+                                <p class="m-button-description m-button-description-kr">영문과 숫자를 조합하여 6자리 이상</p>
+                            </div>
+                        </div>
+                        <div class="v2-1-sign-up-middle-02-04 page">
+                            <span class="v2-1-checkbox-box">
+                                <label class="v2-1-checkbox">
+                                    <input type="checkbox" name="keep_login_inpage" value="yes" checked>
+                                    <span class="v2-1-checkbox-checked"></span>
+                                    <span class="v2-1-checkbox-text">자동로그인</span>
+                                </label>
+                            </span>
+                        </div>
+                        <button type="submit" class="m-button m-button-ghost m-button-block btn-continue-in-page">회원 가입</button>
+                        <div class="m-field-checkbox m-field-checkbox-mini">
+                            <label>
+                                <input type="checkbox" name="is_newsletter" value="YES" checked="checked"/><!--checked 상태가 default입니다.-->
+                                <span class="m-field-checkbox-control"></span>
+                                <span class="m-field-checkbox-label">2019년 최신 디자인 트렌드 정보와 샤플의 소식 등을 받겠습니다.</span>
+                                <span class="m-field-checkbox-label">회원 가입시, 이용약관 및 개인 정보 취급 정책에 동의하게 됩니다.</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="log-field-anchor narrow">
+                    <div>계정이 있다면<a class="v-important" href="#">로그인</a>하세요</div>
+                </div>
+            </div>
+        </div>
+    </main><!--start of main-->
+</div><!--end of wrapper-->
+
+</body>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h90v90H0z"/>
+        <g stroke="#DADADA" stroke-width="4" transform="translate(17 2)">
+            <circle cx="25" cy="43" r="23"/>
+            <g transform="translate(7 25)">
+                <circle cx="18" cy="18" r="16"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.033 1.995V5.58M18.033 29.662v3.583M2.705 18.365H6.31M29.656 18.365h3.606M13.525 15.23l4.508 3.582M24.795 13.438l-6.762 5.374"/>
+            </g>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 27l3-27h28l3 27M8 59l3 27h28l3-27"/>
+            <rect width="6" height="12" x="48" y="37" rx="2"/>
+        </g>
+    </g>
+</svg>

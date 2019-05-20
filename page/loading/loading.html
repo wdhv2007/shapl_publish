@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title></title><!--추가 삽입 필요-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+        <meta name="generator" content="brackets"/>
+        <meta name="author" content="shapl"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <link rel="stylesheet" href="../../css/common.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="../../css/style.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    </head>
+    <body class="main">
+        <div id="loading-page">
+            <div id="loading-bg">
+                <div class="loading-box">
+                    <div class="loading-icon bag"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script>
+    $(function(){
+        loadingEvent.startLoading();
+    })
+
+    var loadingEvent = {
+        startLoading: function() {
+            $("#loading-page").show();
+            var cnt = 0;
+            var loadClass = ["blender", "cosmetic", "dispenser", "docs", "dummy", "electronics",
+                "joystick", "lamp", "ring", "robot", "setting", "shirts", "shoes", "tent", "washer", "watch", "bag"];
+            var removeClass = ""
+
+            for(var i=0;i<loadClass.length;i++){
+                removeClass += loadClass[i]+" ";
+            }
+
+            loading = setInterval(function(){
+                console.log(removeClass);
+                $(".loading-icon").removeClass(removeClass);
+                $(".loading-icon").addClass(loadClass[cnt]);
+                cnt++;
+                cnt = (cnt >= 17)?0:cnt;
+            }, 290);
+        },
+        stopLoading: function() {
+            //$("#loading-page").hide();
+            clearInterval(loading);
+        }
+    }
+
+
+
+</script>
+</html>

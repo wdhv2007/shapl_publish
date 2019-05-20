@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <filter id="a" width="100.8%" height="102%" x="-.4%" y="-.9%" filterUnits="objectBoundingBox">
+            <feOffset dx=".5" dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.497767857 0 0 0 0 0.497767857 0 0 0 0 0.497767857 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle id="b" cx="7" cy="7" r="7"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F6F6F6" d="M-985-1082H935v7451H-985z"/>
+        <path fill="#EDEDED" d="M-745-27H695v597H-745z"/>
+        <path fill="#FFF" d="M0 22.712h1119V474H0z" filter="url(#a)" transform="translate(-663 -373)"/>
+        <g transform="translate(1 1)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <use fill="#016AA7" xlink:href="#b"/>
+            <circle cx="7" cy="7" r="7.1" stroke="#AAA" stroke-width=".2"/>
+            <path fill="#FECC01" d="M-2 5h18v4H-2z" mask="url(#c)"/>
+            <path fill="#FECC01" d="M-4 5h18v4H-4z" mask="url(#c)" transform="rotate(90 5 7)"/>
+        </g>
+    </g>
+</svg>

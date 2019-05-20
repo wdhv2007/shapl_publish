@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/nice-select.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <script src="../../js/main.js"></script>
+
+</head>
+<body class="main">
+
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+    <div class="contents submit-contents">
+        <div class="contents-input-inside contest-result"> <!--  background-blur 넣어주 -->
+            <div>
+                <fieldset class="input-field-wrapper">
+                    <div class="contest-result-topInfo">
+                        <p class="input-field-title intro">Design Title</p>
+                        <div class="info-check-box project">
+                            <div class="img-box">
+                                <!--<img src="../../images/04_Two_Face_main.png">--><!-- 프로필 이미지:없으면 넣지 말 것 -->
+                            </div>
+                            <div class="profile-box">
+                                <p>By brand name</p><!-- 유저 이름 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest-result-text in-box">
+                        <span>Design Title</span>은<br class="mobile">
+                        제2회 SHAPL Design Contest에서<br class="mobile">
+                        총 <span>302</span>개의 LIKE를 받았습니다.<br>
+                        전문가심사점수는 <span>35</span>점 입니다.
+                    </div>
+                </fieldset>
+                <fieldset class="input-field-wrapper">
+                    <div>
+                        <p class="input-field-title large txt-bold txt-blue">
+                            Consumer <br class="mobile">
+                            Voting
+                        </p>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Summary
+                        </p>
+                        <div class="contest-result-content">
+                        <ul class="card-list">
+                            <li>
+                                <div class="input-content-box card">
+                                    <p class="content-title">LIKE 수</p>
+                                    <p class="content-info">302</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-content-box card">
+                                    <p class="content-title">뷰 수</p>
+                                    <p class="content-info">3245</p>
+                                </div>
+                            </li>
+                            <li class="full-width">
+                                <div class="input-content-box card">
+                                    <p class="content-title">가장 LIKE를 많이 받은 국가</p>
+                                    <p class="content-info">South Korea</p>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="contest-result-text">
+                            <span>Design Title</span>에<br>
+                            가장 높은 관심을 보인국가는<br>
+                            <span>South Korea</span>입니다.<br>
+                            또한 <span>United Kingdom</span>에서<br>
+                            이 디자인을 가장 많이 확인했습니다.
+                        </div>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Most Liked
+                            <span class="sub-info">Country</span>
+                        </p>
+
+                        <div class="pie-chart-area">
+                            <canvas id="like_chart_container" class="pie-chart-box">
+
+                                <!-- 원형 차트 영역 -->
+                                <!-- javascript - setLikeChart -->
+
+                            </canvas>
+                            <div class="pie-chart-legend">
+                                <div class="contest-result-content">
+                                <table>
+                                    <colgroup></colgroup>
+                                    <colgroup width="30%"></colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble blue"></span>United Kindom</td>
+                                        <td class="txt-right txt-blue legend">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble violet"></span>South Korea</td>
+                                        <td class="txt-right txt-blue legend">25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble green"></span>Thailand</td>
+                                        <td class="txt-right txt-blue legend">12%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble yellow"></span>Indonesia</td>
+                                        <td class="txt-right txt-blue legend">20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble red"></span>India</td>
+                                        <td class="txt-right txt-blue legend">13%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contest-result-content">
+                            <table>
+                                <colgroup width="15%"></colgroup>
+                                <colgroup></colgroup>
+                                <colgroup width="30%"></colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Country</th>
+                                        <th class="txt-right">LIKE Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>United Kindom</td>
+                                        <td class="txt-right txt-blue">123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>South Korea</td>
+                                        <td class="txt-right txt-blue">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Thailand</td>
+                                        <td class="txt-right txt-blue">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Indonesia</td>
+                                        <td class="txt-right txt-blue">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>India</td>
+                                        <td class="txt-right txt-blue">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Others</td>
+                                        <td class="txt-right txt-blue">11</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Liked Date
+                            <span class="sub-info">(KST)</span>
+                        </p>
+                        <div class="input-field-input-box sub-right">
+                            <select class="input-field-select chart-select">
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                            </select>
+                        </div>
+                        <div class="chart-wrapper">
+                            <div id="like_date_chart_container" class="chart-area">
+
+                                <!-- 차트 영역 -->
+                                <!-- javascript - setLikeDateChart -->
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="input-field-wrapper">
+                    <div>
+                        <p class="input-field-title large txt-bold txt-blue">
+                            Professional’s <br class="mobile">
+                            Judging
+                        </p>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <div class="chart-wrapper has-bottom">
+                            <canvas id="judging_chart_container">
+
+                                <!-- 차트 영역 -->
+                                <!-- javascript - setJudgingChart -->
+
+                            </canvas>
+                        </div>
+                        <div class="contest-result-content last has-top-bottom-line has-top-bottom-padding">
+                            <dl class="sub-title">
+                                <dt>심사 항목</dt>
+                                <dd>평가 점수</dd>
+                            </dl>
+                            <div>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>18</dd>
+                                </dl>
+                                <dl>
+                                    <dt>기능성(실용성)</dt>
+                                    <dd>12</dd>
+                                </dl>
+                                <dl>
+                                    <dt>양질성(독창성)</dt>
+                                    <dd>13</dd>
+                                </dl>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>15</dd>
+                                </dl>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>16</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="contest-result-content">
+                            <p class="result-total-score">총점<span>51</span></p>
+                        </div>
+                    </div>
+
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            심사위원의 <strong>심사평</strong>
+                        </p>
+                        <div class="contest-result-text result-comment">
+                            지금까지 없었던 '기분 좋은 물 붓기'를 가능하게 하는 디자인이다.
+                            핸들은 손에 꼭 맞게 잡히고, 노즐은 절수(絶水)가 뛰어나 원하는 곳에 물을 정확하게 따르기 편하도록 디자인되었다.
+                            스테인리스에 도장을 입힌 외관과 등대처럼 은은하게 빛나는 전원 램프도 무척 아름답다.
+                            무엇보다 이 전기 주전자는, 물을 끓이고 커피를 내리는 시간이 이렇게나 즐거워질 수 있다는 놀라움을 주는 제품이다.
+                        </div>
+                        <p class="contest-result-info txt-blue">
+                            이 평가는 추후 My Project에서도 확인하실 수있습니다.
+                        </p>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div id="popDesignStory" class="popup-wrapper">
+            <div class="popup-bg background-blur"></div>
+            <div class="popup-inner-wrapper has-padding full-height">
+                <div class="popup-container has-header has-footer question-area">
+                    <div class="popup-header txt-center background-gray">
+                        <p class="txt-white sub-title">Helps us to provide better service to you</p>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="question-area-1">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">1</span>AGE?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">17 or younger</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">18-20</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">21-29</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">30-39</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">40-49</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="5">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">50-59</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="5">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">60 or older</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-2" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">2</span>School?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="입력">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">3</span>Your Nationality ?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="입력">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-3" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">4</span>Which country do you use <br class="mobile"/>SHAPL the most frequently?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="입력">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-4" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">5</span>The website is easy to navigate.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-5" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">6</span>The website has a user friendly interface.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-6" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">7</span>It was easy to upload my design.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-7" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">8</span>It was easy to upload my design.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-8" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">9</span>It was easy to share my design with friends.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">10</span>Which SNS or channel did you use the most to share?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-9" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">11</span>It was easy to vote ‘LIKE’ on designs.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">12</span>What would you improve if you could in voting?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-10" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">13</span>In your own words, describe how you feel about SHAPL.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-footer txt-center background-blue info-footer">
+                        <p class="txt-white sub-title"><span>0</span> of 10 Answered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.nice-select.min.js"></script>
+
+<!-- 차트 생성용 CDN -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!-- 차트 생성용 CDN -->
+
+<script>
+
+    var scrollEvent = true;
+    $(function(){
+        $(".input-field-select").niceSelect();
+        google.charts.load("current", {packages:["corechart"]});//구글 차트
+
+        // google.charts.setOnLoadCallback(setLikeChart); // Like 원형 차트
+        google.charts.setOnLoadCallback(setLikeDateChart); // 기간별 Like 선 차트
+        // setLikeChart();
+        setJudgingChart(); // 심사평 방사 차트
+
+        // openPopup("popDesignStory");
+    });
+
+    setInterval(function(){
+        scrollEvent = true;
+    }, 1000);
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+        $("body").addClass('scroll-off');// 뒷 배경 스크롤 막기
+        $(".contents-input-inside").addClass('background-blur');// 뒷 배경 블러
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+        $("body").removeClass('scroll-off');// 뒷 배경 스크롤 막기
+        $(".contents-input-inside").removeClass('background-blur');// 뒷 배경 블러
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+    //like 원형 차트 생성 함수
+    function setLikeChart() {
+
+        //데이터 입력란
+        var data = {
+
+            labels: ['1 Week', '2 Week', '3 Week', '4 Week', '5 Week'],//데이터 이름
+            datasets: [{
+                data: [20, 10, 4, 2, 15],//데이터 값
+                backgroundColor: [
+                    '#ff6384',
+                    '#36a2eb',
+                    '#cc65fe',
+                    '#ffce56'
+                ],
+
+            }]
+        }
+
+
+        //스타일 옵션
+        var options = {
+            legend: {
+                display: false,
+            },
+        }
+
+        var ctx = document.getElementById('like_chart_container');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: options
+        });
+    }
+
+    //기간 별 라이크 선 그래프
+    function setLikeDateChart() {
+
+        //데이터 입력란
+        var data = google.visualization.arrayToDataTable([
+            ['Year', 'Like Count'],//주제
+            ['2004',  1000],
+            ['2005',  1170],
+            ['2006',  660],
+            ['2007',  1030]
+        ]);
+
+        //스타일 옵션
+        var options = {
+            curveType: 'function',
+            legend:'none',
+            pointSize: 5,
+            chartArea:{left:30,bottom:20,top:10,width:"100%",height:"100%"}
+
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('like_date_chart_container'));
+
+        chart.draw(data, options);
+    }
+
+    //심사평 방사 차트 - 구글 차트는 방사형 차트가 없음
+    function setJudgingChart() {
+        //데이터 입력란
+        var data = {
+
+            labels: ['1 Week', '2 Week', '3 Week', '4 Week', '5 Week'],//데이터 이름
+            datasets: [{
+                data: [20, 10, 4, 2, 15],//데이터 값
+                backgroundColor: "rgba(70, 109, 255, 0.3)",//선 색(스타일)
+            }]
+        }
+
+
+        //스타일 옵션
+        var options = {
+            legend: {
+                display: false,
+                labels: {
+                    fontColor: 'rgb(70, 109, 255)'
+                }
+            },
+        }
+
+        var ctx = document.getElementById('judging_chart_container');
+        new Chart(ctx, {
+            type: 'radar',
+            data: data,
+            options: options
+        });
+    }
+
+
+    function areaShowHide(hide, show) {
+
+        $(".question-area-" + hide).hide();
+        $(".question-area-" + show).fadeIn({"display":"block"}, 2600, "easeInOutExpo");
+
+    }
+
+    var questionAreaCount = 1;
+    $(window).on('mousewheel', function(e){
+        if(scrollEvent) {
+            scrollEvent = false;
+            if(e.originalEvent.wheelDelta/120 > 0) {
+                if(questionAreaCount >= 10) {
+                    questionAreaCount = 10;
+                    return;
+                }
+
+                areaShowHide(questionAreaCount, questionAreaCount + 1);
+                questionAreaCount++;
+                console.log("up");
+            } else {
+                if(questionAreaCount <= 1) {
+                    questionAreaCount = 1;
+                    return;
+                }
+
+                areaShowHide(questionAreaCount, questionAreaCount - 1);
+                questionAreaCount--;
+
+                console.log("down");
+            }
+
+        }
+    })
+
+
+</script>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <!--Private-Setting-->
+    <link rel="stylesheet" type="text/css" href="../../css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style_make.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/contents.css">
+    <!--Og-->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content=""/>
+    <!--[if lt EI 9]>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <![endif]-->
+    <script src="../../js/prefixfree.jquery.js"></script>
+    <!--J-Query-CDN-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <!--Private-Setting-->
+    <script src="../../js/main.js"></script>
+
+    <title></title>
+</head>
+<body>
+<div id="header-wrapper">
+    <header id="v2-gnb">
+        <div id="v2-gnb-top">
+            <nav id="v2-nav"></nav>
+            <div class="v2-gnb-logo">
+                <a href="/"><img alt="" src="../../images/logo/v2-1-logo.png"></a>
+            </div>
+            <div class="v2-gnb-right">
+
+                <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                <div class="v2-gnb-store header-pc">
+                    <a href="#">스토어</a>
+                </div>
+
+                <!-- 로그인 안 했을 때 -->
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">1:1 문의</a>
+                </div>
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="wrapper">
+    <div class="making-list-section">
+        <div class="making-list-article">
+            <div class="making-list-container">
+                <div class="making-list">
+                    <h2 class="flow-step-title">해당 제품에 대한 답변 리스트</h2>
+                    <!--<div class="sub-description pc">-->
+                        <!--<p>자세한 내용이 궁금하시면 <span><a href="mailto:support@shapl.com">support@shapl.com</a>으로 연락해 주시기 바랍니다.</span></p>-->
+                    <!--</div>-->
+                    <ul class="making-list">
+                        <li class="height-auto">
+                            <div class="making-content-box">
+                                <p class="making-msg-content" onclick="openPopup('popupMsg')">
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                    제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+
+                                </p>
+                            </div>
+                            <div class="making-info-box">
+                                <p class="making-check reply">답변 있음</p>
+                            </div>
+                        </li>
+                        <li class="height-auto" onclick="openPopup('popupMsg')">
+                            <div class="making-content-box">
+                                <h3 class="making-msg-content">
+                                    이런 얘기, 저런 얘기, 요런 얘기, 그런 얘기
+                                </h3>
+                            </div>
+                            <div class="making-info-box">
+                                <p class="making-check">답변 없음</p>
+                            </div>
+                        </li>
+                        <li class="height-auto" onclick="openPopup('popupMsg')">
+                            <div class="making-content-box">
+                                <h3 class="making-msg-content">
+                                    이런 얘기, 저런 얘기, 요런 얘기, 그런 얘기
+                                </h3>
+                            </div>
+                            <div class="making-info-box">
+                                <p class="making-check reply">답변 있음</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== 문의하기2 ============ -->
+    <div id="popupMsg" class="popup-wrapper">
+        <div class="popup-bg"></div>
+        <div class="popup-container middle-box">
+            <div class="popup-delete">
+                <img src="../../images/icon/icn-delete.svg">
+            </div>
+            <div class="popup-content-title txt-center">
+                문의하기
+            </div>
+            <div class="popup-content-box">
+                <div class="popup-content-subTitle">
+                    제품명 : <span>제품명 자리</span>
+                </div>
+            </div>
+            <div class="popup-content-subTitle txt-bold">
+                문의 내용
+            </div>
+            <div class="popup-content-box info-content has-line">
+                내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+            </div>
+            <div> <!-- 한번에 컨트롤 할수 있도록 div로 병합 -->
+                <div class="popup-content-subTitle txt-bold">
+                    답변
+                </div>
+                <div class="popup-content-box info-content has-line">
+                    답변 위치
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========== 문의하기2 ============ -->
+    <!-- =========== 문의하기1 ============ -->
+</div>
+
+<script>
+    $(function(){
+        // openPopup("popupMsg");
+    })
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+    $(".pop-payment").click(function(){
+        $(".pop-payment").closest(".checking-box").removeClass("checked");
+        if($(this).is(":checked")) {
+            $(this).closest(".checking-box").addClass("checked");
+        }
+    })
+</script>
+</body>
+
+</html>

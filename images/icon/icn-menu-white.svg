@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W-gnb-search_bar-Copy" transform="translate(-21.000000, -24.000000)">
+            <g id="gnb" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <g id="btn-menu">
+                    <g id="icn-menu" transform="translate(21.000000, 24.000000)">
+                        <path d="M1,1 L17,1" id="Stroke-1"></path>
+                        <path d="M1,11 L17,11" id="Stroke-3"></path>
+                        <path d="M1,6 L17,6" id="Stroke-5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

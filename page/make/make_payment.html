@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style_make.css"/>
+<!--    <link rel="stylesheet" href="../../css/font.css"/>-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body class="main">
+
+<div id="header-wrapper">
+    <header id="v2-gnb">
+        <div id="v2-gnb-top">
+            <nav id="v2-nav"></nav>
+            <div class="v2-gnb-logo">
+                <a href="/"><img alt="" src="../../images/logo/v2-1-logo.png"></a>
+            </div>
+            <div class="v2-gnb-right">
+
+                <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                <div class="v2-gnb-store header-pc">
+                    <a href="#">스토어</a>
+                </div>
+
+                <!-- 로그인 안 했을 때 -->
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">1:1 문의</a>
+                </div>
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+    <div class="contents submit-contents">
+        <div class="contents-input-inside table-wide">
+            <div class="l-main display-table">
+                <form>
+                    <fieldset class="input-field-wrapper">
+                        <h2 class="input-field-title required has-info has-bottom">배송지 정보 입력</h2>
+                        <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                        <div class="input-field-container">
+                            <label class="left-label required">이름</label>
+                            <div class="input-field-container-push right-input-150">
+                                <div class="input-field-input-box">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field-container">
+                            <label class="left-label required">성</label>
+                            <div class="input-field-container-push right-input-150">
+                                <div class="input-field-input-box">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field-container">
+                            <label class="left-label required">우편번호</label>
+                            <div class="input-field-container-push right-input-150 left-input-110">
+                                <div class="input-field-input-box">
+                                    <input id="zipCode" type="text" disabled placeholder="">
+                                </div>
+                            </div>
+                            <div class="input-button-btn input-button-nonBlack input-button-small zipcode" onclick="daumPostcode();">
+                                <a href="#">주소 찾기</a>
+                            </div>
+                        </div>
+                        <div class="input-field-container">
+                            <label class="left-label required">주소</label>
+                            <div class="input-field-container-push right-input-150">
+                                <div class="input-field-input-box">
+                                    <input id="addressLine" type="text" disabled placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field-container">
+                            <!-- 상세 주소 -->
+                            <div class="input-field-container-push right-input-150">
+                                <div class="input-field-input-box">
+                                    <input type="text" placeholder="상세 주소를 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="input-field-wrapper">
+                        <h2 class="input-field-title required has-info has-bottom">결제 방법 선택</h2>
+                        <div>
+                            <div class="checking-box checked">
+                                <label class="radio-check">
+                                    <div>
+                                        <input type="radio" class="pop-payment" value="card" name="payment">
+                                        <span class="radio-check"></span>
+                                        <span class="radio-title">
+                                            <p>실시간 계좌이체</p>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="checking-box">
+                                <label class="radio-check">
+                                    <div>
+                                        <input type="radio" class="pop-payment" value="kakao" name="payment">
+                                        <span class="radio-check"></span>
+                                        <span class="radio-title">
+                                            <p>카카오페이로 결제</p>
+                                        </span>
+                                        <!-- 로고 -->
+                                        <span class="radio-logo">
+                                            <img alt="kakakopay" src="../../images/contents/img-kakaopay@2x.png"/>
+                                        </span>
+                                        <!-- 로고 -->
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="checking-box">
+                                <label class="radio-check">
+                                    <div>
+                                        <input type="radio" class="pop-payment" value="naver" name="payment">
+                                        <span class="radio-check"></span>
+                                        <span class="radio-title">
+                                            <p>네이버페이로 결제</p>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="r-main display-table">
+                <div class="making-payment-container">
+                    <ul class="making-list">
+                        <li>
+                            <div class="making-image-box">
+                                <img src="../../images/contents/dummy/product-big4.png">
+                            </div>
+                            <div class="making-content-box">
+                                <p class="making-regist">수량 : <span>2</span></p>
+                                <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                    제목
+                                </h3>
+                                <p class="making-category">이것, 저것, 요것, 그것</p>
+                            </div>
+                            <div class="making-info-box">
+                                <p class="making-status m-money-krw">10,000</p>
+                            </div>
+                        </li>
+                        <!--<li>-->
+                            <!--<div class="making-image-box">-->
+                                <!--<img src="../../images/contents/dummy/product-big4.png">-->
+                            <!--</div>-->
+                            <!--<div class="making-content-box">-->
+                                <!--<p class="making-regist">수량 : <span>2</span></p>-->
+                                <!--<h3 class="making-title has-left-image" onclick="openPopup('popupImage');">-->
+                                    <!--제목-->
+                                <!--</h3>-->
+                                <!--<p class="making-category">이것, 저것, 요것, 그것</p>-->
+                            <!--</div>-->
+                            <!--<div class="making-info-box">-->
+                                <!--<p class="making-status m-money-krw">10,000</p>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="making-image-box">-->
+                                <!--<img src="../../images/contents/dummy/product-big4.png">-->
+                            <!--</div>-->
+                            <!--<div class="making-content-box">-->
+                                <!--<p class="making-regist">수량 : <span>2</span></p>-->
+                                <!--<h3 class="making-title has-left-image" onclick="openPopup('popupImage');">-->
+                                    <!--제목-->
+                                <!--</h3>-->
+                                <!--<p class="making-category">이것, 저것, 요것, 그것</p>-->
+                            <!--</div>-->
+                            <!--<div class="making-info-box">-->
+                                <!--<p class="making-status m-money-krw">10,000</p>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    </ul>
+                    <div class="making-payment-box has-table">
+                        <table>
+                            <thead></thead>
+                            <tbody>
+                            <tr>
+                                <td class="label">총 상품 금액</td>
+                                <td class="value m-money-krw">10</td><!-- m-money-krw 단위 자동 생성 -->
+                            </tr>
+                            <tr>
+                                <td class="label last">배송비</td>
+                                <td class="value last m-money-krw">10</td><!-- m-money-krw 단위 자동 생성, 무료 일시 m-money-krw 제거 -->
+                            </tr>
+                            <tr class="total-result">
+                                <td class="label">주문 총계</td>
+                                <td class="value m-money-krw">10</td><!-- m-money-krw 단위 자동 생성 -->
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="making-payment-box">
+                        <div class="submit-check-box ">
+                            <label class="checkbox-label">
+                                <div>
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </div>
+                                <div class="checkbox-txt">
+                                    <p>
+                                        <span>
+                                           (필수) 상품 및 주문, 결제 정보를 확인하였으며, 이에 동의합니다.
+                                        </span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="making-payment-box">
+                        <div class="input-button-btn input-button-skyblue input-button-full"><!--active로 컨트롤-->
+                            <a href="#">결제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="daum-api-pop" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%;display: none;">
+        <div id="pop-output"
+             style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(133, 133, 133, 0.6);display: none;"
+             onclick="closeDaumPostcode()"></div>
+        <div id="layer" style="display:none;position:fixed;overflow:hidden;-webkit-overflow-scrolling:touch;">
+
+        </div>
+    </div>
+</div>
+<!-- Daum Post API -->
+<!--<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>-->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script>
+
+
+    $(".pop-payment").click(function(){
+
+        $(".pop-payment").closest(".checking-box").removeClass("checked");
+        if($(this).is(":checked")) {
+            $(this).closest(".checking-box").addClass("checked");
+        }
+    })
+</script>
+
+
+<script type="text/javascript">
+    // 우편번호 찾기 화면을 넣을 element
+    var element_layer = document.getElementById('layer');
+    var element_out = document.getElementById('pop-output');
+    var element_pop = document.getElementById('daum-api-pop');
+
+    function closeDaumPostcode() {
+        // iframe을 넣은 element를 안보이게 한다.
+        element_pop.style.display = 'none';
+        element_pop.style.zIndex = '0';
+        element_out.style.display = 'none';
+        element_layer.style.display = 'none';
+    }
+
+    function daumPostcode() {
+        new daum.Postcode({
+            oncomplete: function (data) {
+                // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                var fullAddr = ''; // 최종 주소 변수
+                var extraAddr = ''; // 조합형 주소 변수
+
+                // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    fullAddr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    fullAddr = data.jibunAddress;
+                }
+
+                //사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                if (data.userSelectedType === 'R') {
+                    //법정동명이 있을 경우 추가한다.
+                    if (data.bname !== '') {
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있을 경우 추가한다.
+                    if (data.buildingName !== '') {
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                    fullAddr += (extraAddr !== '' ? ' (' + extraAddr + ')' : '');
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('zipCode').value = data.zonecode; //5자리 새우편번호 사용
+                document.getElementById('addressLine').value = fullAddr;
+
+                // iframe을 넣은 element를 안보이게 한다.
+                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                element_pop.style.display = 'none';
+                element_out.style.display = 'none';
+                element_layer.style.display = 'none';
+                element_pop.style.zIndex = '0';
+            },
+            width: '100%',
+            height: '100%',
+            maxSuggestItems: 5
+        }).embed(element_layer);
+
+        // iframe을 넣은 element를 보이게 한다.
+        element_pop.style.display = 'block';
+        element_out.style.display = 'block';
+        element_layer.style.display = 'block';
+        element_pop.style.zIndex = '1000';
+
+
+        var width = 300; //우편번호서비스가 들어갈 element의 width
+        var height = 400; //우편번호서비스가 들어갈 element의 height
+        var borderWidth = 1; //샘플에서 사용하는 border의 두께
+        element_layer.style.width = width + 'px';
+        element_layer.style.height = height + 'px';
+        element_layer.style.border = borderWidth + 'px solid';
+        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth) + 'px';
+        element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth) + 'px';
+
+        if(window.innerHeight <= 400) {
+            element_layer.style.top = '10px';
+        }
+    }
+
+    // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+    // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+    // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+    function initLayerPosition() {
+        var width = 300; //우편번호서비스가 들어갈 element의 width
+        var height = 400; //우편번호서비스가 들어갈 element의 height
+        var borderWidth = 1; //샘플에서 사용하는 border의 두께
+
+        // 위에서 선언한 값들을 실제 element에 넣는다.
+        element_layer.style.width = width + 'px';
+        element_layer.style.height = height + 'px';
+        element_layer.style.border = borderWidth + 'px solid';
+        // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth) + 'px';
+    }
+
+    $(window).resize(function () {
+        initLayerPosition();
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/nice-select.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <script src="../../js/main.js"></script>
+
+</head>
+<body class="main">
+
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+    <div class="contents submit-contents">
+        <div class="contents-input-inside contest-result"> <!--  background-blur 넣어주 -->
+            <div>
+                <fieldset class="input-field-wrapper">
+                    <div class="contest-result-topInfo">
+                        <p class="input-field-title intro" onclick="makePDF()">Design Title</p>
+                        <div class="info-check-box project">
+                            <div class="img-box">
+                                <!--<img src="../../images/04_Two_Face_main.png">--><!-- 프로필 이미지:없으면 넣지 말 것 -->
+                            </div>
+                            <div class="profile-box">
+                                <p>By brand name</p><!-- 유저 이름 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest-result-text in-box">
+                        <span>Design Title</span>은<br class="mobile">
+                        제2회 SHAPL Design Contest에서<br class="mobile">
+                        총 <span>302</span>개의 LIKE를 받았습니다.<br>
+                        전문가심사점수는 <span>35</span>점 입니다.
+                    </div>
+                </fieldset>
+                <fieldset class="input-field-wrapper">
+                    <div>
+                        <p class="input-field-title large txt-bold txt-blue">
+                            Consumer <br class="mobile">
+                            Voting
+                        </p>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Summary
+                        </p>
+                        <div class="contest-result-content">
+                        <ul class="card-list">
+                            <li>
+                                <div class="input-content-box card">
+                                    <p class="content-title">LIKE 수</p>
+                                    <p class="content-info">302</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-content-box card">
+                                    <p class="content-title">뷰 수</p>
+                                    <p class="content-info">3245</p>
+                                </div>
+                            </li>
+                            <li class="full-width">
+                                <div class="input-content-box card">
+                                    <p class="content-title">가장 LIKE를 많이 받은 국가</p>
+                                    <p class="content-info">South Korea</p>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="contest-result-text">
+                            <span>Design Title</span>에<br>
+                            가장 높은 관심을 보인국가는<br>
+                            <span>South Korea</span>입니다.<br>
+                            또한 <span>United Kingdom</span>에서<br>
+                            이 디자인을 가장 많이 확인했습니다.
+                        </div>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Most Liked
+                            <span class="sub-info">Country</span>
+                        </p>
+
+                        <div class="pie-chart-area">
+                            <div id="like_chart_container" class="pie-chart-box">
+
+                                <!-- 원형 차트 영역 -->
+                                <!-- javascript - setLikeChart -->
+
+                            </div>
+                            <div class="pie-chart-legend">
+                                <div class="contest-result-content">
+                                <table>
+                                    <colgroup></colgroup>
+                                    <colgroup width="30%"></colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble blue"></span>United Kindom</td>
+                                        <td class="txt-right txt-blue legend">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble violet"></span>South Korea</td>
+                                        <td class="txt-right txt-blue legend">25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble green"></span>Thailand</td>
+                                        <td class="txt-right txt-blue legend">12%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble yellow"></span>Indonesia</td>
+                                        <td class="txt-right txt-blue legend">20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="legend"><span class="legend-bubble red"></span>India</td>
+                                        <td class="txt-right txt-blue legend">13%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contest-result-content">
+                            <table>
+                                <colgroup width="15%"></colgroup>
+                                <colgroup></colgroup>
+                                <colgroup width="30%"></colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Country</th>
+                                        <th class="txt-right">LIKE Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>United Kindom</td>
+                                        <td class="txt-right txt-blue">123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>South Korea</td>
+                                        <td class="txt-right txt-blue">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Thailand</td>
+                                        <td class="txt-right txt-blue">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Indonesia</td>
+                                        <td class="txt-right txt-blue">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>India</td>
+                                        <td class="txt-right txt-blue">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Others</td>
+                                        <td class="txt-right txt-blue">11</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            Liked Date
+                            <span class="sub-info">(KST)</span>
+                        </p>
+                        <div class="input-field-input-box sub-right">
+                            <select class="input-field-select chart-select">
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                                <option>Beauty</option>
+                                <option>Mobile</option>
+                            </select>
+                        </div>
+                        <div class="chart-wrapper">
+                            <div id="like_date_chart_container" class="chart-area">
+
+                                <!-- 차트 영역 -->
+                                <!-- javascript - setLikeDateChart -->
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="input-field-wrapper">
+                    <div>
+                        <p class="input-field-title large txt-bold txt-blue">
+                            Professional’s <br class="mobile">
+                            Judging
+                        </p>
+                    </div>
+                    <div class="input-content-box pc-inline-block">
+                        <div class="chart-wrapper has-bottom">
+                            <canvas id="judging_chart_container">
+
+                                <!-- 차트 영역 -->
+                                <!-- javascript - setJudgingChart -->
+
+                            </canvas>
+                        </div>
+                        <div class="contest-result-content last has-top-bottom-line has-top-bottom-padding">
+                            <dl class="sub-title">
+                                <dt>심사 항목</dt>
+                                <dd>평가 점수</dd>
+                            </dl>
+                            <div>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>18</dd>
+                                </dl>
+                                <dl>
+                                    <dt>기능성(실용성)</dt>
+                                    <dd>12</dd>
+                                </dl>
+                                <dl>
+                                    <dt>양질성(독창성)</dt>
+                                    <dd>13</dd>
+                                </dl>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>15</dd>
+                                </dl>
+                                <dl>
+                                    <dt>심미성</dt>
+                                    <dd>16</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="contest-result-content">
+                            <p class="result-total-score">총점<span>51</span></p>
+                        </div>
+                    </div>
+
+                    <div class="input-content-box pc-inline-block">
+                        <p class="contest-result-subTitle">
+                            심사위원의 <strong>심사평</strong>
+                        </p>
+                        <div class="contest-result-text result-comment">
+                            지금까지 없었던 '기분 좋은 물 붓기'를 가능하게 하는 디자인이다.
+                            핸들은 손에 꼭 맞게 잡히고, 노즐은 절수(絶水)가 뛰어나 원하는 곳에 물을 정확하게 따르기 편하도록 디자인되었다.
+                            스테인리스에 도장을 입힌 외관과 등대처럼 은은하게 빛나는 전원 램프도 무척 아름답다.
+                            무엇보다 이 전기 주전자는, 물을 끓이고 커피를 내리는 시간이 이렇게나 즐거워질 수 있다는 놀라움을 주는 제품이다.
+                        </div>
+                        <p class="contest-result-info txt-blue">
+                            이 평가는 추후 My Project에서도 확인하실 수있습니다.
+                        </p>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- 팝업 액션 추가 - 각 input 마다 class 추가 및 name 설정 -->
+        <div id="popDesignStory" class="popup-wrapper">
+            <div class="popup-bg background-blur"></div>
+            <div class="popup-inner-wrapper has-padding full-height">
+                <div class="popup-container has-header has-footer question-area">
+                    <div class="popup-header txt-center background-gray">
+                        <p class="txt-white sub-title">Helps us to provide better service to you</p>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="question-area-box question-area-1">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">1</span>AGE?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="1"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">17 or younger</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="1"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">18-20</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="2"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">21-29</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="3"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">30-39</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="4"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">40-49</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="5"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">50-59</span>
+                                        </label>
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-1 answered" name="question-1" value="6"><!-- class + area-1 answered, name = question-1 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">60 or older</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-2" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">2</span>School?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" class="area-2 answered" name="question-2" placeholder="입력"><!-- class + area-2 answered, name = question-2 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">3</span>Your Nationality ?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" class="area-2 answered" name="question-3" placeholder="입력"><!-- class + area-2 answered, name = question-3 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-3" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">4</span>Which country do you use <br class="mobile"/>SHAPL the most frequently?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" class="area-3 answered" name="question-4" placeholder="입력"><!-- class + area-3 answered, name = question-4 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-4" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">5</span>The website is easy to navigate.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-4 answered" name="question-5" value="1"><!-- class + area-4 answered, name = question-5 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-4 answered" name="question-5" value="2"><!-- class + area-4 answered, name = question-5 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-4 answered" name="question-5" value="3"><!-- class + area-4 answered, name = question-5 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-4 answered" name="question-5" value="4"><!-- class + area-4 answered, name = question-5 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-4 answered" name="question-5" value="5"><!-- class + area-4 answered, name = question-5 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-5" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">6</span>The website has a user friendly interface.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-5 answered" name="question-6" value="1"><!-- class + area-5 answered, name = question-6 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-5 answered" name="question-6" value="2"><!-- class + area-5 answered, name = question-6 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-5 answered" name="question-6" value="3"><!-- class + area-5 answered, name = question-6 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-5 answered" name="question-6" value="4"><!-- class + area-5 answered, name = question-6 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-5 answered" name="question-6" value="5"><!-- class + area-5 answered, name = question-6 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-6" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">7</span>It was easy to upload my design.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-6 answered" name="question-7" value="1"><!-- class + area-6 answered, name = question-7 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-6 answered" name="question-7" value="2"><!-- class + area-6 answered, name = question-7 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-6 answered" name="question-7" value="3"><!-- class + area-6 answered, name = question-7 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-6 answered" name="question-7" value="4"><!-- class + area-6 answered, name = question-7 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-6 answered" name="question-7" value="5"><!-- class + area-6 answered, name = question-7 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-7" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">8</span>It was easy to upload my design.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-7 answered" name="question-8" value="1"><!-- class + area-7 answered, name = question-8 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-7 answered" name="question-8" value="2"><!-- class + area-7 answered, name = question-8 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-7 answered" name="question-8" value="3"><!-- class + area-7 answered, name = question-8 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-7 answered" name="question-8" value="4"><!-- class + area-7 answered, name = question-8 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-7 answered" name="question-8" value="5"><!-- class + area-7 answered, name = question-8 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-8" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">9</span>It was easy to share my design with friends.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-8 answered" name="question-9" value="1"><!-- class + area-8 answered, name = question-9 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-8 answered" name="question-9" value="2"><!-- class + area-8 answered, name = question-9 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-8 answered" name="question-9" value="3"><!-- class + area-8 answered, name = question-9 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-8 answered" name="question-9" value="4"><!-- class + area-8 answered, name = question-9 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-8 answered" name="question-9" value="5"><!-- class + area-8 answered, name = question-9 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">10</span>Which SNS or channel did you use the most to share?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력" class="area-8 answered" name="question-10"></textarea><!-- class + area-8 answered, name = question-10 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-9" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label has-bottom-line has-bottom"><span class="txt-blue">11</span>It was easy to vote ‘LIKE’ on designs.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio block">
+                                            <input type="radio" class="area-9 answered" name="question-11" value="1"><!-- class + area-9 answered, name = question-11 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-9 answered" name="question-11" value="2"><!-- class + area-9 answered, name = question-11 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Agree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-9 answered" name="question-11" value="3"><!-- class + area-9 answered, name = question-11 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Neutral</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-9 answered" name="question-11" value="4"><!-- class + area-9 answered, name = question-11 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Disagree</span>
+                                        </label>
+                                        <label class="input-radio block top-line">
+                                            <input type="radio" class="area-9 answered" name="question-11" value="5"><!-- class + area-9 answered, name = question-11 -->
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">Strongly Disagree</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">12</span>What would you improve if you could in voting?</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력" class="area-9 answered" name="question-12"></textarea><!-- class + area-9 answered, name = question-12 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-10" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label"><span class="txt-blue">13</span>In your own words, describe how you feel about SHAPL.</p>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <div class="input-field-input-box">
+                                            <textarea placeholder="입력" class="area-10 answered" name="question-13"></textarea><!-- class + area-10 answered, name = question-13 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-area-box question-area-11" style="display: none">
+                            <div class="input-field-container">
+                                <p class="input-header-label txt-center has-bottom">
+                                    Thank you for all the valuable feedback. <br>
+                                    Go Check your report.
+                                </p>
+                                <div class="input-field-container-push">
+                                    <div class="txt-center">
+                                        <div class="input-button-btn input-button-nonSkyblue input-button-small auto">
+                                            <a href="#" onclick="resetAnswer(); return false;">Start Over</a>
+                                        </div>
+                                        <div class="input-button-btn input-button-skyblue input-button-small auto submit-btn">
+                                            <a href="#">Check My Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-footer txt-center background-blue info-footer">
+                        <p class="txt-white sub-title"><span class="full-answer">0</span> of 13 Answered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.nice-select.min.js"></script>
+
+<!-- 차트 생성용 CDN -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!-- 차트 생성용 CDN -->
+
+<!--<script src="../../js/jspdf.js"></script>-->
+
+<!--<script src="../../js/bluebird.min.js"></script>-->
+<script src="../../js/html2canvas.js"></script>
+<script src="../../js/jspdf.min.js"></script>
+<script>
+    function makePDF(){
+        html2canvas(document.getElementById("wrapper"), {
+            onrendered : function(canvas){
+                var imgData = canvas.toDataURL('image/png');
+                var doc = new jsPDF('p','mm',[297,210]);
+                doc.addImage(imgData, 'PNG', 10,10,190,95);
+                doc.save('개인지출내역서.pdf');
+            }
+        });
+        // html2canvas(document.getElementById("wrapper"), {
+        //     onrendered: function(canvas) {
+        //
+        //         // 캔버스를 이미지로 변환
+        //         var imgData = canvas.toDataURL('image/png');
+        //
+        //         var imgWidth = 210; // 이미지 가로 길이(mm) A4 기준
+        //         var pageHeight = imgWidth * 1.414;  // 출력 페이지 세로 길이 계산 A4 기준
+        //         var imgHeight = canvas.height * imgWidth / canvas.width;
+        //         var heightLeft = imgHeight;
+        //
+        //         var doc = new jsPDF('p', 'mm');
+        //         var position = 0;
+        //
+        //         // 첫 페이지 출력
+        //         doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        //         heightLeft -= pageHeight;
+        //
+        //         // 한 페이지 이상일 경우 루프 돌면서 출력
+        //         while (heightLeft >= 20) {
+        //             position = heightLeft - imgHeight;
+        //             doc.addPage();
+        //             doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        //             heightLeft -= pageHeight;
+        //         }
+        //
+        //         // 파일 저장
+        //         doc.save('sample_A4.pdf');
+        //     }
+        // });
+    }
+
+</script>
+<script>
+
+    $(function(){
+        $(".input-field-select").niceSelect();
+        google.charts.load("current", {packages:["corechart"]});//구글 차트
+
+        google.charts.setOnLoadCallback(setLikeChart); // Like 원형 차트
+        google.charts.setOnLoadCallback(setLikeDateChart); // 기간별 Like 선 차트
+        setJudgingChart(); // 심사평 방사 차트
+
+        // openPopup("popDesignStory");
+    });
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+        $("body").addClass('scroll-off');// 뒷 배경 스크롤 막기
+        $(".contents-input-inside").addClass('background-blur');// 뒷 배경 블러
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+        $("body").removeClass('scroll-off');// 뒷 배경 스크롤 막기
+        $(".contents-input-inside").removeClass('background-blur');// 뒷 배경 블러
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+    //like 원형 차트 생성 함수
+    function setLikeChart() {
+
+        //데이터 입력란
+        var data = google.visualization.arrayToDataTable([
+            ['Country', 'Like Count'],//주제
+            ['United Kingdom', 11],
+            ['South Korea', 2],
+            ['Japan', 2],
+            ['China', 2],
+            ['India', 7]
+        ]);
+
+        //스타일 옵션
+        var options = {
+            tooltip: {trigger:'none'},
+            pieHole: 0.7,
+            pieSliceText: 'none',
+            legend: 'none',
+            chartArea:{left:0,top:0,width:"100%",height:"100%"},
+            colors: ['#ee423d', '#ec407a', '#ffa726', '#05c985', '#42a5f5'],
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('like_chart_container'));
+        chart.draw(data, options);
+    }
+
+    //기간 별 라이크 선 그래프
+    function setLikeDateChart() {
+
+        //데이터 입력란
+        var data = google.visualization.arrayToDataTable([
+            ['Date', 'Like Count'],//주제
+            ['03.01',  1000],
+            ['03.02',  800],
+            ['03.03',  600],
+            ['03.04',  1200],
+            ['03.05',  230],
+            ['03.06',  500],
+            ['03.07',  1100]
+        ]);
+
+        //스타일 옵션
+        var options = {
+            tooltip: {trigger:'none'},
+            curveType: 'function',
+            legend:'none',
+            pointSize: 5,
+            chartArea:{left:0,bottom:50,top:10,width:"100%",height:"100%"}
+
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('like_date_chart_container'));
+
+        chart.draw(data, options);
+    }
+
+    //심사평 방사 차트 - 구글 차트는 방사형 차트가 없음
+    function setJudgingChart() {
+        //데이터 입력란
+        var data = {
+
+            labels: ['1 Week', '2 Week', '3 Week', '4 Week', '5 Week'],//데이터 이름
+            datasets: [{
+                data: ['20', '10', '15', '2', '12'],//데이터 값
+                backgroundColor: "rgba(70, 109, 255, 0.3)",//선 색(스타일)
+            }]
+        }
+
+
+        //스타일 옵션
+        var options = {
+            legend: {
+                display: false,
+                labels: {
+                    fontColor: 'rgb(70, 109, 255)'
+                }
+            },
+        }
+
+        var ctx = document.getElementById('judging_chart_container');
+        new Chart(ctx, {
+            type: 'radar',
+            data: data,
+            options: options
+        });
+    }
+
+    //팝업 관련
+    var scrollEvent = true;
+    setInterval(function(){
+        scrollEvent = true;
+    }, 1000);
+
+    function areaShowHide(show) {
+        $(".question-area-box").hide();
+        $(".question-area-" + show).fadeIn({"display":"block"}, 2600, "easeInOutExpo");
+    }
+
+    var questionAreaCount = 1;
+    $(".question-area").on('mousewheel', function(e){
+        if(scrollEvent) {
+            scrollEvent = false;
+
+            if(e.originalEvent.wheelDelta/120 > 0) {
+                if(questionAreaCount >= 11) {
+                    questionAreaCount = 11;
+                    return;
+                }
+                questionAreaCount++;
+            } else {
+                if(questionAreaCount <= 1) {
+                    questionAreaCount = 1;
+                    return;
+                }
+                questionAreaCount--;
+            }
+
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+
+
+    // ============= 팝업 페이지 이동 ================
+
+    $(".area-1").on("click", function(){
+        if($(".area-1:checked").length > 0) {
+            questionAreaCount = 2;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-2").on("blur", function(){
+        var chk = true;
+        $(".area-2").each(function(){
+            if($(this).val() === "") {
+                chk = false;
+                return false;
+            }
+        });
+
+        if(chk) {
+            questionAreaCount = 3;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-3").on("click blur", function(){
+        var chk = true;
+        $(".area-3").each(function(){
+            if($(this).val() === "") {
+                chk = false;
+                return false;
+            }
+        });
+
+        if(chk) {
+            questionAreaCount = 4;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-4").on("click", function(){
+        if($(".area-4:checked").length > 0) {
+            questionAreaCount = 5;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-5").on("click", function(){
+        if($(".area-5:checked").length > 0) {
+            questionAreaCount = 6;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-6").on("click", function(){
+        if($(".area-6:checked").length > 0) {
+            questionAreaCount = 7;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-7").on("click", function(){
+        if($(".area-7:checked").length > 0) {
+            questionAreaCount = 8;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-8").on("click blur", function(){
+        if($("input[type=radio].area-8:checked").length > 0 && $("textarea.area-8").val() !== "") {
+            questionAreaCount = 9;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-9").on("click blur", function(){
+        if($("input[type=radio].area-9:checked").length > 0 && $("textarea.area-9").val() !== "") {
+            questionAreaCount = 10;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    $(".area-10").on("blur", function(){
+        var chk = true;
+        $(".area-10").each(function(){
+            if($(this).val() === "") {
+                chk = false;
+                return false;
+            }
+        });
+
+        //마지막 문항 체크 후 처리 버튼 영역 보이기
+        if(chk) {
+            questionAreaCount = 11;
+            areaShowHide(questionAreaCount);
+        }
+    });
+
+    function countAnswered() {
+        var answerd1 = ($("[name=question-1]:checked").length > 0) ? 1 : 0;
+        var answerd2 = ($("[name=question-2]").val() !== "") ? 1 : 0;
+        var answerd3 = ($("[name=question-3]").val() !== "") ? 1 : 0;
+        var answerd4 = ($("[name=question-4]").val() !== "") ? 1 : 0;
+        var answerd5 = ($("[name=question-5]:checked").length > 0) ? 1 : 0;
+        var answerd6 = ($("[name=question-6]:checked").length > 0) ? 1 : 0;
+        var answerd7 = ($("[name=question-7]:checked").length > 0) ? 1 : 0;
+        var answerd8 = ($("[name=question-8]:checked").length > 0) ? 1 : 0;
+        var answerd9 = ($("[name=question-9]:checked").length > 0) ? 1 : 0;
+        var answerd10 = ($("[name=question-10]").val() !== "") ? 1 : 0;
+        var answerd11 = ($("[name=question-11]:checked").length > 0) ? 1 : 0;
+        var answerd12 = ($("[name=question-12]").val() !== "") ? 1 : 0;
+        var answerd13 = ($("[name=question-13]").val() !== "") ? 1 : 0;
+
+        var fullAnswer = answerd1 + answerd2 + answerd3 + answerd4 + answerd5
+            + answerd6 + answerd7 + answerd8 + answerd9 + answerd10 + answerd11
+            + answerd12 + answerd13;
+
+        $(".full-answer").text(fullAnswer);
+
+        //모든 문항을 답해야만 활성화
+        if(fullAnswer === 13) {
+            $(".submit-btn").addClass("active");
+        } else {
+            $(".submit-btn").removeClass("active");
+        }
+    }
+
+    //문항 맨 처음으로 돌아가는 함수
+    function resetAnswer() {
+        $("input.answered[type=radio]").prop("checked", false);
+        $("input.answered[type=text], textarea.answered").val("");
+        questionAreaCount = 1;
+        areaShowHide(questionAreaCount);
+        countAnswered();
+    }
+
+    $(".answered").on("click keyup", function (){
+        countAnswered();
+    });
+
+    // ============= 팝업 페이지 이동 ================
+
+</script>
+</html>

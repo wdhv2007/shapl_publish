@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="482" height="415" viewBox="0 0 482 415">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="nonzero" d="M0 2h482v50H0zM0 93h482v40H0z"/>
+        <path fill="#F4F4F3" fill-rule="nonzero" d="M0 53h482v40H0zM0 133h482v40H0z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M0 173h482v40H0z"/>
+        <path fill="#F4F4F3" fill-rule="nonzero" d="M0 213h482v40H0z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M0 253h482v40H0z"/>
+        <path fill="#F4F4F3" fill-rule="nonzero" d="M0 293h482v40H0z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M0 333h482v40H0z"/>
+        <path fill="#F4F4F3" fill-rule="nonzero" d="M0 373h482v40H0z"/>
+        <path fill="#464646" fill-rule="nonzero" d="M0 0h482v2H0zM0 413h482v2H0zM0 52h482v1H0z"/>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="92" y="79">10%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="119">9%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="79">+ 1,000,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="119">+ 700,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="159">8%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="159">+ 500,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="199">7%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="199">+ 300,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="239">6%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="239">+ 100,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="279">5%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="279">+ 50,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="319">4%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="319">+ 10,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="359">3%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="359">+ 5,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="97" y="399">2%</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Regular, Roboto" font-size="16">
+            <tspan x="278" y="399">+ 1,000 Likes</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="80" y="33">ROYALTY</tspan>
+        </text>
+        <text fill="#2B2B2B" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="308" y="33">LIKES</tspan>
+        </text>
+    </g>
+</svg>

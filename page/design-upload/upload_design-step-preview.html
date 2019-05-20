@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <!--Private-Setting-->
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+
+    <!--Og-->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content=""/>
+    <script src="../../js/prefixfree.jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <!--J-Query-CDN-->
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <!--Private-Setting-->
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/responsive_waterfall.js"></script>
+
+</head>
+    <body class="main">
+
+        <div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+            <div class="submit-success-header preview">
+                <p>미리보기 화면입니다.</p>
+                <span class="change-btn left view-main-list"><img src="../../images/icon/icons-chevron-left-20.svg"/></span>
+                <span class="change-btn right view-design-detail" style="display: none;"><img src="../../images/icon/icons-chevron-light-20.svg"/></span>
+            </div>
+
+            <div id="main-list-preview" class="submit-preview-wrapper" style="display: none;">
+                <div id="v2-contest-menu-outer-section">
+                    <div id="v2-contest-menu-section" class="v2-1">
+                        <div id="v2-contest-menu-article">
+                            <div class="swiper-container v2-1">
+                                <div class="swiper-wrapper v2-1">
+
+                                    <div class="swiper-slide gradiation default white click">
+                                        <div class="v2-contest-content">
+                                            <img alt="" src="../../images/ment02@2x.png"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide gradiation default white next">
+                                        <div class="v2-contest-content">
+                                            <img alt="" src="../../images/ment03@2x.png"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide gradiation default white last">
+                                        <div class="v2-contest-content">
+                                            <img alt="" src="../../images/ment01@2x.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-box v2-1">
+                                    <div class="swiper-button-next v2-1 white">
+                                        <img alt="" src="../../images/icon/right-btn-type02.png"/>
+                                    </div>
+                                    <div class="swiper-button-prev v2-1 white">
+                                        <img alt="" src="../../images/icon/left-btn-type02.png"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-container v2-1-img">
+                                <div class="swiper-wrapper v2-1-img">
+                                    <div class="swiper-slide v2-1-img">
+                                        <img alt="" src="../../images/main_top_menu_img02.png"/>
+                                    </div>
+                                    <div class="swiper-slide v2-1-img">
+                                        <img alt="" src="../../images/main_top_menu_img03.png"/>
+                                    </div>
+                                    <div class="swiper-slide v2-1-img">
+                                        <img alt="" src="../../images/main_top_menu_img01.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="v2-list-section">
+                        <div id="v2-list-article">
+                            <div class="v2-list-bottom">
+                                <div class="wf-container design-list" id="columns">
+                                    <ul class="main-design-list-ul" id="tiles">
+                                        <li>
+                                            <div class="submit-preview-img thumb">
+                                                <img src="../../images/icon/icons-image-outlined-20.svg"/>
+                                                <h2>메인 이미지를 등록해주세요.</h2>
+                                            </div>
+                                            <!--<img alt="img-01" src="../../images/dummy/img-01.png">-->
+                                            <div class="content">
+                                                <p>1</p>
+                                                <h3>JOY</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="submit-preview-img thumb wide">
+                                                <img src="../../images/icon/icons-image-outlined-20.svg"/>
+                                                <h2>메인 이미지를 등록해주세요.</h2>
+                                            </div>
+                                            <!--<img alt="img-02" src="../../images/dummy/img-02.png">-->
+                                            <div class="content">
+                                                <p>2</p>
+                                                <h3>BLEND</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="submit-preview-img thumb long">
+                                                <img src="../../images/icon/icons-image-outlined-20.svg"/>
+                                                <h2>메인 이미지를 등록해주세요.</h2>
+                                            </div>
+                                            <!--<img alt="img-03" src="../../images/dummy/img-03.png">-->
+                                            <div class="content">
+                                                <p>3</p>
+                                                <h3> The Boom Stool</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-04" src="../../images/dummy/img-04.png">
+                                            <div class="content">
+                                                <p>4</p>
+                                                <h3>Tube Silicone Mouse</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-05" src="../../images/dummy/img-05.png">
+                                            <div class="content">
+                                                <p>5</p>
+                                                <h3>AIRLOGUE</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-06" src="../../images/dummy/img-06.png">
+                                            <div class="content">
+                                                <p>6</p>
+                                                <h3>Modern Gardening</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-07" src="../../images/dummy/img-07.png">
+                                            <div class="content">
+                                                <p>7</p>
+                                                <h3>Intelligent iron box</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-08" src="../../images/dummy/img-08.png">
+                                            <div class="content">
+                                                <p>8</p>
+                                                <h3>New Method</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-09" src="../../images/dummy/img-09.png">
+                                            <div class="content">
+                                                <p>9</p>
+                                                <h3>Mi mini fan</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-10" src="../../images/dummy/img-10.png">
+                                            <div class="content">
+                                                <p>10</p>
+                                                <h3>AIRLOGUE </h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-11" src="../../images/dummy/img-11.png">
+                                            <div class="content">
+                                                <p>11</p>
+                                                <h3>BRICK</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-12" src="../../images/dummy/img-12.png">
+                                            <div class="content">
+                                                <p>12</p>
+                                                <h3>Mi mini fan</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-13" src="../../images/dummy/img-13.png">
+                                            <div class="content">
+                                                <p>13</p>
+                                                <h3>Wi-Fi Router Model Y</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-14" src="../../images/dummy/img-14.png">
+                                            <div class="content">
+                                                <p>14</p>
+                                                <h3>DoRe & SoLa</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-15" src="../../images/dummy/img-15.png">
+                                            <div class="content">
+                                                <p>15</p>
+                                                <h3>Mix & Match</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-16" src="../../images/dummy/img-16.png">
+                                            <div class="content">
+                                                <p>16</p>
+                                                <h3>PORTABLE FAN</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-17" src="../../images/dummy/img-17.png">
+                                            <div class="content">
+                                                <p>17</p>
+                                                <h3>PORTABLE FAN</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-18" src="../../images/dummy/img-18.png">
+                                            <div class="content">
+                                                <p>18</p>
+                                                <h3>PORTABLE FAN</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img class="blow" alt="img-19" src="../../images/dummy/img-19.png">
+                                            <div class="content">
+                                                <p>19</p>
+                                                <h3>New Method</h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="design-detail-preview" class="submit-preview-wrapper">
+                <main id="detail" class="design v2-1">
+                    <section class="visual type02 v2-1">
+                        <div class="v2-1-top">
+                            <div class="d-align">
+                                <ul class="d-profile">
+                                    <li class="picture"><img alt="shapl icon" src="../../images/logo/shapl-favicon-64.png"/></li>
+                                    <li class="context">
+                                        <div>
+                                            <p>SHAPL</p>
+                                            <p><span>by<strong>SHAPL</strong></span><span>Republic of South Korea</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<figure class="v2-1-img">-->
+                            <!--<img alt="living-thermal-bottle-main" src="../../images/21_Stella_Leather_Mini_Bag_main.png"/>-->
+                            <!--<figcaption>thermal bottle</figcaption>-->
+                        <!--</figure>-->
+                        <div class="submit-preview-box">
+                            <div class="submit-preview-img main-image">
+                                <img src="../../images/icon/icons-image-outlined-20.svg"/>
+                                <h2>디자인을 잘 나타내는 <br class="mobile">메인 이미지를 등록해주세요.</h2>
+                                <a href="javascript:openPopup('popMainImage')"><p class="input-field-info inline-block">이미지를 결정하기 어려우신가요?</p></a>
+                            </div>
+                        </div>
+                        <div class="d-like v2-1">
+                            <p class="like-image">
+                                <span><img src="../../images/icon/like-image-type02.png" alt="icon-like"/>219</span><!--0104 이미지 추가-->
+                            </p>
+                        </div>
+
+                        <div class="v2-1-design-button-box">
+                            <span class="v2-1-design-like-button">
+                                <img alt="like-button-icon" src="../../images/icon/like-btn-type02.png"/>
+                                <img style="display: none;" alt="like-button-disable" src="../../images/icon/like-btn-disable.png"/>
+                            </span>
+                            <span class="v2-1-design-pass-button">
+                                <img alt="pass-button-icon-type02" src="../../images/icon/pass-btn-type02.png"/>
+                            </span>
+                        </div>
+                        <div class="v2-1-product-comment">
+                            <p class="submit-preview-emptyArea empty">요약 설명을 적어주세요.</p>
+                        </div>
+                        <ul class="v2-1-sns">
+                            <li><a href="#"><img alt="facebook" src="../../images/icon/facebook-type02.png"/></a></li>
+                            <li><a href="#"><img alt="twitter" src="../../images/icon/twitter-type02.png"/></a></li>
+                            <li><a href="#"><img alt="link" src="../../images/icon/link-type02.png"/></a></li>
+                        </ul>
+                    </section>
+
+                    <section class="content v2-design-detail">
+                        <div class="d-video">
+                            <iframe src="https://www.youtube.com/embed/a3ZgjwP0-6o?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <!--<div class="d-fullCut">-->
+                            <!--<figure>-->
+                                <!--<img alt="thermal bottle photo 02" src="../../images/tea-infuser-cup-photo-05.png"/>-->
+                                <!--<figcaption>thermal bottle photo</figcaption>-->
+                            <!--</figure>-->
+                        <!--</div>-->
+                        <div class="submit-preview-img">
+                            <img src="../../images/icon/icons-image-outlined-20.svg"/>
+                            <h2>
+                                9개의 이미지를 더 올리실 수 있습니다.<br>
+                                디자인에 대해서 더 알려주세요!
+                            </h2>
+                        </div>
+
+                        <article class="d-info design submit-preview-area">
+                            <h2>Product Information</h2>
+                            <ul class="d-info">
+                                <li class="dimensions">
+                                    <dl>
+                                        <dt>Product Dimensions</dt>
+                                        <dd class="submit-preview-emptyArea empty">사이즈를 입력해주세요</dd>
+                                    </dl>
+                                </li>
+                                <li class="weight">
+                                    <dl>
+                                        <dt>Product Materials</dt>
+                                        <dd class="submit-preview-emptyArea empty">재질을 입력해주세요</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="d-detail">
+                            <h2 class="submit-preview-emptyArea empty">디자인 스토리의 제목을 입력해주세요.</h2>
+                            <p class="submit-preview-emptyArea empty textarea">디자인 스토리의 내용을 입력해주세요.</p>
+                        </article>
+
+                        <article class="d-howWork design">
+                            <div class="howWork-box">
+                                <div class="title">
+                                    <h2>How We Work</h2>
+                                </div>
+                                <div class="workImg">
+                                    <img alt="how we work" src="../../images/icon/img-how-we-work.png"/><!--0703-->
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span class="step">Step1 : </span><span class="slogan">LIKE.</span><span class="comment">We award designs according to consumer preferences.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="step">Step2 : </span><span class="slogan">MAKE.</span><span class="comment">Awarded winning designs are produced by SHAPL.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="step">Step3 : </span><span class="slogan">SELL.</span><span class="comment">We sell directly to consumer with affordable price.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="v2-d-review-design white">
+                            <div class="v2-d-review-box">
+                                <div class="v2-d-review-title">
+                                    <h2>Comment</h2>
+                                </div>
+                                <div class="v2-d-review-container">
+                                    <table>
+                                        <tr class="write-tr">
+                                            <td class="comment-content" colspan="2">
+                                                <div class="v2-write-review-box">
+                                                    <textarea></textarea>
+                                                </div>
+                                                <div class="v2-write-review-regist">
+                                                    <button class="btn-v2-d-design-review">Leave a message</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="comment-profile">
+                                                <div class="v2-d-designerPic-review-box">
+                                                    <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                                </div>
+                                            </td>
+                                            <td class="comment-content">
+                                                <div class="v2-write-review-box">
+                                                    <textarea>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</textarea>
+                                                </div>
+                                                <div class="v2-create-review-box">
+                                                    <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="comment-profile">
+                                                <div class="v2-d-designerPic-review-box">
+                                                    <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                                </div>
+                                            </td>
+                                            <td class="comment-content">
+                                                <div class="v2-designer-review-box">
+                                                    <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                                </div>
+                                                <div class="v2-text-review-box">
+                                                    <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                                </div>
+                                                <div class="v2-create-review-box">
+                                                    <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment-profile">
+                                                <div class="v2-d-designerPic-review-box">
+                                                    <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                                </div>
+                                            </td>
+                                            <td class="comment-content">
+                                                <div class="v2-designer-review-box">
+                                                    <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                                </div>
+                                                <div class="v2-text-review-box">
+                                                    <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                                </div>
+                                                <div class="v2-create-review-box">
+                                                    <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment-profile">
+                                                <div class="v2-d-designerPic-review-box">
+                                                    <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                                </div>
+                                            </td>
+                                            <td class="comment-content">
+                                                <div class="v2-designer-review-box">
+                                                    <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                                </div>
+                                                <div class="v2-text-review-box">
+                                                    <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                                </div>
+                                                <div class="v2-create-review-box">
+                                                    <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="v2-design-more-box">
+                                        <button class="btn-v2-more">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+                <!-- 메인 이미지 주의사항 팝업 -->
+                <div id="popMainImage" class="popup-wrapper">
+                    <div class="popup-bg"></div>
+                    <div class="popup-inner-wrapper">
+                        <div class="popup-container info-box">
+                            <div class="popup-delete-wrapper">
+                                <div class="popup-delete fixed-hold">
+                                    <img src="../../images/icon/icn-close-type03.svg">
+                                </div>
+                            </div>
+                            <div class="popup-content-title large-size">
+                                메인 이미지를 고를 때의 Tip
+                            </div>
+                            <div class="popup-content-box">
+                                <div class="popup-content-subTitle">
+                                    부분적으로 확대된 이미지보다는 전체가 보이는 이미지가 좋아요.<br>
+                                    궁금증을 유발할 수도 있지만, 대부분은 그냥 지나가기 쉽답니다.
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-good-01@2x.png">
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-bad-01@2x.png">
+                                </div>
+                            </div>
+                            <div class="popup-content-box">
+                                <div class="popup-content-subTitle">
+                                    디자이너님이 어떤 부분을 해결하고 싶었는지,<br>
+                                    이 제품이 사람에게 주는 이익이 무엇인지 잘 드러나는 이미지를 등록해주세요.
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-good-02@2x.png">
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-bad-02@2x.png">
+                                </div>
+                            </div>
+                            <div class="popup-content-box last">
+                                <div class="popup-content-subTitle">
+                                    기존의 제품들과는 아주 다른 디자인이라,<br>
+                                    보는 사람으로 하여금 제품의 본기능을 유추하기 힘든 디자인이라면,<br>
+                                    실제 생활 속 이미지를 등록해주세요. <br>
+                                    선풍기이지만 기존의 선풍기와는 완전히 다른 디자인이라면,<br>
+                                    실제로 사용 될 때의 이미지가 훨씬 효과적이랍니다.
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-good-03@2x.png">
+                                </div>
+                                <div class="popup-content-image col-2">
+                                    <img src="../../images/contents/w-bad-03@2x.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 메인 이미지 주의사항 팝업 -->
+            </div>
+        </div>
+        <script type="text/javascript" src="../../js/swiper.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.wookmark.js"></script>
+
+        <script>
+
+            function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+                $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+            }
+
+            function closePopup() {//팝업을 닫는 function
+                $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+            }
+
+            $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+                closePopup();
+            })
+
+            var handler = null;
+            var options = {
+                autoResize: false,
+                container: $('#columns'),
+                offset: 16,
+                resizeDelay: 50
+            }
+
+            function setMainList() {
+
+                var swiper_img = new Swiper('.swiper-container.v2-1-img', {
+                    loop: false,
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    initialSlide: 1,
+                    effect: 'fade',
+                    pagination: {
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                });
+
+                var swiper = new Swiper('.swiper-container.v2-1', {
+                    loop: false,
+                    slidesPerView: 'auto',
+                    spaceBetween: 70,
+                    initialSlide: 1,
+                    freeMode: false,
+                    centeredSlides: true,
+                    pagination: {
+                        clickable: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    thumbs: {
+                        swiper: swiper_img
+                    }
+                });
+
+                applyLayout();
+            }
+
+            $(function(){
+                setMainList()
+            })
+
+
+            function applyLayout() {
+                // Clear our previous layout handler.
+                if(handler) handler.wookmarkClear();
+
+                // Create a new layout handler.
+                handler = $('#tiles li');
+                handler.wookmark(options);
+            };
+
+            $(window).resize(function() {
+                applyLayout();
+            });
+
+            $(".view-main-list").click(function(){
+                $("#design-detail-preview").hide();
+                $("#main-list-preview").show();
+                $(".view-design-detail").show();
+                $(".view-main-list").hide();
+                setMainList();
+            })
+
+            $(".view-design-detail").click(function(){
+                $("#main-list-preview").hide();
+                $("#design-detail-preview").show();
+                $(".view-main-list").show();
+                $(".view-design-detail").hide();
+            })
+        </script>
+    </body>
+
+
+</html>

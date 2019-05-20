@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+        <!--Private-Setting-->
+        <link rel="stylesheet" href="../../css/font.css"/>
+        <link rel="stylesheet" href="../../css/common.css"/>
+        <link rel="stylesheet" href="../../css/style.css"/>
+        <!--Og-->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content=""/>
+        <meta property="og:type" content=""/>
+        <!--[if lt EI 9]>
+            <link rel="stylesheet" href="../../css/style.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <![endif]-->
+        <script src="../../js/prefixfree.jquery.js"></script>
+        <!--J-Query-CDN-->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+        <!--Private-Setting-->
+        <script src="../../js/main.js"></script>
+        
+        <title>SHAPL.com : Selling designer's product based on D2C Ecommerce | Product Design</title>
+    </head>
+    <body>
+        <div id="wrapper">
+           
+            <div id="account-header-section" class="w-100">
+                <ul class="a-account-menu fl">
+                    <li class="fl-100-l"><a href="#">프로필</a></li>
+                    <li class="fl-100-l active"><a href="#">프로젝트</a></li>
+                    <li class="fl-100-l"><a href="#">장바구니</a></li>
+                    <li class="fl-100-l"><a href="#">주문내역</a></li>
+                    <li class="fl-100-l"><a href="#">등록제품</a></li>
+                </ul>
+            </div>
+            
+            <div id="account-flow-section" class="w-100">
+                <div id="account-flow-article">
+                    
+                    <ul class="account-project-select">
+                        <li class="active"><a href="#">좋아한 프로젝트</a></li>
+                        <li><a href="#">출품한 프로젝트</a></li>
+                    </ul>
+                   
+                    <div class="flow-container narrow">
+                        <!--<ol class="flow-text fl pc">
+                            <li class="fl-100-l">출품 완료<span class="work-count">1</span><span class="flow-step-circle type01"></span></li>
+                            <li class="fl-100-l">예선 심사 중<span class="work-count">1</span><span class="flow-step-circle type01"></span></li>
+                            <li class="fl-100-l">예선 통과 디자인 편집<span class="work-count">0</span><span class="flow-step-circle type01"></span></li>
+                            <li class="fl-100-l">본선 진행 중<span class="work-count">0</span><span class="flow-step-circle type01"></span></li>
+                            <li class="fl-100-l">출품완료<span class="work-count">0</span><span class="flow-step-circle type01"></span></li>
+                        </ol>-->
+                        <ul class="v2-flow-board fl">
+                            <li class="fl-100-l">
+                                <p>좋아요</p>
+                                <p>20</p>
+                            </li>
+                            <li class="fl-100-l">
+                                <p>투표 진행중</p>
+                                <p>8</p>
+                            </li>
+                            <li class="fl-100-l">
+                                <p>투표 종료</p>
+                                <p>12</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="account-project-section" class="w-100 v2-account-my-like">
+                <div class="like-go-box end"><!--end는 종료된 콘테스트에서 like button 삭제-->
+                    <a href="#">LIKE 하러 가기</a>
+                </div>
+                <div class="v2-account-contest-title-article end"><!--end는 종료된 콘테스트에서 like button 삭제 됨에 따라 height가 줄어듭니다.-->
+                    <h2>1st SHAPL Design Contest<img alt="btn-drop-down-type05" src="../../images/icon/btn-drop-down-type05.svg"/></h2>
+                </div>
+                <div class="v2-account-project-article">
+                    <div class="v2-account-contest-like">
+                        <div class="v2-account-contest-like-title">
+                            <p>투표 진행중</p>
+                        </div>
+                        <ul class="product-list fl flexible border">
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ball-tab" src="../../images/design/112.jpg"/>
+                                            <figcaption>ball tab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">ball tab</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="young-k" src="../../images/designer/30590269_1527927187319260_2835441132832292864_n.jpg"/>
+                                                    <figcaption>young k</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">YOUNG_K</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="time-flow" src="../../images/design/flow_minakim.png"/>
+                                            <figcaption>time flow</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Time Flow</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer-kim" src="../../images/designer/KakaoTalk_Photo_2018-06-28-23-48-091.jpg"/>
+                                                    <figcaption>designer-kim</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer kim</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ore-bluetooth-speaker" src="../../images/design/Main%20Image_j.jpg"/>
+                                            <figcaption>ore bluetooth speaker</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Ore Bluetooth Speaker</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer hong" src="../../images/designer/KakaoTalk_20180802_192708439.jpg"/>
+                                                    <figcaption>designer hong</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer hong</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">electronics</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="plynite-the-logo-furniture" src="../../images/design/119.jpg"/>
+                                            <figcaption>plynite-the-logo-furniture</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">PLYNITE - The Logo Furniture</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="jinali-parekh" src="../../images/designer/IMG_20180710_100249_259.jpg"/>
+                                                    <figcaption>jinali-parekh</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">jinali-parekh</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ball-tab" src="../../images/design/112.jpg"/>
+                                            <figcaption>ball tab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">ball tab</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="young-k" src="../../images/designer/30590269_1527927187319260_2835441132832292864_n.jpg"/>
+                                                    <figcaption>young k</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">YOUNG_K</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="time-flow" src="../../images/design/flow_minakim.png"/>
+                                            <figcaption>time flow</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Time Flow</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer-kim" src="../../images/designer/KakaoTalk_Photo_2018-06-28-23-48-091.jpg"/>
+                                                    <figcaption>designer-kim</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer kim</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ore-bluetooth-speaker" src="../../images/design/Main%20Image_j.jpg"/>
+                                            <figcaption>ore bluetooth speaker</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Ore Bluetooth Speaker</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer hong" src="../../images/designer/KakaoTalk_20180802_192708439.jpg"/>
+                                                    <figcaption>designer hong</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer hong</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">electronics</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="plynite-the-logo-furniture" src="../../images/design/119.jpg"/>
+                                            <figcaption>plynite-the-logo-furniture</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">PLYNITE - The Logo Furniture</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="jinali-parekh" src="../../images/designer/IMG_20180710_100249_259.jpg"/>
+                                                    <figcaption>jinali-parekh</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">jinali-parekh</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                       
+                    <div class="v2-account-contest-like">
+                        <div class="v2-account-contest-like-title">
+                            <p>투표 종료</p>
+                        </div>
+                        <ul class="product-list fl flexible border">
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ball-tab" src="../../images/design/112.jpg"/>
+                                            <figcaption>ball tab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">ball tab</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="young-k" src="../../images/designer/30590269_1527927187319260_2835441132832292864_n.jpg"/>
+                                                    <figcaption>young k</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">YOUNG_K</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="time-flow" src="../../images/design/flow_minakim.png"/>
+                                            <figcaption>time flow</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Time Flow</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer-kim" src="../../images/designer/KakaoTalk_Photo_2018-06-28-23-48-091.jpg"/>
+                                                    <figcaption>designer-kim</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer kim</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ore-bluetooth-speaker" src="../../images/design/Main%20Image_j.jpg"/>
+                                            <figcaption>ore bluetooth speaker</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Ore Bluetooth Speaker</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer hong" src="../../images/designer/KakaoTalk_20180802_192708439.jpg"/>
+                                                    <figcaption>designer hong</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer hong</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">electronics</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="plynite-the-logo-furniture" src="../../images/design/119.jpg"/>
+                                            <figcaption>plynite-the-logo-furniture</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">PLYNITE - The Logo Furniture</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="jinali-parekh" src="../../images/designer/IMG_20180710_100249_259.jpg"/>
+                                                    <figcaption>jinali-parekh</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">jinali-parekh</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="account-project-section" class="w-100 v2-account-my-like">
+                <div class="like-go-box">
+                    <a href="#">LIKE 하러 가기</a>
+                </div>
+                <div class="v2-account-contest-title-article">
+                    <h2>2nd SHAPL Design Contest<img alt="btn-drop-down-type05" src="../../images/icon/btn-drop-down-type05.svg"/></h2>
+                </div>   
+                <div class="v2-account-project-article enable">
+                    <div class="v2-account-contest-like">
+                        <div class="v2-account-contest-like-title">
+                            <p>투표 진행중</p>
+                        </div>
+                        <ul class="product-list fl flexible border">
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ball-tab" src="../../images/design/112.jpg"/>
+                                            <figcaption>ball tab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">ball tab</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="young-k" src="../../images/designer/30590269_1527927187319260_2835441132832292864_n.jpg"/>
+                                                    <figcaption>young k</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">YOUNG_K</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="time-flow" src="../../images/design/flow_minakim.png"/>
+                                            <figcaption>time flow</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Time Flow</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer-kim" src="../../images/designer/KakaoTalk_Photo_2018-06-28-23-48-091.jpg"/>
+                                                    <figcaption>designer-kim</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer kim</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ore-bluetooth-speaker" src="../../images/design/Main%20Image_j.jpg"/>
+                                            <figcaption>ore bluetooth speaker</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Ore Bluetooth Speaker</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer hong" src="../../images/designer/KakaoTalk_20180802_192708439.jpg"/>
+                                                    <figcaption>designer hong</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer hong</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">electronics</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="plynite-the-logo-furniture" src="../../images/design/119.jpg"/>
+                                            <figcaption>plynite-the-logo-furniture</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">PLYNITE - The Logo Furniture</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="jinali-parekh" src="../../images/designer/IMG_20180710_100249_259.jpg"/>
+                                                    <figcaption>jinali-parekh</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">jinali-parekh</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                       
+                    <div class="v2-account-contest-like">
+                        <div class="v2-account-contest-like-title">
+                            <p>투표 종료</p>
+                        </div>
+                        <ul class="product-list fl flexible border">
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ball-tab" src="../../images/design/112.jpg"/>
+                                            <figcaption>ball tab</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">ball tab</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="young-k" src="../../images/designer/30590269_1527927187319260_2835441132832292864_n.jpg"/>
+                                                    <figcaption>young k</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">YOUNG_K</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="time-flow" src="../../images/design/flow_minakim.png"/>
+                                            <figcaption>time flow</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Time Flow</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer-kim" src="../../images/designer/KakaoTalk_Photo_2018-06-28-23-48-091.jpg"/>
+                                                    <figcaption>designer-kim</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer kim</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="ore-bluetooth-speaker" src="../../images/design/Main%20Image_j.jpg"/>
+                                            <figcaption>ore bluetooth speaker</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">Ore Bluetooth Speaker</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="designer hong" src="../../images/designer/KakaoTalk_20180802_192708439.jpg"/>
+                                                    <figcaption>designer hong</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">designer hong</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">electronics</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-img-container">
+                                    <a href="#">
+                                        <figure class="product-image">
+                                            <img alt="plynite-the-logo-furniture" src="../../images/design/119.jpg"/>
+                                            <figcaption>plynite-the-logo-furniture</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="list-content-container design my-like">
+                                    <div class="like-gauge-box">
+                                        <p class="like-count">499</p>
+                                        <div class="like-gauge">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="view-count-box">
+                                        <p class="view-count">1200</p>
+                                    </div>
+                                    <h2 class="list-name">PLYNITE - The Logo Furniture</h2>
+                                    <div class="profile-box">
+                                        <a href="#">
+                                            <div class="user-image-box">
+                                                <figure class="user-image">
+                                                    <img alt="jinali-parekh" src="../../images/designer/IMG_20180710_100249_259.jpg"/>
+                                                    <figcaption>jinali-parekh</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="user-info-box">
+                                                <p class="user-nickname">jinali-parekh</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="category-box pc">
+                                        <a href="#">Living</a>
+                                    </div>-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var acc01 = document.getElementsByClassName("v2-account-contest-title-article");
+            var a;
+            
+            for(a = 0; a < acc01.length; a++) {
+                acc01[a].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                    var panel01 = this.nextElementSibling;
+                    if(panel01.style.display === "block") {
+                        panel01.style.display = "none";
+                    } else {
+                        panel01.style.display = "block";
+                    }
+                });
+            }
+
+        })
+    </script>
+
+
+</html>

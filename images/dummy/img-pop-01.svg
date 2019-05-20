@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="63" viewBox="0 0 98 63">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#466DFF" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="26" font-weight="bold" transform="translate(-552 -163)">
+            <tspan x="646.055" y="230">제품</tspan> <tspan x="691.035" y="230" font-family="Roboto-Bold, Roboto"> </tspan> <tspan x="697.51" y="230">등록</tspan> <tspan x="742.49" y="230" font-family="Roboto-Bold, Roboto"> </tspan> <tspan x="748.965" y="230">완료</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <path fill="#FCC851" d="M47.95 0L42 1.855 50.244 16 59 12.187z"/>
+            <path fill="#7C97FF" d="M15.966 26.894C8.013 24.939 2.994 21.942.91 17.904l2.697-6.318c4.26 4.718 9.72 7.723 16.381 9.014l-4.022 6.294z"/>
+            <path fill="#FF8C8F" d="M67.035 51.145c-6.927 1.987-11.665 5.96-14.215 11.92l-3.703-6.096c2.318-5.372 6.558-9.33 12.72-11.875 3.506 4.729 1.282 1.949 5.198 6.05z"/>
+            <path fill="#FF8A30" d="M98 13.39L95.581 19 90 15.979 93.018 11z"/>
+        </g>
+    </g>
+</svg>

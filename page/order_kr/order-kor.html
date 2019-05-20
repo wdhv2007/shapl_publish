@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <script src="../../js/contents/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+</head>
+    <body class="main">
+
+        <div class="shopping-header">
+            <div class="l-wrapper">
+                <a class="shopping-header-logo" href=""><img src="../../images/contents/logo-shapl-k.svg"></a>
+            </div>
+        </div>
+
+        <div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+               
+            <div class="pay-step-container"><!-- 추가 -->
+                <ol class="pay-step-box">
+                    <li class="pay-step01">
+                        <div class="pay-txt-box">
+                            <p class="pay-step">STEP 01</p>
+                            <p class="pay-txt pay-txt-01">장바구니</p>
+                        </div>
+                    </li>
+                    <li class="pay-step02 pay-on">
+                        <div class="pay-txt-box">
+                            <p class="pay-step">STEP 02</p>
+                            <p class="pay-txt pay-txt-02">배송 및 결제</p>
+                        </div>
+                    </li>
+                    <li class="pay-step03">
+                        <div class="pay-txt-box">
+                            <p class="pay-step">STEP 03</p>
+                            <p class="pay-txt pay-txt-03">주문 완료</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+               
+            <div class="contents pay-contents">
+                <div class="contents-inside contents-pay-inside">
+                       
+                    <div class="pay-shipping-notice"><!-- 추가 -->
+                        <p class="pay-pc"><span><img alt="" src="../../images/contents/icn-notification-blue.svg"/></span>배송지 정보를 영문으로 입력해주세요. SHAPL의 모든 제품은 해외에서 배송됩니다.</p>
+                        <p class="pay-mobile"><span><img alt="" src="../../images/contents/icn-notification-blue.svg"/></span>배송지 정보를 영문으로 입력해주세요.<br><span class="m-26">SHAPL의 모든 제품은 해외에서 배송됩니다.</span></p>
+                    </div>   
+
+                    <div class="l-main l-main-r l-main-wide">
+                        <form class="m-field">
+                            <fieldset>
+                                <h2 class="m-field-title">배송지 정보 입력</h2>
+                                <div class="m-field-group">
+                                    <label class="required">이름</label>
+                                    <div class="m-field-group-push">
+                                        <div class="m-field-input-wrapper">
+                                            <input type="text" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-field-group">
+                                    <label class="required">성</label>
+                                    <div class="m-field-group-push">
+                                        <div class="m-field-input-wrapper">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="m-field-group">
+                                    <label class="required">우편번호</label>
+                                    <div class="m-field-group-push">
+                                        <div class="m-field-input-wrapper m-field-zipcode-wrapper">
+                                            <input type="text">
+                                        </div>
+                                        <button class="zipcode-btn-borderBlack">주소찾기</button>
+                                    </div>
+                                </div>
+                                    
+                                <div class="m-field-group">
+                                    <label class="required">주소</label>
+                                    <div class="m-field-group-push">
+                                        <div class="m-field-input-wrapper m-field-addr-wrapper">
+                                            <input type="text" class="first-addr">
+                                            <input type="text" class="detail-addr" placeholder="상세 주소를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                            
+                        <form class="m-field m-field-pay-method-wrapper"><!-- 추가 -->
+                            <fieldset id="m-field-pay-method">
+                                <h2 class="m-field-title">결제 방법 선택</h2>
+                                <div class="l-row">
+                                    <div class="l-col-1 pay-selected">
+                                        <label class="m-field-radio-s">
+                                            <div class="order-radio-btn">
+                                                <input type="radio" checked="checked" name="select-pay-meothod">
+                                                <strong></strong>
+                                                <span class="select-title">
+                                                    <h4>신용/체크카드</h4>
+                                                </span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="l-col-1">
+                                        <label class="m-field-radio-s">
+                                            <div class="order-radio-btn">
+                                                <input type="radio" name="select-pay-meothod">
+                                                <strong></strong>
+                                                <span class="select-title">
+                                                    <h4>실시간 계좌이체</h4>
+                                                </span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="l-col-1">
+                                        <label class="m-field-radio-s">
+                                            <div class="order-radio-btn">
+                                                <input type="radio" name="select-pay-meothod">
+                                                <strong></strong>
+                                                <span class="select-title">
+                                                    <h4>무통장 입금</h4>
+                                                </span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="l-col-1">
+                                        <label class="m-field-radio-s">
+                                            <div class="order-radio-btn">
+                                                <input type="radio" name="select-pay-meothod">
+                                                <strong></strong>
+                                                <span class="select-title">
+                                                    <h4>카카오페이</h4>
+                                                </span>
+                                                <img alt="kakakopay" src="../../images/contents/img-kakaopay@2x.png"/>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                            
+                    </div>
+
+                    <div class="l-sidebar l-sidebar-r l-sidebar-wide"><!-- 변경 -->
+                        <div class="how-many-order-wrapper pay-pc">
+                            <p>주문상품 <span class="how-many-order">2</span></p>
+                        </div>
+                        <div class="m-track">
+                            <div class="m-track-main">
+                                <img class="m-track-cover" src="../../images/contents/dummy.png">
+                                <div class="m-track-information">
+                                    <!--<div class="m-coupon">-10%</div>-->
+                                    <h3 class="m-track-title">CupsetCupset 203298481kkakds googkgkgkgk</h3>
+                                        
+                                    <dl class="m-track-information-list">
+
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                            
+                                        <dt>옵션</dt>
+                                        <dd>Skyblue</dd>
+
+                                        <div class="m-money m-money-krw">0</div><!--0817-->
+
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-track">
+                            <div class="m-track-main">
+                                <img class="m-track-cover" src="../../images/contents/dummy.png">
+                                <div class="m-track-information">
+                                    <!--<div class="m-coupon">-10%</div>-->
+                                    <h3 class="m-track-title">CupsetCupset 203298481kkakds googkgkgkgk</h3>
+                                        
+                                    <dl class="m-track-information-list">
+
+                                        <dt>수량</dt>
+                                        <dd>1</dd>
+                                            
+                                        <dt>옵션</dt>
+                                        <dd>Skyblue</dd>
+
+                                        <div class="m-money m-money-krw">0</div><!--0817-->
+
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="order-summary"><!-- 변경 -->
+                            <h2>주문 요약</h2> 
+                            <dl class="order-summary-data">
+                                <dt>총 상품 금액</dt>
+                                <dd class="m-money-krw">0</dd><!--0817-->
+                                <dt>배송비</dt>
+                                <dd>무료</dd>
+                            </dl>
+                            <dl class="order-summary-data v-total">
+                                <dt>주문 총계</dt>
+                                <dd class="m-money-krw">0</dd><!--0817-->
+                            </dl>
+                        </div>
+                            
+                        <div class="order-essential-check-wrapper">
+                            <label class="g-agree">
+                                <div class="g-agree-checkbox">
+                                    <input type="checkbox"/>
+                                    <span class="g-agree-checkmark"></span>
+                                </div>
+                                <div class="g-agree-txt g-agree-txt02 g-agree-txt03">
+                                    <p><span>(필수)</span> 상품 및 주문, 결제 정보를 확인하였으며, 이에 동의합니다.</p>
+                                </div>
+                            </label>
+                        </div>
+                            
+                        <button class="pay-btn-mint">주문하기</button><!-- 추가 -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="460px" viewBox="0 0 1440 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>B0F96E87-B13B-4580-A4B9-E82FBB624006</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="460"></rect>
+        <linearGradient x1="4.26567925%" y1="101.897079%" x2="52.6906798%" y2="11.9269799%" id="linearGradient-3">
+            <stop stop-color="#B5BAC2" offset="0%"></stop>
+            <stop stop-color="#D0D2D5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-24.3225366%" x2="44.7199764%" y2="83.6880213%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.98309399%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#D3D3D3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.4648305%" y1="84.359786%" x2="43.4648309%" y2="0%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C3C5C9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.4648305%" y1="84.359786%" x2="43.4648309%" y2="0%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C4C6CA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="41.4629369%" y1="28.6582473%" x2="50%" y2="2.12499955%" id="linearGradient-8">
+            <stop stop-color="#DADADA" offset="0%"></stop>
+            <stop stop-color="#E6E6E6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W-shop_now-clicked" transform="translate(0.000000, -106.000000)">
+            <g id="img-shop_now-banner" transform="translate(0.000000, 106.000000)">
+                <g id="bg">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#ECECEC" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="url(#linearGradient-3)" mask="url(#mask-2)" x="-1" y="0" width="1440" height="460"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(1185.010290, 109.010290) rotate(-315.000000) translate(-1185.010290, -109.010290) " x="1098.8637" y="-207.908541" width="172.293174" height="633.837662" rx="86.146587"></rect>
+                    <circle id="Oval-3" fill="#CED0D3" mask="url(#mask-2)" cx="172" cy="6" r="75"></circle>
+                    <rect id="Rectangle-Copy" fill="url(#linearGradient-5)" mask="url(#mask-2)" transform="translate(1396.996815, 111.996815) rotate(-315.000000) translate(-1396.996815, -111.996815) " x="1364.95845" y="-5.86695291" width="64.0767312" height="235.727537" rx="32.0383656"></rect>
+                    <circle id="Oval-2" fill="#D8D8D8" mask="url(#mask-2)" cx="1281.5" cy="230.5" r="32.5"></circle>
+                    <rect id="Rectangle-Copy-3" fill="url(#linearGradient-6)" mask="url(#mask-2)" transform="translate(45.172727, 476.327273) rotate(-315.000000) translate(-45.172727, -476.327273) " x="-16.9176766" y="260.768985" width="124.180808" height="431.116576" rx="62.0904038"></rect>
+                    <rect id="Rectangle-Copy-5" fill="url(#linearGradient-7)" mask="url(#mask-2)" transform="translate(-45.257661, 411.742339) rotate(-315.000000) translate(45.257661, -411.742339) " x="-74.3583195" y="289.886534" width="58.2013165" height="243.71161" rx="29.1006582"></rect>
+                    <rect id="Rectangle-Copy-4" fill="url(#linearGradient-8)" mask="url(#mask-2)" transform="translate(1266.984585, 497.984585) rotate(-315.000000) translate(-1266.984585, -497.984585) " x="1221.34831" y="330.096408" width="91.2725408" height="335.776355" rx="45.6362704"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

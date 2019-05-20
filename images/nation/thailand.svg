@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>thailand</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="7" cy="7" r="7"></circle>
+    </defs>
+    <g id="Global-Shipping-Free" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="thailand" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="#ED2939" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#AAAAAA" stroke-width="0.2" cx="7" cy="7" r="7.1"></circle>
+            </g>
+            <image id="download" mask="url(#mask-2)" x="-3" y="0" width="21" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAElBMVEX///8AJH3eEBjdAADvo6QAAHDFX92XAAABrklEQVR4Ae3csRGEQAwEQXFA/im/r3kyaHk3Zte6MMdtgdnB+zDpCJgwqUCLnTCpQIudMKlAi50wqUCLnTCpQIudMKlAi50wqUCLnTCpQIudMKlAi50wqUCLnTCpQIudMKlAi50wqUDL3G4LzOO2wDgCBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAwJfA67bAXG4LMNki18WESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7IRJBVrshEkFWuyESQVa7OSPyf5Y3/v9+rWDToAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBCYx22Bud0WmOO2AJMtcg4TJhVosRMmFWixEyYVaLETJhVosRMmFWixEyYVaLETJhVosRMmFWixEyYVaLETJhVosRMmFWixEyYVaLETJhVosZOa/ACg9dXGGD8uCwAAAABJRU5ErkJggg=="></image>
+        </g>
+    </g>
+</svg>

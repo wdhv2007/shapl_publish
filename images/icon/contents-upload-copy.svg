@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244" height="244" viewBox="0 0 244 244">
+    <defs>
+        <rect id="a" width="244" height="244" rx="10"/>
+        <mask id="b" width="244" height="244" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use stroke="#D1D1D1" stroke-dasharray="4" stroke-width="4" mask="url(#b)" xlink:href="#a"/>
+            <g fill="#466DFF" fill-rule="nonzero">
+                <path d="M102 101h40v2h-40z"/>
+                <path d="M121 82h2v40h-2z"/>
+            </g>
+        </g>
+        <g transform="translate(50 164)">
+            <g fill-rule="nonzero">
+                <path d="M20 12h16v16H20z"/>
+                <path stroke="#466DFF" stroke-width="1.13" d="M23.536 12.8l8.169 8.168.339 3.05-3.078-.315-8.167-8.167 2.737-2.737z"/>
+                <path fill="#466DFF" d="M26.364 14.828l-.707-.707-3.536 3.536.707.707zM20 28v-1h16v1z"/>
+            </g>
+            <text fill="#466DFF" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400">
+                <tspan x="44.285" y="22">컨텐츠 올리기</tspan>
+            </text>
+            <rect width="144" height="39" x=".5" y=".5" fill-rule="nonzero" stroke="#466DFF" rx="19.5"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/nice-select.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/style_make.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+
+
+
+    <script src="../../js/main.js"></script>
+
+</head>
+<body class="main">
+
+<div id="header-wrapper">
+    <header id="v2-gnb">
+        <div id="v2-gnb-top">
+            <nav id="v2-nav"></nav>
+            <div class="v2-gnb-logo">
+                <a href="/"><img alt="" src="../../images/logo/v2-1-logo.png"></a>
+            </div>
+            <div class="v2-gnb-right">
+
+                <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                <div class="v2-gnb-store header-pc">
+                    <a href="#">스토어</a>
+                </div>
+
+                <!-- 로그인 안 했을 때 -->
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">1:1 문의</a>
+                </div>
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+    <div class="contents submit-contents">
+        <div class="contents-input-inside">
+            <div class="info-button-box is-fixed txt-center">
+                <div class="input-button-btn input-button-wide-270 input-button-skyblue">
+                    <a href="#">다음</a><!-- class:active로 활성화 -->
+                </div>
+            </div>
+            <div>
+                <fieldset class="input-field-wrapper">
+                    <h2 class="input-field-title required">주문자 정보</h2>
+                    <!--<p class="input-field-description">프로젝트를 잘 설명할 수 있는 기본적인 정보를 입력해주세요.</p>-->
+                    <div class="input-field-container has-nice-select">
+                        <label class="left-label center">회사 유형</label>
+                        <div class="input-field-container-push right-input-150">
+                            <div class="input-field-input-box">
+                                <select class="input-field-select policy">
+                                    <option value="">이런 회사</option>
+                                    <option value="">저런 회사</option>
+                                    <option value="">요런 회사</option>
+                                    <option value="">그런 회사</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field-container">
+                        <label class="left-label">회사명/이름</label>
+                        <div class="input-field-container-push right-input-150">
+                            <div class="input-field-input-box">
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="input-field-warning"> <!-- 경고창 보여야 할 시 active 사용 -->
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="input-field-container">
+                        <label class="left-label">담당자 이름</label>
+                        <div class="input-field-container-push right-input-150">
+                            <div class="input-field-input-box">
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="input-field-warning"> <!-- 경고창 보여야 할 시 active 사용 -->
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="input-field-container">
+                        <label class="left-label">담당자 이메일</label>
+                        <div class="input-field-container-push right-input-150">
+                            <div class="input-field-input-box">
+                                <input type="email" placeholder=""><!-- input type email로 임의 지정 -->
+                            </div>
+                        </div>
+                        <div class="input-field-warning"> <!-- 경고창 보여야 할 시 active 사용 -->
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="input-field-container">
+                        <label class="left-label">담당자 연락처</label>
+                        <div class="input-field-container-push right-input-150">
+                            <div class="input-field-input-box">
+                                <input type="tel" placeholder="010-0000-0000"><!-- input type tel로 임의 지정 -->
+                            </div>
+                        </div>
+                        <div class="input-field-warning"> <!-- 경고창 보여야 할 시 active 사용 -->
+                            <p></p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.nice-select.js"></script>
+    <script>
+        $(function(){
+            $(".input-field-select").niceSelect();
+        })
+    </script>
+
+
+</div>
+</body>
+
+</html>

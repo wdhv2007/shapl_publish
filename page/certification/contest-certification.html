@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/nice-select.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+    <script src="../../js/main.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="contest-cert-container">
+            <div class="contest-cert-wrapper in-logo-box">
+                <div class="cert-logo-box">
+                    <img src="../../images/contents/shapl-design-contest-img-kr@3x.png">
+                </div>
+            </div>
+            <div class="contest-cert-contentArea">
+                <div class="contest-cert-wrapper">
+                    <dl>
+                        <dt>Submission Number</dt>
+                        <dd>2019-1285</dd>
+                    </dl>
+                    <dl>
+                        <dt>Design Title</dt>
+                        <dd>디자인 프로젝트 타이틀</dd>
+                    </dl>
+                    <dl>
+                        <dt>Design Category</dt>
+                        <dd>출품 시 선택한 카테고리</dd>
+                    </dl>
+                    <dl>
+                        <dt>Brand Name</dt>
+                        <dd>디자이너 브랜드명</dd>
+                    </dl>
+                    <dl>
+                        <dt>Representative Email</dt>
+                        <dd>user 이메일 주소</dd>
+                    </dl>
+                    <dl>
+                        <dt>Initial Submission Upload Date</dt>
+                        <dd>출품 완료일 또는 출품 마감일 (KST)</dd>
+                    </dl>
+                    <dl>
+                        <dt>Disclosure Date</dt>
+                        <dd>투표 시작일 (KST)</dd>
+                    </dl>
+                    <dl>
+                        <dt class="block">Designer Name</dt>
+                        <dd class="block">Andrea / 1984.Feb.19 / Am Teichgrund 22, 8063 Eggersdorf, Austria</dt>
+                        <dd class="block"> Jiyeon Lee / 1989.Mar.21 / Am Teichgrund 22, 8063 Eggersdorf, Austria</dt>
+                        <dd class="block">  Josh Woo / 1984.Feb.19 / Am Teichgrund 22, 8063 Eggersdorf, Austria</dt>
+                        <dd class="block">  Kate Lee / 1989.Mar.21 / Am Teichgrund 22, 8063 Eggersdorf, Austria</dt>
+                    </dl>
+                </div>
+                <div class="contest-cert-wrapper in-img-box">
+                    <p class="cert-image-sub">Submitted Design Representation</p>
+                    <div class="cert-main-box">
+                        <img src="../../images/product-img@3x.png">
+                    </div>
+                </div>
+                <div class="contest-cert-wrapper last">
+                    <p class="cert-comment-sub">Certify that the above design has been submitted to SHAPL.</p>
+                    <p class="cert-comment-bottom">Seoul, 15 October 2019</p>
+                    <div class="cert-sign-box">
+                        <img src="../../images/shapl-sign@3x.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contest-cert-btn">
+            <div id="pdf" class="input-button-btn input-button-blue auto">
+                <a href="#">확인서 저장</a>
+            </div>
+        </div>
+    </div>
+    <!--<script src="../../js/bluebird.min.js"></script>-->
+    <script src="../../js/html2canvas.min.js"></script>
+    <script src="../../js/jspdf.js"></script>
+    <script>
+        $(function() {
+            $('#pdf').click(function() {
+                html2canvas(document.getElementById("wrapper"))
+                    // .then(function(canvas) {
+                    //         var imgData = canvas.toDataURL("image/png");
+                    //         console.log(imgData);
+                    //         var doc = new jsPDF('p', 'mm', [297, 210]);
+                    //         doc.addImage(imgData, 'PNG', 10, 10, 190, 95);
+                    //         doc.save('sample-file.pdf');
+                    // });
+                html2canvas(document.querySelector("#wrapper")).then(canvas => {
+                    // document.body.appendChild(canvas)
+                    var imageData = canvas.toDataURL('image/png');
+                    console.log(imageData);
+                    downloadImage(imageData);
+                });
+            });
+        });
+
+        function downloadImage(imageData) {
+            var link = document.createElement('a');
+            link.download = 'test.png';
+            link.href = imageData;
+            document.body.appendChild(link);
+            link.click();
+        }
+    </script>
+</body>
+</html>

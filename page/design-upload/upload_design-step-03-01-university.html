@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title><!--추가 삽입 필요-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+        <meta name="generator" content="brackets"/>
+        <meta name="author" content="shapl"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="../../css/style.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+
+        <link rel="stylesheet" href="../../css/nice-select.css"/>
+        <link rel="stylesheet" href="../../css/common.css"/>
+        <link rel="stylesheet" href="../../css/style.css"/>
+        <link rel="stylesheet" href="../../css/contents.css"/>
+        <link rel="stylesheet" href="../../css/font.css"/>
+
+    </head>
+    <body class="main">
+
+        <div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+            <div class="submit-success-header">
+                <p>수정 사항이 모두 반영되었습니다.</p>
+            </div>
+
+            <div class="submit-step-container"><!-- 추가 -->
+                <ol class="submit-step-box">
+                    <li class="submit-step01">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font pc">STEP 01</p>
+                            <p class="submit-step step-font mobile">STEP 1/4</p>
+                            <p class="step-txt-font">콘테스트 정책 동의</p>
+                        </div>
+                    </li>
+                    <li class="submit-step02">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font pc">STEP 02</p>
+                            <p class="submit-step step-font mobile">STEP 2/4</p>
+                            <p class="step-txt-font">디자인 업로드</p> <!-- active로 아이콘 조절 -->
+                        </div>
+                    </li>
+                    <li class="submit-step03 active">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font pc">STEP 03</p>
+                            <p class="submit-step step-font mobile">STEP 3/4</p>
+                            <p class="step-txt-font">디자이너 정보 입력</p>
+                        </div>
+                    </li>
+                    <li class="submit-step04">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font pc">STEP 04</p>
+                            <p class="submit-step step-font mobile">STEP 4/4</p>
+                            <p class="step-txt-font">출품</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+               
+            <div class="contents submit-contents">
+                <div class="contents-input-inside tablet-submit submit">
+                    <div class="r-main pc">
+                        <div class="info-check-container">
+                            <div class="info-check-box white-box">
+                                <p class="info-step step-font">STEP 01</p>
+                                <div class="info-step-box checked"><span class="info-check"><!-- info-check-box + checked, 여기는 checked default--></span><p class="info-step step-txt-font">콘테스트 출품 동의</p></div>
+                            </div>
+                            <div class="info-check-box white-box">
+                                <p class="info-step step-font">STEP 02</p>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">카테고리</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">디자인 기본 정보</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">메인 이미지</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">상세 이미지</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">디자인 스토리</p></div>
+                            </div>
+                            <div class="info-check-box white-box">
+                                <p class="info-step step-font">STEP 03</p>
+                                <div class="info-step-box checked"><span class="info-check"><!-- info-check-box + checked--></span><p class="info-step step-txt-font">디자이너 정보입력</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">소속</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">디자이너</p></div>
+                            </div>
+                            <div class="info-check-box info-button-box">
+                                <ul>
+                                    <li class="input-button-btn input-button-small input-button-nonSkyblue"><a href="#">미리보기</a></li>
+                                    <li class="input-button-btn input-button-small input-button-skyblue"><a href="#">다음</a></li><!-- class:active로 활성화 -->
+                                </ul>
+                            </div>
+                            <div class="info-text-box">
+                                <p>※제출 이후에도 수정이 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-check-box info-button-box mobile">
+                        <ul>
+                            <li class="input-button-btn input-button-small input-button-nonSkyblue"><a href="#">미리보기</a></li>
+                            <li class="input-button-btn input-button-small input-button-skyblue"><a href="#">다음</a></li><!-- class:active로 활성화 -->
+                        </ul>
+                    </div>
+                    <div class="l-main">
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required">프로필 이미지</h2>
+                            <p class="input-field-description">
+                                디자이너님 또는 팀을 대표할 수 있는 프로필 이미지를 등록해주세요.
+                            </p>
+                            <p class="input-field-description mobile">
+                                - 업로드 가능 파일 타입 : .png, .svg, .jpg<br>
+                                - 최대 업로드 제한 파일 크기 : 5mb<br>
+                                ※ 웹 용으로 저장한 이미지를 등록하시기를 권장합니다.
+                            </p>
+
+                            <div class="input-upload-container">
+                                <div class="input-upload main large" ondrop="dropHandler(this, event);" ondragover="dragOverHandler(event);"><!-- 경고창 생성 시 warning 생성 -->
+                                    <div class="input-upload-box">
+                                        <div class="input-upload-holder"></div>
+                                        <p>드래그 &amp; 드롭 또는</p>
+                                        <label class="input-button-btn input-button-round input-button-tiny input-button-blue">파일 선택<input class="in-label" type="file" onchange="imagePreview(this)"></label>
+                                    </div>
+
+                                    <!-- 미리보기 이미지 영역 -->
+                                    <div class="preview-img">
+                                        <!-- 미리보기 -->
+                                        <!--<div class="preview-box">-->
+                                        <!--<img src="../../images/04_Two_Face_main.png">-->
+                                        <!--<span class="close-btn"></span>--> <!-- 삭제 버튼 -->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <p class="r-info input-field-description box-pc">
+                                    - 업로드 가능 파일 타입 : .png, .svg, .jpg<br>
+                                    - 최대 업로드 제한 파일 크기 : 5mb<br>
+                                    ※ 웹 용으로 저장한 이미지를 등록하시기를 권장합니다.
+                                </p>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title none-bottom">소속</h2>
+                            <!--<p class="input-field-description">출품하는 개인 또는 단체의 정보를 적어주세요.</p>-->
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio check-radio">
+                                            <input type="radio" class="brand_type" name="brand_type" value="0" checked="checked">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">개인</span>
+                                        </label>
+                                        <label class="input-radio check-radio">
+                                            <input type="radio" class="brand_type" name="brand_type" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">단체</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input class="warning" type="text" placeholder="브렌드 명">
+                                    </div>
+                                    <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input class="" type="text" placeholder="수상시 긴급연락처">
+                                    </div>
+                                    <div class="input-field-hint"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>이메일또는 전화번호</p>
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>이메일또는 전화번호</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div id="personal-div">
+                        <form id="id_1">
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required">디자이너</h2>
+                            <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                            <p class="input-field-description">출품하는 개인 또는 팀의 정보를 적어주세요.</p>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input class="warning" type="text" placeholder="이름">
+                                    </div>
+                                    <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box in-select">
+                                        <input type="text" class="non-line in-shadow search-right university-name active" placeholder="국적">
+                                        <input name="university_id" class="v-search university_id" type="hidden" value="">
+                                        <span class="input-search right drop-down"></span>
+                                    </div>
+                                    <div class="input-search-keyword-box" style="display:none;opacity: 0">
+                                        <div class="input-search-keyword">
+                                            <div>
+                                                <a href="#ant man">ant man</a>
+                                                <a href="#ant man">ant man</a>
+                                                <a href="#ant man">ant man</a>
+                                                <a href="#ant man">ant man</a>
+                                                <a href="#ant man">ant man</a>
+                                                <a href="#ant man">ant man</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label required">연령</label>
+                                <div class="input-field-container-push right-input-60">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio">
+                                            <input type="radio" name="age" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">10대</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="age" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">20대</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="age" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">30대</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="age" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">40대</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="age" value="5">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">50대 이상</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label required">소속</label>
+                                <div class="input-field-container-push right-input-60">
+                                    <div class="input-field-input-box radio">
+                                        <label class="input-radio">
+                                            <input type="radio" name="belong" value="1">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">고등학생</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="belong" value="2">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">대학생</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="belong" value="3">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">대학원생</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="belong" value="4">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">직장인</span>
+                                        </label>
+                                        <label class="input-radio">
+                                            <input type="radio" name="belong" value="5">
+                                            <span class="input-radio-checked"></span>
+                                            <span class="input-radio-text">프리랜서</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box in-select">
+                                        <input type="text" class="non-line in-shadow search-right university-name active" placeholder="대학">
+                                        <input name="university_id" class="v-search university_id" type="hidden" value="">
+                                        <span class="input-search right drop-down"></span>
+                                    </div>
+                                    <div class="input-content-box">
+                                        <div class="input-search-keyword">
+                                            <!--<div>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--<a href="#ant man">ant man</a>-->
+                                            <!--</div>-->
+                                            <div class="add-university-wrapper">
+                                                <div class="add-university-title-box">
+                                                    <h2>학교 신청</h2>
+                                                    <p>
+                                                        리스트에 없는 학교를 신청할 수 있습니다.<br>
+                                                        아래 정보를 적어주시면, 학교의 공식 이름을 확인하여 등록해드립니다.
+                                                    </p>
+                                                </div>
+                                                <div class="add-university-input-box input-field-input-box">
+                                                    <input type="text" name="add_university" class="" placeholder="학교 이름">
+                                                </div>
+                                                <div class="add-university-input-box input-field-input-box">
+                                                    <input type="text" name="add_university" class="" placeholder="학교 웹사이트">
+                                                </div>
+                                                <div class="btn-box">
+                                                    <button class="input-button-btn common input-button-nonSkyblue">신청</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="이메일">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        </form>
+                        </div>
+                        <div id="group-div" style="display:none">
+                            <form id="id_2">
+                                <fieldset class="input-field-wrapper group-field">
+                                    <h2 class="input-field-title required has-info">디자이너</h2>
+                                    <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                                    <p class="input-field-description">출품하는 개인 또는 팀의 정보를 적어주세요.</p>
+                                    <div class="input-field-container">
+                                        <div class="input-field-container-push">
+                                            <div class="input-field-input-box">
+                                                <input class="warning empty-right" type="text" placeholder="이름">
+                                                <span class="input-icon plus right" onclick="plusInputField()"></span>
+                                            </div>
+                                            <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                                <p>경고문구</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field-container">
+                                        <div class="input-field-container-push">
+                                            <div class="input-field-input-box in-select">
+                                                <input type="text" class="non-line in-shadow search-right university-name active" placeholder="국적">
+                                                <input name="university_id" class="v-search university_id" type="hidden" value="">
+                                                <span class="input-search right drop-down"></span>
+                                            </div>
+                                            <div class="input-search-keyword-box" style="display:none;opacity: 0">
+                                                <div class="input-search-keyword">
+                                                    <div>
+                                                        <a href="#ant man">ant man</a>
+                                                        <a href="#ant man">ant man</a>
+                                                        <a href="#ant man">ant man</a>
+                                                        <a href="#ant man">ant man</a>
+                                                        <a href="#ant man">ant man</a>
+                                                        <a href="#ant man">ant man</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field-container">
+                                        <label class="left-label required">연령</label>
+                                        <div class="input-field-container-push right-input-60">
+                                            <div class="input-field-input-box radio">
+                                                <label class="input-radio">
+                                                    <input type="radio" name="age" value="1">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">10대</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="age" value="2">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">20대</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="age" value="3">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">30대</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="age" value="4">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">40대</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="age" value="5">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">50대 이상</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field-container">
+                                        <label class="left-label required">소속</label>
+                                        <div class="input-field-container-push right-input-60">
+                                            <div class="input-field-input-box radio">
+                                                <label class="input-radio">
+                                                    <input type="radio" name="belong" value="1">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">고등학생</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="belong" value="2">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">대학생</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="belong" value="3">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">대학원생</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="belong" value="4">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">직장인</span>
+                                                </label>
+                                                <label class="input-radio">
+                                                    <input type="radio" name="belong" value="5">
+                                                    <span class="input-radio-checked"></span>
+                                                    <span class="input-radio-text">프리랜서</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field-container">
+                                        <div class="input-field-container-push">
+                                            <div class="input-field-input-box in-select">
+                                                <input type="text" class="non-line in-shadow search-right university-name active" placeholder="대학">
+                                                <input name="university_id" class="v-search university_id" type="hidden" value="">
+                                                <span class="input-search right drop-down"></span>
+                                            </div>
+                                            <div class="input-content-box">
+                                                <div class="input-search-keyword">
+                                                    <div class="add-university-wrapper">
+                                                        <div class="add-university-title-box">
+                                                            <h2>학교 신청</h2>
+                                                            <p>
+                                                                리스트에 없는 학교를 신청할 수 있습니다.<br>
+                                                                아래 정보를 적어주시면, 학교의 공식 이름을 확인하여 등록해드립니다.
+                                                            </p>
+                                                        </div>
+                                                        <div class="add-university-input-box input-field-input-box">
+                                                            <input type="text" name="add_university" class="" placeholder="학교 이름">
+                                                        </div>
+                                                        <div class="add-university-input-box input-field-input-box">
+                                                            <input type="text" name="add_university" class="" placeholder="학교 웹사이트">
+                                                        </div>
+                                                        <div class="btn-box">
+                                                            <button class="input-button-btn common input-button-nonSkyblue">신청</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-field-container">
+                                        <div class="input-field-container-push">
+                                            <div class="input-field-input-box">
+                                                <input type="text" placeholder="이메일">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!--<div class="btn-box">-->
+                        <!--<div class="input-button-btn input-button-wide-270 input-button-gray input-button-two active">&lt;!&ndash; 활성화 시 active 사용 &ndash;&gt;<a href="#">디자인 출품</a></div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div id="popSuccess" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container warning-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <img class="hold-img" src="../../images/contents/icn-x.svg">
+                    <div class="popup-content-title warning-box">
+                        업로드를 실패하였습니다.<br>
+                        다시 시도해 주세요
+                    </div>
+                    <p class="common">업로드 가능 용량 제한을 초과하였습니다.</p><!-- 경고 원인 -->
+                    <div class="input-button-btn input-button-black input-button-wide">
+                        <a href="#">확인</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popUniversity" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container warning-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <img class="hold-img" src="../../images/icon/icn-v-blue.svg">
+                    <div class="popup-content-title warning-box">
+                        대학 등록이 요청되었습니다.
+                    </div>
+                    <p class="has-info common">등록 완료 시 메일로 결과를 보내드리겠습니다.</p><!-- 경고 원인 -->
+                    <div class="popup-content-info">대학명 : <span>University</span></div><!-- 경고 원인 -->
+                    <div class="input-button-btn input-button-black input-button-wide">
+                        <a href="#">확인</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+<script>
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+    $(function(){
+        var setSuccessHeader = setTimeout(function(){
+            $(".submit-success-header").animate({"top":"-60px"}, "slow");
+        }, 5000)
+    })
+
+
+    function plusInputField(){
+        var div = '';
+
+        div +='<form id="id_2" tabindex="-1">';
+        div +='        <fieldset class="input-field-wrapper group-field">';
+        div +='    <div class="input-field-container">';
+        div +='        <div class="input-field-container-push">';
+        div +='        <div class="input-field-input-box">';
+        div +='        <input class="warning empty-right" type="text" placeholder="이름">';
+        div +='        <span class="input-icon minus right" onclick="minusInputField(this)"></span>';
+        div +='        </div>';
+        div +='        <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->';
+        div +='    <p>경고문구</p>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    <div class="input-field-container">';
+        div +='        <div class="input-field-container-push">';
+        div +='        <div class="input-field-input-box in-select">';
+        div +='        <input type="text" class="non-line in-shadow search-right university-name active" placeholder="국적">';
+        div +='        <input name="university_id" class="v-search university_id" type="hidden" value="">';
+        div +='        <span class="input-search right drop-down"></span>';
+        div +='        </div>';
+        div +='        <div class="input-search-keyword-box" style="display:none;opacity: 0">';
+        div +='        <div class="input-search-keyword">';
+        div +='        <div>';
+        div +='        <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    <div class="input-field-container">';
+        div +='        <label class="left-label required">연령</label>';
+        div +='        <div class="input-field-container-push right-input-60">';
+        div +='        <div class="input-field-input-box radio">';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="age" value="1">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">10대</span>';
+        div +='    </label>';
+        div +='    <label class="input-radio">';
+        div +='        <input type="radio" name="age" value="2">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">20대</span>';
+        div +='    </label>';
+        div +='    <label class="input-radio">';
+        div +='        <input type="radio" name="age" value="3">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">30대</span>';
+        div +='    </label>';
+        div +='    <label class="input-radio">';
+        div +='        <input type="radio" name="age" value="4">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">40대</span>';
+        div +='    </label>';
+        div +='    <label class="input-radio">';
+        div +='        <input type="radio" name="age" value="5">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">50대 이상</span>';
+        div +='    </label>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    </div>';
+        div +='    <div class="input-field-container">';
+        div +='        <label class="left-label required">소속</label>';
+        div +='        <div class="input-field-container-push right-input-60">';
+        div +='        <div class="input-field-input-box radio">';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="belong" value="1">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">고등학생</span>';
+        div +='        </label>';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="belong" value="2">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">대학생</span>';
+        div +='        </label>';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="belong" value="3">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">대학원생</span>';
+        div +='        </label>';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="belong" value="4">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">직장인</span>';
+        div +='        </label>';
+        div +='        <label class="input-radio">';
+        div +='        <input type="radio" name="belong" value="5">';
+        div +='        <span class="input-radio-checked"></span>';
+        div +='        <span class="input-radio-text">프리랜서</span>';
+        div +='        </label>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        <div class="input-field-container">';
+        div +='        <div class="input-field-container-push">';
+        div +='        <div class="input-field-input-box in-select">';
+        div +='        <input type="text" class="non-line in-shadow search-right university-name active" placeholder="대학">';
+        div +='        <input name="university_id" class="v-search university_id" type="hidden" value="">';
+        div +='        <span class="input-search right drop-down"></span>';
+        div +='        </div>';
+        div +='        <div class="input-search-keyword-box" style="display:none;opacity: 0">';
+        div +='        <div class="input-search-keyword">';
+        div +='        <div>';
+        div +='        <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    <a href="#ant man">ant man</a>';
+        div +='    </div>';
+        div +='    <div class="add-university-wrapper">';
+        div +='        <div class="add-university-title-box">';
+        div +='        <h2>학교 신청</h2>';
+        div +='    <p>';
+        div +='    리스트에 없는 학교를 신청할 수 있습니다.<br>';
+        div +='    아래 정보를 적어주시면, 학교의 공식 이름을 확인하여 등록해드립니다.';
+        div +='    </p>';
+        div +='    </div>';
+        div +='    <div class="add-university-input-box input-field-input-box">';
+        div +='        <input type="text" name="add_university" class="" placeholder="학교 이름">';
+        div +='        </div>';
+        div +='        <div class="add-university-input-box input-field-input-box">';
+        div +='        <input type="text" name="add_university" class="" placeholder="학교 웹사이트">';
+        div +='        </div>';
+        div +='        <div class="btn-box">';
+        div +='        <button class="input-button-btn common input-button-nonSkyblue">신청</button>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        <div class="input-field-container">';
+        div +='        <div class="input-field-container-push">';
+        div +='        <div class="input-field-input-box">';
+        div +='        <input type="text" placeholder="이메일">';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </div>';
+        div +='        </fieldset>';
+        div +='        </form>';
+
+        $("#group-div").append(div);
+    }
+
+    function minusInputField(minus){
+        var $div = $(minus).closest('form');
+        $div.remove();
+    }
+
+    $(".drop-down").click(function(){
+        var searchbox = $(this).closest('.input-field-container-push').children(".input-search-keyword-box");
+        if($(this).hasClass("open")) {
+
+            $(this).removeClass("open");
+            $(searchbox).animate({'opacity': '0'}, 500);
+            $(searchbox).hide();
+
+        } else {
+
+            $(this).addClass("open");
+            $(searchbox).animate({'opacity': '1'}, 100);
+            $(searchbox).show();
+        }
+
+    })
+
+    $(".brand_type").click(function(){
+        setBrandType();
+    });
+
+    function setBrandType(){
+        if($("[name=brand_type]:checked").val() == 1) {
+            $("#personal-div").hide();
+            $("#group-div").show();
+        } else {
+            $("#group-div").hide();
+            $("#personal-div").show();
+        }
+    }
+
+</script>
+</html>

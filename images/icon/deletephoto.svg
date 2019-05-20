@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>deletephoto</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W_DetailPage_wReview_reviewwphotos_post" transform="translate(-372.000000, -1593.000000)">
+            <g id="deletephoto" transform="translate(372.000000, 1593.000000)">
+                <g id="Oval-2">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <circle stroke="#000000" stroke-width="1" cx="10" cy="10" r="9.5"></circle>
+                </g>
+                <g transform="translate(5.000000, 5.000000)" fill="#000000" id="Rectangle-2">
+                    <rect transform="translate(4.949747, 4.949747) rotate(45.000000) translate(-4.949747, -4.949747) " x="4.44974747" y="-1.55025253" width="1" height="13"></rect>
+                    <rect transform="translate(4.949747, 4.949747) rotate(-45.000000) translate(-4.949747, -4.949747) " x="4.44974747" y="-1.55025253" width="1" height="13"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="22px" viewBox="0 0 125 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>2BDE73F2-FB91-4BA6-A8F7-049EE91E19E6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="3-SHOP-List-desk1440-1a-TOY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-23.000000, -433.000000)" opacity="0.23658288">
+        <g id="breadcrumb---nav" transform="translate(23.000000, 433.000000)">
+            <text id="home-&gt;-about" font-family="Roboto-Bold, Roboto" font-size="11" font-weight="bold" letter-spacing="0.916666627" fill="#222222">
+                <tspan x="36" y="17">home &gt; abou</tspan>
+                <tspan x="109.553548" y="17" letter-spacing="1.00833333">t</tspan>
+            </text>
+            <g id="Page-1" transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M0,7 L9,0 L18,7 L18,18 C18,19.104 17.104,20 16,20 L2,20 C0.896,20 0,19.104 0,18 L0,7 Z" id="Stroke-1"></path>
+                <polyline id="Stroke-3" points="6 20 6 10 12 10 12 20"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

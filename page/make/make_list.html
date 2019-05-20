@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/nice-select.css">
+        <link rel="stylesheet" type="text/css" href="../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style_make.css">
+        <link rel="stylesheet" type="text/css" href="../../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+        <script src="../../js/main.js"></script>
+        
+        <title></title>
+    </head>
+    <body>
+    <div id="header-wrapper">
+        <header id="v2-gnb">
+            <div id="v2-gnb-top">
+                <nav id="v2-nav"></nav>
+                <div class="v2-gnb-logo">
+                    <a href="/"><img alt="" src="../../images/logo/v2-1-logo.png"></a>
+                </div>
+                <div class="v2-gnb-right">
+
+                    <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                    <div class="v2-gnb-store header-pc">
+                        <a href="#">스토어</a>
+                    </div>
+
+                    <!-- 로그인 안 했을 때 -->
+                    <div class="v2-gnb-logIn header-pc log-off">
+                        <a href="#">1:1 문의</a>
+                    </div>
+                    <div class="v2-gnb-logIn header-pc log-off">
+                        <a href="#">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+        <div id="wrapper">
+
+            <div class="making-list-section">
+                <div class="making-list-article">
+                    <div class="making-header-container gray-background">
+                        <ol class="making-flow pc">
+                            <li class="first-circle">등록<span class="count">1</span><span class="circle"></span></li>
+                            <li>견적 중<span class="count">1</span><span class="circle"></span></li>
+                            <li>계약완료<span class="count">0</span><span class="circle"></span></li>
+                            <li>제작 중<span class="count">0</span><span class="circle"></span></li>
+                            <li>검수 중<span class="count">0</span><span class="circle"></span></li>
+                            <li>결제 중<span class="count">0</span><span class="circle"></span></li>
+                            <li>배송 중<span class="count">0</span><span class="circle"></span></li>
+                            <li class="last-circle">배송완료<span class="count">0</span><span class="circle"></span></li>
+                        </ol>
+                        <div class="making-header-title">
+                            <p class="txt-center">
+                                만들고 싶은 제품이 있으세요? SHAPL에 의뢰하세요!<br/>
+                                디자인 제품을 생산, 판매하는 전문가들로 이루어진 SHAPL에서 당신의 제품 생산을 함께하겠습니다.
+                            </p>
+                        </div>
+                        <button class="btn-account-upload shaplBlue"><span>제품 제작 요청</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="making-list-section">
+                <div class="making-list-article">
+                    <div class="making-list-container">
+                        <div class="making-list">
+                            <h2 class="flow-step-title">나의 요청 내역</h2>
+                            <div class="sub-description pc">
+                                <p>자세한 내용이 궁금하시면 <span><a href="mailto:support@shapl.com">support@shapl.com</a>으로 연락해 주시기 바랍니다.</span></p>
+                            </div>
+                            <ul class="making-list">
+                                <li>
+                                    <div class="making-image-box">
+                                        <img src="../../images/contents/dummy/product-big4.png">
+                                    </div>
+                                    <div class="making-content-box">
+                                        <p class="making-status">견적 검토중</p>
+                                        <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                            제목제목제목제목제목제목제목제목제목제목제목제목제목제목
+                                        </h3>
+                                        <p class="making-category">이것, 저것, 요것, 그것</p>
+                                    </div>
+                                    <div class="making-info-box">
+                                        <p class="making-regist">2019.05.02</p>
+                                    </div>
+                                    <div class="making-btn-box">
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupEstimate');" class="input-button-btn input-button-small input-button-blue"><span>견적서 보기</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="making-image-box">
+                                        <img src="../../images/contents/dummy/product-big4.png">
+                                    </div>
+                                    <div class="making-content-box">
+                                        <p class="making-status">계약서 검토중</p>
+                                        <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                            제목
+                                        </h3>
+                                        <p class="making-category">이것, 저것, 요것, 그것</p>
+                                    </div>
+                                    <div class="making-info-box">
+                                        <p class="making-regist">2019.05.02</p>
+                                    </div>
+                                    <div class="making-btn-box">
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupContractPrev');" class="input-button-btn input-button-small input-button-blue"><span>계약하기</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="making-image-box">
+                                        <img src="../../images/contents/dummy/product-big4.png">
+                                    </div>
+                                    <div class="making-content-box">
+                                        <p class="making-status">계약 완료</p>
+                                        <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                            제목
+                                        </h3>
+                                        <p class="making-category">이것, 저것, 요것, 그것</p>
+                                    </div>
+                                    <div class="making-info-box">
+                                        <p class="making-regist">2019.05.02</p>
+                                    </div>
+                                    <div class="making-btn-box">
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupContractSecond');" class="input-button-btn input-button-small input-button-blue"><span>계약서 보기</span></button>
+                                        </div>
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupPayment');" class="input-button-btn input-button-small input-button-blue"><span>결제하기</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="making-image-box">
+                                        <img src="../../images/contents/dummy/product-big4.png">
+                                    </div>
+                                    <div class="making-content-box">
+                                        <p class="making-status">제작 진행 중</p>
+                                        <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                            제목
+                                        </h3>
+                                        <p class="making-category">이것, 저것, 요것, 그것</p>
+                                    </div>
+                                    <div class="making-info-box">
+                                        <p class="making-regist">2019.05.02</p>
+                                    </div>
+                                    <div class="making-btn-box">
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupContractSecond');" class="input-button-btn input-button-small input-button-blue"><span>계약서 보기</span></button>
+                                        </div>
+                                        <div class="btn-box">
+                                            <button type="button" onclick="openPopup('popupHelpPrev');" class="input-button-btn input-button-small input-button-blue"><span>문의하기</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========== 견적서 ============ -->
+            <div id="popupEstimate" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        견적서
+                    </div>
+                    <div class="popup-content-table">
+                        <table>
+                            <thead></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="label">요청 번호</td>
+                                    <td class="value">S20190420-A001</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">제품명/제목</td>
+                                    <td class="value">제목</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">주문자</td>
+                                    <td class="value">주문회사명</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">주문날짜</td>
+                                    <td class="value">2019.05.19</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">신청한 날짜</td>
+                                    <td class="value">2019.05.19</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">제작 수량</td>
+                                    <td class="value">123개</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">금액</td>
+                                    <td class="value m-money-krw">10</td><!-- m-money-krw 단위 자동 생성 -->
+                                </tr>
+                                <tr>
+                                    <td class="label last">부가세</td>
+                                    <td class="value last m-money-krw">10</td><!-- m-money-krw 단위 자동 생성 -->
+                                </tr>
+                                <tr class="total-result">
+                                    <td class="label">총 금액</td>
+                                    <td class="value m-money-krw">10</td><!-- m-money-krw 단위 자동 생성 -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="popup-content-box">
+                        <p class="has-bottom sub-info txt-center common">
+                            본 견적서는 고객의 편의를 위해 제공되는 자료이며,<br/>
+                            법적증빙 자료로 사용하실 수 없습니다.
+                            <span>입력 날짜</span><br/>
+                            <br/>
+                            (주) 샤플
+                        </p>
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-nonBlack">
+                            <a href="#">출력</a>
+                        </div>
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">이 견적으로 진행</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 견적서 ============ -->
+
+            <!-- =========== 계약서1 ============ -->
+            <div id="popupContractPrev" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        계약서
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">
+                            제목 : <span>제목 자리</span>
+                        </div>
+                        <div class="popup-content-subTitle">
+                            신청 서비스 : <span>서비스 명 자리</span>
+                        </div>
+                    </div>
+                    <div class="popup-content-box info-content has-scroll has-line">
+                        <p><span class="name">회사/개인 이름</span> (이하 “의뢰사”이라 한다)와 주식회사 샤플(이하 “제작사”이라 한다)은 아래와 같이 제품 제작 서비스 계약을 체결한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 1 조【 목  적 】</p>
+                        <p>본 계약은 “의뢰사”의 의뢰에 따라 “제작사”가 “의뢰사”의 제품 제작 서비스에 필요한 의뢰 내용을 서비스하는 것을 목적으로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 2 조【 제품 제작 서비스의 내용 】</p>
+                        <p><span>이용 서비스 타이틀</span> 으로(로) 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 3 조【 계약의 기간 】</p>
+                        <p>계약의 기간은 계약 일자로부터 견적서에 표기된 일자로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 4 조【 제품 제작 서비스의 방법 】</p>
+                        <p>1. “제작사”는 “의뢰사”의 제품 제작 서비스 전반에 대하여 (이미지 랜더링, 시제품 제작 등)서는 “의뢰사”의 동의를 얻어 제작한다.</p>
+                        <p>2. “의뢰사”는 “제작사”가 제품 제작 서비스에 있어 필요한 (이미지 파일, 3D 제품 도면 등) 제반 여건을 “제작사”에게 제공하여야 한다.</p>
+                        <p>3. 제품 제작 서비스 결과물은 “의뢰사”에게 납품한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 5 조【 제작의 수정 】</p>
+                        <p>1. “제작사”는 “의뢰사”에게 납품 전에 검수를 통해 납품 동의를 얻어야 한다.</p>
+                        <p>2. “의뢰사”는 “제작사”에게 검수 직후 수정을 요구할 수 있다. 단 수정은 1차 수정 이상, 2차 수정부터는 소요되는 불가피한 경비에 대하여서는 “의뢰사”는 그 소요비용을 “제작사”에게 지급하여야 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 6 조【 계약의 기간 】</p>
+                        <p>1. 제작비는 견적서 내용으로 진행한다.</p>
+                        <p>2. 제작비의 지불은 계 약시 30%, 납품과 동시에 70%를 “의뢰사”는 “제작사”에게 지불 또는 결제하여야 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 7 조【 계약의 위반에 대한 위약 배상금 】</p>
+                        <p>“의뢰사”과 “제작사”의 상호 신뢰를 바탕으로 한 계약의 조항 가운데 제2·3·4·5·6조를 위반 및 기술·인적인 문제의 발생으로 계약의 내용을 이행하지 못하였을 시에는 계약금액을 일할 계산하여 120%를 위약 배상한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 9 조【 관할법원 】</p>
+                        <p>본 계약에 관하여 “의뢰사”와 “제작사”의 쌍방 간에 일어나는 민·형사상의 분쟁에 대한 재판 관할은 “의뢰사”의 소재지 관할 지방법원으로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 10 조【 기타사항 】</p>
+                        <p>1. 본 계약서에 명시되지 아니한 사항은 “의뢰사”와 “제작사”의 상호 협의하에 정한다.</p>
+                        <p>2. 상호 협의가 되지 아니한 사항은 일반적인 관례에 따른다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p>위와 같이 계약을 체결하고 계약서 서명란에 동의한 후 “의뢰사”와 “제작사”가 각각 1통씩 보관한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-center">계약일자 : <span>2019. 05. 18</span></p>
+                    </div>
+                    <div class="popup-content-box">
+                        <p class="has-bottom sub-info common">
+                            <strong>(주)샤플</strong><br/>
+                            <br/>
+                            <span>서울시 중구 청계천로 40, 1205호</span><br/> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                            대표이사 <span>진창수</span>
+                            <span>(인)<img class="stamp" src="../../images/contents/stamp.png"/></span> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                        </p>
+
+                        <!-- 경우에 따라 한번에 컨트롤 할 수 있도록 div로 통합 -->
+                        <div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push bottom-input-8">
+                                    <div class="input-field-input-box">
+                                        <input class="warning" type="text" placeholder="회사명/이름"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title active"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push bottom-input-8">
+                                    <div class="input-field-input-box">
+                                        <input class="" type="text" placeholder="대표자명"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push bottom-input-8">
+                                    <div class="input-field-input-box">
+                                        <input class="" type="text" placeholder="주소"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input class="" type="text" placeholder="사업자/주민등록번호"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title "> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit-check-box txt-center">
+                                <label class="checkbox-label inline-block">
+                                    <div>
+                                        <input type="checkbox" class="check-agreement"/>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <div class="checkbox-txt">
+                                        <p>
+                                            <span>
+                                                계약서의 내용을 모두 읽었으며, 동의합니다.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 경우에 따라 한번에 컨트롤 할 수 있도록 div로 통합 -->
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">계약 완료</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 계약서1 ============ -->
+
+            <!-- =========== 계약서2 ============ -->
+            <div id="popupContractSecond" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        계약서
+                    </div>
+                    <div class="popup-content-box info-content has-line">
+                        <p><span class="name">회사/개인 이름</span> (이하 “의뢰사”이라 한다)와 주식회사 샤플(이하 “제작사”이라 한다)은 아래와 같이 제품 제작 서비스 계약을 체결한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 1 조【 목  적 】</p>
+                        <p>본 계약은 “의뢰사”의 의뢰에 따라 “제작사”가 “의뢰사”의 제품 제작 서비스에 필요한 의뢰 내용을 서비스하는 것을 목적으로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 2 조【 제품 제작 서비스의 내용 】</p>
+                        <p><span>이용 서비스 타이틀</span> 으로(로) 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 3 조【 계약의 기간 】</p>
+                        <p>계약의 기간은 계약 일자로부터 견적서에 표기된 일자로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 4 조【 제품 제작 서비스의 방법 】</p>
+                        <p>1. “제작사”는 “의뢰사”의 제품 제작 서비스 전반에 대하여 (이미지 랜더링, 시제품 제작 등)서는 “의뢰사”의 동의를 얻어 제작한다.</p>
+                        <p>2. “의뢰사”는 “제작사”가 제품 제작 서비스에 있어 필요한 (이미지 파일, 3D 제품 도면 등) 제반 여건을 “제작사”에게 제공하여야 한다.</p>
+                        <p>3. 제품 제작 서비스 결과물은 “의뢰사”에게 납품한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 5 조【 제작의 수정 】</p>
+                        <p>1. “제작사”는 “의뢰사”에게 납품 전에 검수를 통해 납품 동의를 얻어야 한다.</p>
+                        <p>2. “의뢰사”는 “제작사”에게 검수 직후 수정을 요구할 수 있다. 단 수정은 1차 수정 이상, 2차 수정부터는 소요되는 불가피한 경비에 대하여서는 “의뢰사”는 그 소요비용을 “제작사”에게 지급하여야 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 6 조【 계약의 기간 】</p>
+                        <p>1. 제작비는 견적서 내용으로 진행한다.</p>
+                        <p>2. 제작비의 지불은 계 약시 30%, 납품과 동시에 70%를 “의뢰사”는 “제작사”에게 지불 또는 결제하여야 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 7 조【 계약의 위반에 대한 위약 배상금 】</p>
+                        <p>“의뢰사”과 “제작사”의 상호 신뢰를 바탕으로 한 계약의 조항 가운데 제2·3·4·5·6조를 위반 및 기술·인적인 문제의 발생으로 계약의 내용을 이행하지 못하였을 시에는 계약금액을 일할 계산하여 120%를 위약 배상한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 9 조【 관할법원 】</p>
+                        <p>본 계약에 관하여 “의뢰사”와 “제작사”의 쌍방 간에 일어나는 민·형사상의 분쟁에 대한 재판 관할은 “의뢰사”의 소재지 관할 지방법원으로 한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-bold has-info">제 10 조【 기타사항 】</p>
+                        <p>1. 본 계약서에 명시되지 아니한 사항은 “의뢰사”와 “제작사”의 상호 협의하에 정한다.</p>
+                        <p>2. 상호 협의가 되지 아니한 사항은 일반적인 관례에 따른다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p>위와 같이 계약을 체결하고 계약서 서명란에 동의한 후 “의뢰사”와 “제작사”가 각각 1통씩 보관한다.</p>
+                        <p class="has-bottom"></p><!-- 여백용 -->
+                        <p class="has-bottom"></p><!-- 여백용 -->
+
+                        <p class="txt-center">계약일자 : <span>2019. 05. 18</span></p>
+                    </div>
+                    <div class="popup-content-box">
+                        <p class="has-bottom sub-info common">
+                            <strong>(주)샤플</strong><br/>
+                            <br/>
+                            <span>서울시 중구 청계천로 40, 1205호</span><br/> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                            대표이사 <span>진창수</span>
+                            <span>(인)<img class="stamp" src="../../images/contents/stamp.png"/></span> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                        </p>
+                    </div>
+                    <div class="popup-content-box">
+                        <p class="has-bottom sub-info common">
+                            <strong>(주)텐핑</strong><br/>
+                            <br/>
+                            <span>서울특별시 서초구 강남대로 557 성한빌딩 9층</span><br/> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                            대표이사 <span>진창수</span>
+                            <span class="has-left">(인)</span> <!-- span 불필요하시면 제거하셔도 됩니다. -->
+                        </p>
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-nonBlack">
+                            <a href="#">출력</a>
+                        </div>
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========== 계약서2 ============ -->
+
+            <!-- =========== 결제창 ============ -->
+            <div id="popupPayment" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container warning-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        결제하기
+                    </div>
+                    <div class="popup-content-box txt-left">
+                        <div class="checking-box checked">
+                            <label class="radio-check">
+                                <div>
+                                    <input type="radio" class="pop-payment" name="payment">
+                                    <span class="radio-check"></span>
+                                    <span class="radio-title">
+                                        <p>실시간 계좌이체</p>
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checking-box">
+                            <label class="radio-check">
+                                <div>
+                                    <input type="radio" class="pop-payment" name="payment">
+                                    <span class="radio-check"></span>
+                                    <span class="radio-title">
+                                        <p>카카오페이로 결제</p>
+                                    </span>
+                                    <!-- 로고 -->
+                                    <span class="radio-logo">
+                                        <img alt="kakakopay" src="../../images/contents/img-kakaopay@2x.png"/>
+                                    </span>
+                                    <!-- 로고 -->
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checking-box">
+                            <label class="radio-check">
+                                <div>
+                                    <input type="radio" class="pop-payment" name="payment">
+                                    <span class="radio-check"></span>
+                                    <span class="radio-title">
+                                        <p>네이버페이로 결제</p>
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">결제 선택</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 결제창 ============ -->
+
+            <!-- =========== 문의하기1 ============ -->
+            <div id="popupHelpPrev" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container warning-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        문의하기
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">
+                            제품명 : <span>제품명 자리</span>
+                        </div>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="input-field-container">
+                            <div class="input-field-container-push">
+                                <div class="input-field-input-box">
+                                    <textarea placeholder="내용을 입력해주세요."></textarea>
+                                </div>
+                                <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                    <p>경고문구</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">보내기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 문의하기1 ============ -->
+
+            <!-- =========== 문의하기2 ============ -->
+            <div id="popupHelpSecond" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        문의하기
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">
+                            제품명 : <span>제품명 자리</span>
+                        </div>
+                    </div>
+                    <div class="popup-content-box info-content has-scroll has-line">
+                        내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                        내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                        내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                        내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동내 문의 내역으로 이동
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">내 문의 내역으로 이동</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 문의하기2 ============ -->
+
+            <!-- =========== 이미지 확인 ============ -->
+            <div id="popupImage" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-box info-content has-line">
+                        <div class="popup-content-image has-bottom">
+                            <img src="../../images/contents/dummy/product-big4.png">
+                        </div>
+                        <p>
+                            멘트 입니다.
+                        </p>
+                    </div>
+                    <div class="popup-content-box"> <!-- 한번에 컨트롤 할수 있도록 div로 병합 -->
+                        <div class="popup-content-box info-content has-line small-bottom">
+                           <p class="content-info-area">
+                               <span class="txt-bold">주문자명</span>
+                               <span class="has-left">19.05.07 11:21</span>
+                           </p>
+                           <p>
+                                댓글 내용
+                           </p>
+                        </div>
+                        <div class="popup-content-box info-content has-line small-bottom">
+                            <p class="content-info-area">
+                                <span class="txt-bold">주문자명</span>
+                                <span class="has-left">19.05.07 11:21</span>
+                            </p>
+                            <p>
+                                댓글 내용
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="input-field-container">
+                            <div class="input-field-container-push">
+                                <div class="input-field-input-box">
+                                    <textarea placeholder="내용을 입력해주세요."></textarea>
+                                </div>
+                                <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                    <p>경고문구</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-right">
+                            <div class="input-button-btn input-button-small input-button-blue">
+                                <a href="#">등록</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">내 문의 내역으로 이동</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 이미지 확인 ============ -->
+
+            <!-- =========== 카드정보 입력란 ============ -->
+            <div id="popupCardInput" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title txt-center">
+                        카드 정보 입력
+                    </div>
+
+                    <div class="popup-content-box">
+                        <!-- 경우에 따라 한번에 컨트롤 할 수 있도록 div로 통합 -->
+                        <div>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push bottom-input-8">
+                                    <p class="input-field-description up-field">
+                                        카드번호
+                                    </p>
+                                    <div class="input-field-input-box">
+                                        <input class="cc-number" type="text" placeholder=""> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push bottom-input-8">
+                                    <p class="input-field-description up-field">
+                                        유효기간
+                                    </p>
+                                    <div class="input-field-input-box">
+                                        <input class="cc-expires" type="text" placeholder="MM/YY" maxlength="7"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push bottom-input-8">
+                                    <p class="input-field-description up-field">
+                                        CVC 번호
+                                    </p>
+                                    <div class="input-field-input-box">
+                                        <input class="cc-cvc" type="text" placeholder="카드 뒷면 3자리"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                                <div class="input-field-container-push bottom-input-8">
+                                    <p class="input-field-description up-field">
+                                        비밀번호
+                                    </p>
+                                    <div class="input-field-input-box">
+                                        <input type="password" placeholder="비밀번호 4자리" maxlength="4"> <!-- 경고창 보여야 할 시 warning 사용 -->
+                                    </div>
+                                    <div class="input-field-warning warn-title"> <!-- 경고창 보여야 할 시 active 사용 -->
+                                        <p>경고문구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit-check-box txt-center">
+                                <label class="checkbox-label inline-block">
+                                    <div>
+                                        <input type="checkbox" class="check-agreement"/>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <div class="checkbox-txt">
+                                        <p>
+                                            <span>
+                                                계약서의 내용을 모두 읽었으며, 동의합니다.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 경우에 따라 한번에 컨트롤 할 수 있도록 div로 통합 -->
+                    </div>
+                    <div class="txt-center">
+                        <div class="input-button-btn input-button-two input-button-black">
+                            <a href="#">계약 완료</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 카드정보 입력란 ============ -->
+            <!-- =========== 이미지 확인 ============ -->
+            <div id="popupFullImg" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container middle-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-image has-bottom">
+                        <img src="../../images/contents/dummy/product-big4.png">
+                    </div>
+                </div>
+            </div>
+            <!-- =========== 이미지 확인 ============ -->
+        </div>
+        <script src="../../js/jquery.payment.js"></script>
+        <script>
+            $(function(){
+                // openPopup("popupEstimate");
+                // openPopup("popupContractPrev");
+                // openPopup("popupContractSecond");
+                // openPopup("popupPayment");
+                // openPopup("popupHelpPrev");
+                // openPopup("popupHelpSecond");
+                // openPopup("popupImage"); //제작 상태 확인
+                // openPopup("popupCardInput"); //카드 정보 입력
+                // openPopup("popupFullImg"); // 풀 이미지 보기
+
+            });
+
+            function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+                $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+            }
+
+            function closePopup() {//팝업을 닫는 function
+                $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+            }
+
+            $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+                closePopup();
+            })
+
+            $(".pop-payment").click(function(){
+                $(".pop-payment").closest(".checking-box").removeClass("checked");
+                if($(this).is(":checked")) {
+                    $(this).closest(".checking-box").addClass("checked");
+                }
+            })
+
+            $(function () {
+                // Set up formatting for Credit Card fields
+                $('.cc-number').payment('formatCardNumber');
+                $('.cc-expires').payment('formatCardExpiry');
+                $('.cc-cvc').payment('formatCardCVC');
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18">
+    <g fill="none" fill-rule="evenodd">
+        <path fill-rule="nonzero" d="M0 0h18v18H0z"/>
+        <circle cx="5.5" cy="16.5" r="1.5" fill="#DADADA"/>
+        <circle cx="12.5" cy="16.5" r="1.5" fill="#DADADA"/>
+        <path fill="#DADADA" fill-rule="nonzero" d="M5.847 12H14a1 1 0 0 1 0 2H5a1 1 0 0 1-.99-.852L2.154 2H0V0h3.847l2 12z"/>
+        <path fill="#DADADA" fill-rule="nonzero" d="M4.75 5.002L5.401 9h8.048l1.01-3.915-9.71-.083zm-2.357-2.02l14.642.125L15 11H3.702L2.393 2.982z"/>
+    </g>
+</svg>

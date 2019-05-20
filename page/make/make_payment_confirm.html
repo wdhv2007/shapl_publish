@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style_make.css"/>
+<!--    <link rel="stylesheet" href="../../css/font.css"/>-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body class="main">
+
+<div id="header-wrapper">
+    <header id="v2-gnb">
+        <div id="v2-gnb-top">
+            <nav id="v2-nav"></nav>
+            <div class="v2-gnb-logo">
+                <a href="/"><img alt="" src="../../images/logo/v2-1-logo.png"></a>
+            </div>
+            <div class="v2-gnb-right">
+
+                <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                <div class="v2-gnb-store header-pc">
+                    <a href="#">스토어</a>
+                </div>
+
+                <!-- 로그인 안 했을 때 -->
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">1:1 문의</a>
+                </div>
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+    <div class="making-list-section">
+        <div class="making-list-article">
+            <div class="making-list-container">
+                <div class="making-list">
+                    <div class="main-description">
+                        <p>
+                            구매해 주셔서 감사합니다. 주문이 완료되었습니다.<br/>
+                            주문번호는 <span class="txt-bold">1533234219859647</span> 입니다.<br/><!-- 글씨 굵기는 txt-bold로 조절 -->
+                            고객님의 이메일 <span class="txt-bold">주소 daniel@shapl.com</span> 로 주문확인 메일이 발송되었습니다.<br/><!-- 글씨 굵기는 txt-bold로 조절 -->
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="making-list has-bottom">
+                            <li>
+                                <div class="making-image-box">
+                                    <img src="../../images/contents/dummy/product-big4.png">
+                                </div>
+                                <div class="making-content-box">
+                                    <p class="making-regist">수량 : <span>2</span></p>
+                                    <h3 class="making-title has-left-image" onclick="openPopup('popupImage');">
+                                        제목
+                                    </h3>
+                                    <p class="making-category">이것, 저것, 요것, 그것</p>
+                                </div>
+                                <div class="making-info-box">
+                                    <p class="making-status m-money-krw">10,000</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="making-payment-box">
+                        <h2 class="flow-step-title">입금 정보</h2>
+                        <div class="main-description">
+                            <p>
+                                아래의 정보로 <span class="txt-bold">2019.05.14</span>까지 입금해주시기 바랍니다.
+                            </p>
+                        </div>
+                        <div class="making-payment-box has-dl">
+                            <dl>
+                                <dt class="label">이름</dt>
+                                <dd class="value">Seo Gangjun</dd>
+                            </dl>
+                            <!--필요없으시면 지워주세요.-->
+                            <dl>
+                                <dt class="label">예금주</dt>
+                                <dd class="value">
+                                    <div class="input-field-container">
+                                        <div class="input-field-container-push">
+                                            <div class="input-field-input-box">
+                                                <input type="tel" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="input-field-warning">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">은행명</dt>
+                                <dd class="value">카카오뱅크</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">계좌번호</dt>
+                                <dd class="value">0000-0000-0000</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label last">입금 날짜</dt><!-- 마지막 요소에는 last를 넣어주세요. -->
+                                <dd class="value last">2018.05.14</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="making-payment-box">
+                        <h2 class="flow-step-title">배송 정보</h2>
+                        <div class="making-payment-box has-dl">
+                            <dl>
+                                <dt class="label">받으시는 분</dt>
+                                <dd class="value">Seo Gangjun</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">주소</dt>
+                                <dd class="value">40, Cheonggyecheon-ro, Jung-gu, Seoul, korea</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label last">연락처</dt><!-- 마지막 요소에는 last를 넣어주세요. -->
+                                <dd class="value last">+82-2-81-00933</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="making-payment-box">
+                        <h2 class="flow-step-title">결제 정보</h2>
+                        <div class="making-payment-box has-dl">
+                            <dl>
+                                <dt class="label">결제 정보</dt>
+                                <dd class="value">신용/체크카드</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">주문 상태</dt>
+                                <dd class="value">결제 완료</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">주문 접수 일시</dt>
+                                <dd class="value">2018-08-06 10:39 AM (GMT+9)</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">결제 완료 일시</dt>
+                                <dd class="value">2018-08-06 10:39 AM (GMT+9)</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">총 상품 가격</dt>
+                                <dd class="value m-money-krw">10</dd>
+                            </dl>
+                            <dl>
+                                <dt class="label">배송비</dt>
+                                <dd class="value m-money-krw">10</dd>
+                            </dl>
+                            <dl class="total-result"><!-- 배경색 하얀색은 background-white 클래스 추가 -->
+                                <dt class="label background-white">주문 총계</dt>
+                                <dd class="value m-money-krw background-white">20</dd><!-- m-money-krw 단위 자동 생성 -->
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="making-payment-box txt-center">
+                        <div class="input-button-btn input-button-blue">
+                            <a href="#">계속 둘러보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Daum Post API -->
+<!--<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>-->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script>
+
+
+    $(".pop-payment").click(function(){
+
+        $(".pop-payment").closest(".checking-box").removeClass("checked");
+        if($(this).is(":checked")) {
+            $(this).closest(".checking-box").addClass("checked");
+        }
+    })
+</script>
+
+
+</body>
+
+</html>

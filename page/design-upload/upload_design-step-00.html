@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title><!--추가 삽입 필요-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+    <meta name="generator" content="brackets"/>
+    <meta name="author" content="shapl"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/nice-select.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/contents.css"/>
+
+
+
+    <script src="../../js/main.js"></script>
+
+</head>
+<body class="main">
+
+<div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+
+    <div class="contents submit-contents">
+        <div class="contents-input-inside card-list">
+            <div>
+                <fieldset class="input-field-wrapper">
+                    <div class="submit-contest-title">
+                        <img src="../../images/contents/3-rd-shapl-design-con@3x.png">
+                    </div>
+                </fieldset>
+                <fieldset class="input-field-wrapper">
+
+                    <div class="input-upload-container card-list">
+                        <div class="input-upload main huge storage pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <div class="storage-main-image">
+                                <img src="../../images/04_Two_Face_main.png" style="">
+                            </div>
+                            <p>New ImageNew ImageNew ImageNew ImageNew ImageNew ImageNew Image</p>
+                        </div>
+                        <div class="input-upload main huge storage pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <div class="storage-main-image">
+                            </div>
+                            <p>New Image</p>
+                        </div>
+                        <div class="input-upload main huge storage pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <div class="storage-main-image">
+                                <img src="../../images/04_Two_Face_main.png" style="">
+                            </div>
+                            <p>New Image</p>
+                        </div>
+                        <div class="input-upload main huge storage pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <div class="storage-main-image">
+                            </div>
+                            <p>New Image</p>
+                        </div>
+                        <div class="input-upload main huge storage pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <div class="storage-main-image">
+                                <img src="../../images/04_Two_Face_main.png" style="">
+                            </div>
+                            <p>New Image</p>
+                        </div>
+                        <div class="input-upload main huge plus pointer"><!-- 경고창 생성 시 warning 생성 -->
+                            <p>New Image</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <!-- 경고창 팝업 -->
+    <div id="popWarning" class="popup-wrapper">
+        <div class="popup-bg"></div>
+        <div class="popup-container warning-box">
+            <div class="popup-delete">
+                <img src="../../images/icon/icn-delete.svg">
+            </div>
+            <img class="hold-img" src="../../images/contents/icn-x.svg">
+            <div class="popup-content-title warning-box">
+                업로드를 실패하였습니다.<br>
+                다시 시도해 주세요
+            </div>
+            <p class="common">업로드 가능 용량 제한을 초과하였습니다.</p><!-- 경고 원인 -->
+            <div class="input-button-btn input-button-black input-button-wide">
+                <a href="#">확인</a>
+            </div>
+        </div>
+    </div>
+    <!-- 경고창 팝업 -->
+
+    <!-- 메인 이미지 주의사항 팝업 -->
+    <div id="popMainImage" class="popup-wrapper">
+        <div class="popup-bg"></div>
+        <div class="popup-inner-wrapper">
+            <div class="popup-container info-box">
+                <div class="popup-delete-wrapper">
+                    <div class="popup-delete fixed-hold">
+                        <img src="../../images/icon/icn-close-type03.svg">
+                    </div>
+                </div>
+                <div class="popup-content-title large-size">
+                    메인 이미지를 고를 때의 Tip
+                </div>
+                <div class="popup-content-box">
+                    <div class="popup-content-subTitle">
+                        부분적으로 확대된 이미지보다는 전체가 보이는 이미지가 좋아요.<br>
+                        궁금증을 유발할 수도 있지만, 대부분은 그냥 지나가기 쉽답니다.
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-good-01@2x.png">
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-bad-01@2x.png">
+                    </div>
+                </div>
+                <div class="popup-content-box">
+                    <div class="popup-content-subTitle">
+                        디자이너님이 어떤 부분을 해결하고 싶었는지,<br>
+                        이 제품이 사람에게 주는 이익이 무엇인지 잘 드러나는 이미지를 등록해주세요.
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-good-02@2x.png">
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-bad-02@2x.png">
+                    </div>
+                </div>
+                <div class="popup-content-box last">
+                    <div class="popup-content-subTitle">
+                        기존의 제품들과는 아주 다른 디자인이라,<br>
+                        보는 사람으로 하여금 제품의 본기능을 유추하기 힘든 디자인이라면,<br>
+                        실제 생활 속 이미지를 등록해주세요. <br>
+                        선풍기이지만 기존의 선풍기와는 완전히 다른 디자인이라면,<br>
+                        실제로 사용 될 때의 이미지가 훨씬 효과적이랍니다.
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-good-03@2x.png">
+                    </div>
+                    <div class="popup-content-image col-2">
+                        <img src="../../images/contents/w-bad-03@2x.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 이미지 주의사항 팝업 -->
+
+    <!-- 상세 이미지 주의사항 팝업 -->
+    <div id="popDetailImage" class="popup-wrapper">
+        <div class="popup-bg"></div>
+        <div class="popup-inner-wrapper">
+            <div class="popup-container info-box">
+                <div class="popup-delete-wrapper">
+                    <div class="popup-delete fixed-hold"><!-- 팝업 닫기 -->
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                </div>
+                <div class="popup-content-title">
+                    상세 이미지 업로드 시 주의 사항
+                </div>
+                <div class="popup-content-box">
+                    <div class="popup-content-subTitle">이미지 등록방법</div>
+                    <ul>
+                        <li>드래그 & 드롭하시거나, 컴퓨터에서 파일을 선택해주세요. </li>
+                        <li>
+                            업로드에 실패한 경우는 아래와 같이 표시됩니다.<br>
+                            실패 원인을 확인하시고 다시 시도해 주세요.
+                        </li>
+                    </ul>
+                    <div class="popup-content-image">
+                        <img src="../../images/contents/img-example-main-01.svg">
+                    </div>
+                </div>
+                <div class="popup-content-box">
+                    <div class="popup-content-subTitle">업로드 가능한 파일 조건</div>
+                    <ul>
+                        <li>형식 : 웹용으로 저장된 jpg, png<a class="underline" href="#">웹용으로 저장하는 방법 보기</a></li>
+                        <li>용량 : 최대 50mb</li>
+                        <li>이미지 비율 : 1:1</li>
+                    </ul>
+                </div>
+                <div class="popup-content-box last">
+                    <div class="popup-content-subTitle">Tip</div>
+                    <ul>
+                        <li>상세 이미지는 디자이너님의 프로젝트를 가장 잘 설명해줄 수 있는 이미지(들)로 등록하시는 것이 좋습니다.</li>
+                        <li>높이가 긴 이미지 하나를 등록하시는 것 보다는, 가로가 넓은 직사각형 형태의 이미지를 여러장 등록하시는 것이 더 좋습니다. </li>
+                    </ul>
+                    <div class="popup-content-image">
+                        <img src="../../images/contents/img-example-sub-02.svg">
+                    </div>
+                    <ul>
+                        <li>사이즈나 용량이 너무 작은 이미지를 등록하시는 경우 심사를 통과하지 못할 가능성이 있습니다. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 상세 이미지 주의사항 팝업 -->
+
+</div>
+</body>
+<script src="../../js/jquery.nice-select.js"></script>
+<script>
+
+    $(function(){
+        radioCheck();
+        var setSuccessHeader = setTimeout(function(){
+            $(".submit-success-header").animate({"top":"-60px"}, "slow");
+        }, 5000)
+
+        $(".input-field-select").niceSelect();
+    })
+
+    // 카테고리 선택 시
+    $("input[type=radio]").click(function(){
+        radioCheck();
+    })
+
+    //카테고리 radiobox -> label의 css 조절
+    function radioCheck(){
+        $("input[type=radio]").each(function(){
+            if($(this).is(":checked") ){
+                $(this).closest('label').addClass('checked');
+            } else {
+                $(this).closest('label').removeClass('checked');
+            }
+        })
+    }
+
+    $(window).scroll(function(){ /* 체크 확인창 따라오기 */
+        if($(window).scrollTop() > 159) {
+            $(".r-main").css('top', $(window).scrollTop());
+        } else {
+            $(".r-main").css('top', 'inherit');
+        }
+    });
+
+    $('.popup-bg').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+    function imagePreview(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                const uploadBox = $(input).closest(".input-upload-box");
+                const uploadArea = $(input).closest('.input-upload');
+                const previewArea = $(uploadArea).children('.preview-img');
+                $(uploadBox).hide();
+                $(previewArea).html('<div class="preview-box"><img src="'+e.target.result+'"><span class="close-btn" onclick="removePreview(this)"></span></div>');
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function filePreview(div, files) {
+        console.log('filePreview');
+        if(files) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                const uploadArea = div;
+                const uploadBox = $(uploadArea).children(".input-upload-box");
+                const previewArea = $(uploadArea).children('.preview-img');
+                $(uploadBox).hide();
+                $(previewArea).html('<div class="preview-box"><img src="'+e.target.result+'"><span class="close-btn" onclick="removePreview(this)"></span></div>');
+            }
+        }
+
+        reader.readAsDataURL(files);
+    }
+
+    function removePreview(close) {
+        const previewArea = $(close).closest('.preview-img');
+        const uploadArea = $(close).closest('.input-upload');
+        const uploadBox = $(uploadArea).children(".input-upload-box");
+        const inputFile = $(uploadBox).children("input[type=file]");
+
+        $(inputFile).val("");
+        $(previewArea).remove();
+        $(uploadBox).show();
+    }
+
+    function dropHandler(div, ev) {
+
+        // Prevent default behavior (Prevent file from being opened)
+        ev.preventDefault();
+        let files = null;
+        if (ev.dataTransfer.items) {
+            if (ev.dataTransfer.items[0].kind === 'file') {
+                files = ev.dataTransfer.items[0].getAsFile();
+
+                console.log("1 : "+files.name);
+            }
+        } else {
+            files = ev.dataTransfer.files[0].name;
+            console.log("2 : "+files.name)
+        }
+
+
+        console.log($(div).children('input[type=file]').attr('class'));
+        console.log($(div).attr('class'));
+        filePreview(div, files);
+
+    }
+
+    function dragOverHandler(ev) {
+        //console.log('File(s) in drop zone');
+
+        // Prevent default behavior (Prevent file from being opened)
+        ev.preventDefault();
+    }
+
+</script>
+</html>

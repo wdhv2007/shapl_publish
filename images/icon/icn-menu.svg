@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>BD9E2117-2E9B-4EB0-AB76-4F95FA69D970</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W-discover_designs-clicked" transform="translate(-21.000000, -24.000000)">
+            <g id="gnb">
+                <rect id="bg" stroke="#EDEDED" fill="#FFFFFF" x="0.5" y="0.5" width="1439" height="59"></rect>
+                <g id="btn-menu">
+                    <rect id="bg-60x60" stroke="#EDEDED" fill="#FFFFFF" x="0.5" y="0.5" width="59" height="59"></rect>
+                    <g id="icn-menu" transform="translate(21.000000, 24.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M1,1 L17,1" id="Stroke-1"></path>
+                        <path d="M1,11 L17,11" id="Stroke-3"></path>
+                        <path d="M1,6 L17,6" id="Stroke-5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

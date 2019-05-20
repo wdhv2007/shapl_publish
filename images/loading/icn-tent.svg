@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-tent</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="loading" transform="translate(-965.000000, -540.000000)" fill-rule="nonzero">
+            <g id="icn-tent-copy" transform="translate(965.000000, 540.000000)">
+                <rect id="Rectangle-Copy-64" x="0" y="0" width="60" height="60"></rect>
+                <g id="Group-10-Copy-2" transform="translate(0.000000, 1.000000)" fill="#FFFFFF">
+                    <path d="M30,12.8873013 L3.53238076,57 L56.4676192,57 L30,12.8873013 Z M30,9 L60,59 L0,59 L30,9 Z" id="Triangle"></path>
+                    <path d="M33.1116762,3.50229372 C33.3866453,3.0233256 33.9978321,2.8579517 34.4768003,3.13292077 C34.9557684,3.40788984 35.1211423,4.01907669 34.8461732,4.49804481 L29.8674177,13.1705297 C29.5924487,13.6494978 28.9812618,13.8148717 28.5022937,13.5399026 C28.0233256,13.2649336 27.8579517,12.6537467 28.1329208,12.1747786 L33.1116762,3.50229372 Z" id="Line"></path>
+                    <path d="M30.1116762,3.50229372 C30.3866453,3.0233256 30.9978321,2.8579517 31.4768003,3.13292077 C31.9557684,3.40788984 32.1211423,4.01907669 31.8461732,4.49804481 L26.8674177,13.1705297 C26.5924487,13.6494978 25.9812618,13.8148717 25.5022937,13.5399026 C25.0233256,13.2649336 24.8579517,12.6537467 25.1329208,12.1747786 L30.1116762,3.50229372 Z" id="Line-Copy" transform="translate(28.489547, 8.336412) scale(-1, 1) translate(-28.489547, -8.336412) "></path>
+                    <path d="M29,1 C29,0.44771525 29.4477153,0 30,0 C30.5522847,0 31,0.44771525 31,1 L31,11 C31,11.5522847 30.5522847,12 30,12 C29.4477153,12 29,11.5522847 29,11 L29,1 Z" id="Line-Copy" transform="translate(30.000000, 6.000000) scale(-1, 1) translate(-30.000000, -6.000000) "></path>
+                    <path d="M21,36 L19,36 L19,48.2 C19,54.1646753 23.8353247,59 29.8,59 C35.7646753,59 40.6,54.1646753 40.6,48.2 L40.6,36 L38.6,36 L38.6,48.2 C38.6,53.0601058 34.6601058,57 29.8,57 C24.9398942,57 21,53.0601058 21,48.2 L21,36 Z" id="Path" transform="translate(29.800000, 47.500000) scale(1, -1) translate(-29.800000, -47.500000) "></path>
+                    <polygon id="Line-2" points="22 26 22 24 38 24 38 26"></polygon>
+                    <polygon id="Line-2-Copy" points="11 44 11 42 21 42 21 44"></polygon>
+                    <polygon id="Line-2-Copy-2" points="39.9552469 44 39 44 39 42 49 42 49 44 48.0447531 44"></polygon>
+                    <circle id="Oval" cx="3.4" cy="3.19444444" r="1"></circle>
+                    <circle id="Oval-Copy" cx="13" cy="12.75" r="1"></circle>
+                    <circle id="Oval-Copy-2" cx="7" cy="25.2916667" r="1"></circle>
+                    <circle id="Oval-Copy-3" cx="53.2" cy="3.79166667" r="1"></circle>
+                    <circle id="Oval-Copy-4" cx="44.8" cy="17.5277778" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

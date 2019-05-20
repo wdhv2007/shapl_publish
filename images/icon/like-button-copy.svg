@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <linearGradient id="c" x1="82.201%" x2="-10.213%" y1="89.744%" y2="-54.544%">
+            <stop offset="0%" stop-color="#466DFF" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#7E2AB8"/>
+        </linearGradient>
+        <circle id="b" cx="30" cy="30" r="30"/>
+        <filter id="a" width="135%" height="135%" x="-17.5%" y="-12.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero" transform="translate(6 3)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="url(#c)" xlink:href="#b"/>
+        </g>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="14.005" font-weight="bold" letter-spacing=".545">
+            <tspan x="19.446" y="48.795">LIKE</tspan>
+        </text>
+        <path d="M51.773 38.876V27.742h11.134v11.134z"/>
+        <path stroke="#FFF" stroke-width=".617" d="M55.303 29.233l4.505 4.506.439-.439-4.506-4.505-.438.438z"/>
+        <path stroke="#FFF" stroke-width=".617" d="M55.74 37.777l4.463-4.462-.438-.438-4.462 4.462.438.438z"/>
+        <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.161">
+            <path d="M29.505 32.072h-2.97c-1.092 0-1.978-.705-1.978-1.574v-5.511c0-.87.886-1.575 1.979-1.575h2.97v8.66z"/>
+            <path d="M36.288 21.734v-3.332c0-1.332-1.301-2.412-2.907-2.412l-3.876 7.237v8.845h10.93c.966.009 1.793-.574 1.937-1.367l1.338-7.122c.16-.878-.567-1.699-1.626-1.832a2.367 2.367 0 0 0-.312-.017h-5.484z"/>
+        </g>
+    </g>
+</svg>

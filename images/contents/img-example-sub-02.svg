@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="172" viewBox="0 0 520 172">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-40-682h600v948H-40z"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#DADADA" d="M.5.5h519v171H.5z"/>
+        <g transform="translate(133 23)">
+            <rect width="80" height="96" y="8" fill="#CCC" rx="4"/>
+            <rect width="60" height="22" x="10" y="30" fill="#FFF" rx="4"/>
+            <rect width="60" height="22" x="10" y="60" fill="#FFF" rx="4"/>
+            <rect width="60" height="22" x="10" fill="#FFF" opacity=".5" rx="4"/>
+            <rect width="60" height="22" x="10" y="90" fill="#FFF" opacity=".5" rx="4"/>
+        </g>
+        <g fill-rule="nonzero" stroke="#F46064" stroke-width="2" transform="translate(350 136)">
+            <circle cx="8" cy="8" r="7" fill="#FFF"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l4.243 4.243M10.243 6L6 10.243"/>
+        </g>
+        <g stroke="#58CDF9" stroke-width="2" transform="translate(165 136)">
+            <circle cx="8" cy="8" r="7" fill="#FFF" fill-rule="nonzero"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.333 7.584l1.938 2.194 3.396-3.556"/>
+        </g>
+        <text fill="#464646" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400">
+            <tspan x="253" y="150">vs</tspan>
+        </text>
+        <g transform="translate(318 30)">
+            <rect width="80" height="96" fill="#CCC" rx="4"/>
+            <rect width="60" height="76" x="10" y="10" fill="#FFF" rx="2"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+    <defs>
+        <path id="a" d="M0 0h90v90H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill-rule="nonzero" d="M0 0h90v90H0z"/>
+        <g>
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <g fill-rule="nonzero" stroke="#DADADA" stroke-width="4" mask="url(#b)">
+                <g transform="translate(0 -8)">
+                    <ellipse cx="30.291" cy="67.743" rx="28.291" ry="28.257"/>
+                    <ellipse cx="30.291" cy="67.743" rx="20.273" ry="20.248"/>
+                    <ellipse cx="48.444" cy="51.17" fill="#FAFAFA" rx="42.966" ry="12.692" transform="rotate(45 48.444 51.17)"/>
+                    <path fill="#FAFAFA" d="M56.394 56.18c2.545-3.076 6.707-5.844 12.466-8.373 2.365-1.039 8.835-3.63 9.82-4.181 1.255-.702 2.357-1.629 4.644-3.915 5.541-5.542 5.71-16.216-1.47-23.421-7.21-7.211-17.902-7.052-23.452-1.501-2.286 2.286-3.213 3.389-3.915 4.644-.552.985-3.142 7.454-4.181 9.82-2.53 5.76-5.298 9.921-8.373 12.465l7.247 7.247 7.214 7.214z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M75.837 23.745c-4.047-4.147-8.538-4.145-13.473.006"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

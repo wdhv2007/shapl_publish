@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)">
+            <text fill="#FFF" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" letter-spacing=".1">
+                <tspan x="7.074" y="14">!</tspan>
+            </text>
+            <circle cx="9" cy="9" r="9" stroke="#FFF"/>
+        </g>
+        <path d="M0 0h20v20H0z"/>
+    </g>
+</svg>

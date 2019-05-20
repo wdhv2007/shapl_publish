@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* =========================ROBOTO============================ */
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v18-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('../fonts/roboto-v18-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v18-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v18-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v18-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('../fonts/roboto-v18-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v18-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v18-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v18-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v18-latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
+/* =========================NotoKr============================ */
+/* NotoKr-100 - thin */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans Thin'), local('NotoSans-Thin'), url(../font/NotoSans-Thin.eot);
+    src: url(../fonts/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Thin.woff2) format('woff2'),
+    url(../fonts/NotoSans-Thin.woff) format('woff');
+}
+
+/* NotoKr-300 - light */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('NotoSans-Light'), url(../font/NotoSans-Light.eot);
+    src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+}
+
+/* NotoKr-400 - regular */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../font/NotoSans-Regular.eot);
+    src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+/* NotoKr-500 - medium */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../font/NotoSans-Medium.eot);
+    src: url(/fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+/* NotoKr-700 - bold */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../font/NotoSans-Bold.eot);
+    src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+/* NotoKr-900 - black */
+@font-face {
+    font-family: 'NotoKr';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Noto Sans Black'), local('NotoSans-Black'), url(../font/NotoSan-Black.eot);
+    src: url(../fonts/NotoSans-Black.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Black.woff2) format('woff2'),
+    url(../fonts/NotoSans-Black.woff) format('woff');
+}
+
+
+
+/* =========================NanumGothic============================ */
+/* NanumGothic-400 - regular */
+@font-face { 
+    font-family: 'NanumGothic';
+    font-style: normal; 
+    font-weight: 400; 
+    src: url(../fonts/NanumGothic.eot);
+    src: local('NanumGothic'), local('NanumGothic'),
+         url(../fonts/NanumGothic.woff2) format('woff2'), 
+         url(../fonts/NanumGothic.woff) format('woff'), 
+         url(../fonts/NanumGothic.otf) format('opentype'); 
+}
+
+/* NanumGothic-500 - bold */
+@font-face { 
+    font-family: 'NanumGothic';
+    font-style: normal; 
+    font-weight: 500; 
+    src: url(../fonts/NanumGothicBold.eot);
+    src: local('NanumGothic'), local('NanumGothicBold'),
+         url(../fonts/NanumGothicBold.woff2) format('woff2'), 
+         url(../fonts/NanumGothicBold.woff) format('woff'), 
+         url(../fonts/NanumGothicBold.otf) format('opentype'); 
+} 
+
+/* NanumGohic-800 - extrabold */
+@font-face { 
+    font-family: 'NanumGothic';
+    font-style: normal; 
+    font-weight: 800; 
+    src: url(../fonts/NanumGothicExtraBold.eot);
+    src: local('NanumGothic'), local('NanumGothicExtraBold'),
+         url(../fonts/NanumGothicExtraBold.woff2) format('woff2'), 
+         url(../fonts/NanumGothicExtraBold.woff) format('woff'), 
+         url(../fonts/NanumGothicExtraBold.otf) format('opentype'); 
+}
+
+/* =========================APPLE SD GOTHIC============================ */

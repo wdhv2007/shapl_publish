@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title><!--추가 삽입 필요-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+        <meta name="generator" content="brackets"/>
+        <meta name="author" content="shapl"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/style.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+
+        <link rel="stylesheet" href="../../css/common.css"/>
+        <link rel="stylesheet" href="../../css/style.css"/>
+        <link rel="stylesheet" href="../../css/contents.css"/>
+        <link rel="stylesheet" href="../../css/font.css"/>
+        <script src="../../js/main.js"></script>
+
+    </head>
+    <body class="main">
+        <div id="wrapper"> 
+            <main class="contents">
+                
+                <div id="v2-signin-narrow-section">
+                    <div id="v2-signin-narrow-article" class="narrow">
+                        <div class="v2-signin-top">
+                            <img alt="global-v2-type01" src="../../images/icon/global-v2-type01@2x.png"/>
+                        </div>
+                        
+                        <div class="v2-signin-middle border">
+                            <h2><span>홍길동</span>님 환영합니다!</h2>
+                            <p>SHAPL은 디자이너와 소비자의 참여로 멋진 디자인 제품을 생산하고 합리적인 가격에 판매하는 플랫폼 서비스입니다.</p>
+                        </div>
+                        
+                        <div class="v2-signin-bottom">
+                            <p>지금 비밀번호를 설정하시면,<br/>자동 로그인 기능을 사용하실 수 있습니다.</p>
+                            <div class="v2-signin-bottom-pass-box">
+                                <div class="v2-signin-bottom-pass">
+                                    <p class="required">Password</p>
+                                    <div>
+                                        <input type="password" placeholder="*combination of alphabet(U&L), number, special character">
+                                    </div>
+                                </div>
+                                <div class="v2-signin-bottom-pass">
+                                    <p class="required">Re-type password</p>
+                                    <div>
+                                        <input type="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="v2-signin-bottom-autologin">
+                                <div>
+                                    <button type="button" class="btn-signin-auto-login"><span>자동 로그인 기능 사용</span></button>
+                                </div>
+                                <p>비밀번호가 설정되었습니다.<br/>이제 사입하신 SNS가 기억나지 않으시더라도,<br/>가입하신 이메일 주소와 비밀번호로 로그인하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+            
+    </body>
+<script>
+    $(document).ready(function(){
+        
+        $('.btn-signin-auto-login').on('click', function(){
+            $('.btn-signin-auto-login span').text('Go home');
+            $('.v2-signin-bottom-autologin p').css({"display":"block"});
+        })
+        
+    })
+</script>
+</html>

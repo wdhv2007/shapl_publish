@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>88AF127C-B36F-4E37-AC4A-33C4DA088E88</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W-gnb-search_bar" transform="translate(-323.000000, -472.000000)">
+            <g id="btn-category" transform="translate(217.000000, 464.000000)">
+                <g id="icn-arr-down" transform="translate(106.000000, 8.000000)">
+                    <rect id="bg" x="0" y="0" width="24" height="24"></rect>
+                    <polyline id="Shape" stroke="#878686" transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) " points="6 15 12 9 18 15"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

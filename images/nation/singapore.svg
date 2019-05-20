@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>singapore</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="7" cy="7" r="7"></circle>
+    </defs>
+    <g id="Global-Shipping-Free" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="W_Shop_Detail_global-shipping0-free_Tablet" transform="translate(-38.000000, -1272.000000)">
+            <g id="Group-37" transform="translate(39.000000, 1270.000000)">
+                <g id="singapore" transform="translate(0.000000, 3.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#ED2939" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#AAAAAA" stroke-width="0.2" cx="7" cy="7" r="7.1"></circle>
+                    </g>
+                    <g id="Flag_of_Singapore" mask="url(#mask-2)">
+                        <g transform="translate(0.000000, 1.000000)">
+                            <rect id="Rectangle-path" fill="#ED2939" fill-rule="nonzero" x="0" y="0" width="21" height="7"></rect>
+                            <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="0" y="7" width="21" height="7"></rect>
+                            <path d="M7.20260139,3.5 C7.20260139,4.95377457 6.02408425,6.13229172 4.57030967,6.13229172 C3.1165351,6.13229172 1.93801796,4.95377457 1.93801796,3.5 C1.93801796,2.55957275 2.43972992,1.69058213 3.25416382,1.2203685 C4.06859771,0.750154878 5.07202164,0.750154878 5.88645553,1.2203685 C6.70088942,1.69058213 7.20260139,2.55957275 7.20260139,3.5 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M8.02975347,3.5 C8.02975347,4.87386394 6.91601669,5.98760072 5.54215275,5.98760072 C4.16828881,5.98760072 3.05455203,4.87386394 3.05455203,3.5 C3.05455203,2.12613606 4.16828881,1.01239928 5.54215275,1.01239928 C6.91601669,1.01239928 8.02975347,2.12613606 8.02975347,3.5 Z" id="Shape" fill="#ED2939" fill-rule="nonzero"></path>
+                            <polygon id="star" fill="#FFFFFF" fill-rule="nonzero" points="4.89608729 3.56350745 4.53850182 3.28919427 4.18100662 3.56363763 4.31863965 3.12130423 3.95991687 2.84863688 4.40256444 2.8495741 4.53835715 2.40661298 4.6742954 2.8495249 5.11694264 2.84842863 4.75830931 3.12122611"></polygon>
+                            <g id="star-link" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(6.762722, 2.406250)">
+                                <polygon id="star" fill="#FFFFFF" fill-rule="nonzero" points="0.939142847 1.15725745 0.581557375 0.882944271 0.224062174 1.15738763 0.361695201 0.715054229 0.00297242361 0.442386875 0.44562 0.443324097 0.581412708 0.000362979167 0.717350958 0.443274903 1.15999819 0.442178625 0.801364861 0.714976111"></polygon>
+                            </g>
+                            <g id="star-link" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(5.361264, 1.364946)">
+                                <polygon id="star" fill="#FFFFFF" fill-rule="nonzero" points="0.939142847 1.15725745 0.581557375 0.882944271 0.224062174 1.15738763 0.361695201 0.715054229 0.00297242361 0.442386875 0.44562 0.443324097 0.581412708 0.000362979167 0.717350958 0.443274903 1.15999819 0.442178625 0.801364861 0.714976111"></polygon>
+                            </g>
+                            <g id="star-link" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(4.481942, 4.072390)">
+                                <polygon id="star" fill="#FFFFFF" fill-rule="nonzero" points="0.939142847 1.15725745 0.581557375 0.882944271 0.224062174 1.15738763 0.361695201 0.715054229 0.00297242361 0.442386875 0.44562 0.443324097 0.581412708 0.000362979167 0.717350958 0.443274903 1.15999819 0.442178625 0.801364861 0.714976111"></polygon>
+                            </g>
+                            <g id="star-link" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(6.237722, 4.072390)">
+                                <polygon id="star" fill="#FFFFFF" fill-rule="nonzero" points="0.939142847 1.15725745 0.581557375 0.882944271 0.224062174 1.15738763 0.361695201 0.715054229 0.00297242361 0.442386875 0.44562 0.443324097 0.581412708 0.000362979167 0.717350958 0.443274903 1.15999819 0.442178625 0.801364861 0.714976111"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

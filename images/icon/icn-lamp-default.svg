@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h90v90H0z"/>
+        <g stroke="#DADADA" stroke-width="4">
+            <g stroke-linecap="round" stroke-linejoin="round">
+                <path d="M45.5 80v8M56.429 77.258l4.12 6.857M63.258 69.429l6.857 4.12M34.549 77.258l-4.12 6.857M27.115 69.429l-6.857 4.12"/>
+            </g>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M45.5 2.084v18"/>
+            <path d="M82.948 58C81.908 37.943 65.316 22 45 22S8.092 37.942 7.052 57.999a194250.457 194250.457 0 0 1 56.758 0h19.138zM59.868 58C58.89 65.34 52.606 71 45 71c-7.606 0-13.89-5.66-14.868-13a114974.122 114974.122 0 0 0 29.736 0z"/>
+        </g>
+    </g>
+</svg>

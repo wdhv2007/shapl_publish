@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="408" height="48" viewBox="0 0 408 48">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" stroke="#DADADA" d="M.5 39.5V.5h407v39H209.43L204 47.137l-5.43-7.637H.5z"/>
+        <text fill="#6B6B6B" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400">
+            <tspan x="125" y="26">샤플 회원가입 시 평생 무료배송</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <path fill="#6B6B6B" d="M113 18.5V24h5v-2.64l-2.596-2.86H113zm-1-3.5h-10v9h10v-9zm1 2.5h2.846L119 20.974V25h-18V14h12v3.5z"/>
+            <path fill="#6B6B6B" d="M101 16h12v1h-12zM101 18h12v1h-12zM101 20h12v1h-12zM101 22h12v1h-12zM115 27a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM105 27a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+            <path fill="#F6F6F6" d="M115 26a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM105 26a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </g>
+    </g>
+</svg>

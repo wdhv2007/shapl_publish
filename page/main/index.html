@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <!--Private-Setting-->
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/font.css"/>
+    <link rel="stylesheet" href="../../css/swiper.min.css"/>
+
+    <!--Og-->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content=""/>
+    <!--[if lt EI 9]>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <![endif]-->
+    <script src="../../js/prefixfree.jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <!--J-Query-CDN-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <!--Private-Setting-->
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/responsive_waterfall.js"></script>
+
+    <title>SHAPL.com : Selling designer's product based on D2C Ecommerce | Product Design</title>
+</head>
+<body>
+<div id="header-wrapper">
+
+    <header id="v2-gnb">
+        <div id="v2-gnb-top">
+            <nav id="v2-nav">
+                <a href="#"><!--<img alt="" src="../../images/icon/icn-menu-type02.svg"/>-->
+                    <div class="v2-nav-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <ul class="v2-1-nav-box">
+                    <li><a href="#">샤플은?</a></li>
+                    <li><a href="#">디자인</a>
+                        <ul>
+                            <li><a href="#">1회 샤플 공모전</a></li>
+                            <li><a href="#">2회 샤플 공모전</a></li>
+                            <li><a href="#">서울 디자인 페스티벌</a></li>
+                            <li><a href="#">2018 리워드 디자인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">메거진</a>
+                        <ul>
+                            <li><a href="#">샤플 소식</a></li>
+                            <li><a href="#">디자인 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객 지원</a>
+                        <ul>
+                            <li><a href="#">제품 가이드</a></li>
+                            <li><a href="#">정품 등록</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">문의 하기</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-pc"><span><a href="#"><img alt="editor" src="../../images/editor_pick_img.png"/></a></span><span>에디터 추천 제품</span></li>
+                </ul>
+            </nav>
+            <div class="v2-gnb-logo">
+                <a href="#"><img alt="" src="../../images/logo/v2-1-logo.png"/></a>
+            </div>
+            <div class="v2-gnb-right">
+
+                <!-- pc에서 로그인 했을 때이건 안 했을 때이건 동일하게 노출 -->
+                <div class="v2-gnb-store header-pc">
+                    <a href="#">스토어</a>
+                </div>
+
+                <!-- 로그인 안 했을 때 -->
+                <div class="v2-gnb-logIn header-pc log-off">
+                    <a href="javascript:openSigninupPopup('pop-v2-1-sign-in-wrap')">로그인</a>
+                </div>
+                <div class="v2-gnb-signUp header-pc log-off">
+                    <a href="javascript:openSigninupPopup('pop-v2-1-sign-up-wrap')">회원가입</a>
+                </div>
+                <div class="v2-gnb-myPage header-mobile log-off">
+                    <a href="#"><img alt="icn-my-page" src="../../images/icon/icn-my-page.svg"/></a><!--로그인 페이지로 이동-->
+                </div>
+
+                <!-- 로그인 했을 때 for pc -->
+                <div class="v2-gnb-myPage header-pc log-on">
+                    <a href="#">마이페이지</a>
+                    <div class="v2-gnb-myPage-menu">
+                        <div>
+                            <p>환영합니다 &#58;&#41;</p>
+                            <p>Alice</p>
+                        </div>
+                        <div><a href="#">프로필</a></div>
+                        <div class="v2-project"><a href="#">프로젝트<!--<img alt="" src="../../images/icon/btn-drop-down-type02.svg"/>--></a>
+                            <div class="default">
+                                <div><a href="#">내가 좋아한</a></div>
+                                <div><a href="#">내가 출품한</a></div>
+                            </div>
+                        </div>
+                        <div><a href="#">장바구니</a></div>
+                        <div><a href="#">주문내역</a></div>
+                        <div><a href="#">등록제품</a></div>
+                        <div><a href="#">로그아웃</a></div>
+                    </div>
+                </div>
+
+                <!-- 로그인 했을 때 for mobile -->
+                <div class="v2-gnb-myPage header-mobile log-on">
+                    <a href="#"><img alt="icn-my-page" src="../../images/icon/icn-my-page.svg"/></a>
+                    <div class="v2-gnb-myPage-menu">
+                        <div>
+                            <p>환영합니다 &#58;&#41;</p>
+                            <p>Alice</p>
+                        </div>
+                        <div><a href="#">프로필</a></div>
+                        <div><a href="#">프로젝트<!--<img alt="" src="../../images/icon/btn-drop-down-type02.svg"/>--></a>
+                            <div>
+                                <div><a href="#">내가 좋아한</a></div>
+                                <div><a href="#">내가 출품한</a></div>
+                            </div>
+                        </div>
+                        <div><a href="#">장바구니</a></div>
+                        <div><a href="#">주문내역</a></div>
+                        <div><a href="#">등록제품</a></div>
+                        <div><a href="#">로그아웃</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('#v2-nav > a').on('click', function(){
+                $('.v2-nav-button').toggleClass('open');
+                $('#v2-nav > ul').toggleClass('open');
+            });
+
+            $('.v2-gnb-myPage.log-on').on('click', function(){
+                $('.v2-gnb-myPage-menu').toggleClass('open');
+            });
+
+        });
+
+    </script>
+</div>
+
+<div id="wrapper">
+
+    <div id="v2-contest-menu-outer-section">
+        <div id="v2-contest-menu-section" class="v2-1">
+            <!--<div id="v2-contest-menu-article">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <c:set var="swiperStart" value="-1"/>
+                    <c:set var="startCnt" value="0"/>
+                    <c:forEach items="${ contestTab }" var="tab">
+                        <c:choose>
+                            <c:when test="${ tab.status eq 'completed' }">
+                                <c:set var="contestStatusName" value="COMPLETED"/>
+                                <c:set var="contestStatusClass" value="completed"/>
+                            </c:when>
+                            <c:when test="${ tab.status eq 'upcoming' }">
+                                <c:set var="contestStatusName" value="UPCOMING"/>
+                                <c:set var="contestStatusClass" value="upcoming"/>
+                            </c:when>
+                            <c:otherwise>
+                                <c:set var="contestStatusName" value="ONGOING"/>
+                                <c:set var="contestStatusClass" value="ongoing"/>
+                            </c:otherwise>
+                        </c:choose>
+                        <c:set var="startCnt" value="${ startCnt + 1 }"/>
+                        <c:set var="swiperClass" value=""/>
+                        <c:if test="${ contestInfo.contest_id eq tab.contest_id }">
+                            <c:set var="swiperClass" value="default"/>
+                            <c:set var="swiperStart" value="${ startCnt }"/>
+                        </c:if>
+                        <div class="swiper-slide gradiation <c:out value="${ swiperClass }"/>" onclick="goPage('${ pageContext.request.contextPath }/contest/detail/info/<c:out value="${ tab.contest_id }"/>')">
+                        <div class="v2-contest-content">
+                            <div class="v2-contest-condition <c:out value="${ contestStatusClass }"/>">
+                            <p><c:out value="${ contestStatusName }"/></p>
+                        </div>
+                        <p class="v2-contest-title"><c:out value="${ tab.name }"/></p>
+                </div>
+            </div>
+            </c:forEach>
+            <div class="swiper-slide gradiation" onclick="goPage('${ pageContext.request.contextPath }/?reward_type=royalty')">
+                <div class="v2-contest-content">
+                    <div class="v2-contest-condition ongoing">
+                        <p>REWARD</p>
+                    </div>
+                    <p class="v2-contest-title">2018 Reward Design</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="swiper-button-next circle"></div>
+            <div class="swiper-button-prev circle"></div>
+        </div>
+    </div>-->
+
+            <div id="v2-contest-menu-article">
+                <div class="swiper-container v2-1">
+                    <div class="swiper-wrapper v2-1">
+
+                        <div class="swiper-slide gradiation default white last">
+                            <div class="v2-contest-content">
+                                <img alt="" src="../../images/ment01@2x.png"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide gradiation default white click">
+                            <div class="v2-contest-content">
+                                <img alt="" src="../../images/ment02@2x.png"/>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide gradiation default white next">
+                            <div class="v2-contest-content">
+                                <img alt="" src="../../images/ment03@2x.png"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-box v2-1">
+                        <div class="swiper-button-next v2-1 white">
+                            <img alt="" src="../../images/icon/right-btn-type02.png"/>
+                        </div>
+                        <div class="swiper-button-prev v2-1 white">
+                            <img alt="" src="../../images/icon/left-btn-type02.png"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-container v2-1-img">
+                    <div class="swiper-wrapper v2-1-img">
+                        <div class="swiper-slide v2-1-img">
+                            <img alt="" src="../../images/main_top_menu_img01.png"/>
+                        </div>
+                        <div class="swiper-slide v2-1-img">
+                            <img alt="" src="../../images/main_top_menu_img02.png"/>
+                        </div>
+                        <div class="swiper-slide v2-1-img">
+                            <img alt="" src="../../images/main_top_menu_img03.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="v2-list-section">
+            <div id="v2-list-article">
+                <div class="v2-list-bottom">
+                    <div class="wf-container">
+                        <div class="wf-box">
+                            <img alt="img-01" src="../../images/dummy/img-01.png">
+                            <div class="content">
+                                <p>1</p>
+                                <h3>JOY</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-02" src="../../images/dummy/img-02.png">
+                            <div class="content">
+                                <p>2</p>
+                                <h3>BLEND</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-03" src="../../images/dummy/img-03.png">
+                            <div class="content">
+                                <p>3</p>
+                                <h3> The Boom Stool</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-04" src="../../images/dummy/img-04.png">
+                            <div class="content">
+                                <p>4</p>
+                                <h3>Tube Silicone Mouse</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-05" src="../../images/dummy/img-05.png">
+                            <div class="content">
+                                <p>5</p>
+                                <h3>AIRLOGUE</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-06" src="../../images/dummy/img-06.png">
+                            <div class="content">
+                                <p>6</p>
+                                <h3>Modern Gardening</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-07" src="../../images/dummy/img-07.png">
+                            <div class="content">
+                                <p>7</p>
+                                <h3>Intelligent iron box</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-08" src="../../images/dummy/img-08.png">
+                            <div class="content">
+                                <p>8</p>
+                                <h3>New Method</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-09" src="../../images/dummy/img-09.png">
+                            <div class="content">
+                                <p>9</p>
+                                <h3>Mi mini fan</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-10" src="../../images/dummy/img-10.png">
+                            <div class="content">
+                                <p>10</p>
+                                <h3>AIRLOGUE </h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-11" src="../../images/dummy/img-11.png">
+                            <div class="content">
+                                <p>11</p>
+                                <h3>BRICK</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-12" src="../../images/dummy/img-12.png">
+                            <div class="content">
+                                <p>12</p>
+                                <h3>Mi mini fan</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-13" src="../../images/dummy/img-13.png">
+                            <div class="content">
+                                <p>13</p>
+                                <h3>Wi-Fi Router Model Y</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-14" src="../../images/dummy/img-14.png">
+                            <div class="content">
+                                <p>14</p>
+                                <h3>DoRe & SoLa</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-15" src="../../images/dummy/img-15.png">
+                            <div class="content">
+                                <p>15</p>
+                                <h3>Mix & Match</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-16" src="../../images/dummy/img-16.png">
+                            <div class="content">
+                                <p>16</p>
+                                <h3>PORTABLE FAN</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-17" src="../../images/dummy/img-17.png">
+                            <div class="content">
+                                <p>17</p>
+                                <h3>PORTABLE FAN</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-18" src="../../images/dummy/img-18.png">
+                            <div class="content">
+                                <p>18</p>
+                                <h3>PORTABLE FAN</h3>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <img alt="img-19" src="../../images/dummy/img-19.png">
+                            <div class="content">
+                                <p>19</p>
+                                <h3>New Method</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="pop-v2-design-detail-wrap" class="v2-1">
+        <div class="pop-design-detail-back"></div>
+        <div id="detail" class="v2-design v2-1">
+            <div class="pop-v2-design-detail-close v2-1">
+                <img class="pc" alt="" src="../../images/icon/icn-delete-grey.svg"/>
+                <img class="mobile" alt="" src="../../images/icon/icn-close-type03.svg"/>
+            </div>
+
+            <div class="pop-v2-design-detail-content v2-1">
+                <section class="visual type02 v2-1">
+                    <div class="v2-1-top">
+                        <div class="d-align">
+                            <ul class="d-profile">
+                                <li class="picture"><img alt="shapl icon" src="../../images/icon/profile_shapl.png"/></li>
+                                <li class="context">
+                                    <div>
+                                        <p>Tarus Horn</p>
+                                        <p><span>by<strong>SHAPL</strong></span><span>South Korea</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figure class="v2-1-img">
+                        <img alt="living-thermal-bottle-main" src="../../images/21_Stella_Leather_Mini_Bag_main.png"/>
+                        <figcaption>thermal bottle</figcaption>
+                    </figure>
+                    <div class="d-like v2-1">
+                        <p class="like-image">
+                            <span><img src="../../images/icon/like-image-type02.png" alt="icon-like"/>219</span><!--0104 이미지 추가-->
+                        </p>
+                    </div>
+
+                    <div class="v2-1-design-button-box">
+                        <span class="v2-1-design-like-button">
+                            <img alt="like-button-icon" src="../../images/icon/like-btn-type02.png"/>
+                            <img style="display: none;" alt="like-button-disable" src="../../images/icon/like-btn-disable.png"/>
+                        </span>
+                        <span class="v2-1-design-pass-button">
+                            <img alt="pass-button-icon-type02" src="../../images/icon/pass-btn-type02.png"/>
+                        </span>
+                    </div>
+                    <div class="v2-1-product-comment">
+                        <p>This product is 5 in one. It is the most suitable tool for a camper.</p>
+                    </div>
+                    <ul class="v2-1-sns">
+                        <li><a href="#"><img alt="facebook" src="../../images/icon/facebook-type02.png"/></a></li>
+                        <li><a href="#"><img alt="twitter" src="../../images/icon/twitter-type02.png"/></a></li>
+                        <li><a href="#"><img alt="insta" src="../../images/icon/insta-type02.png"/></a></li>
+                        <li><a href="#"><img alt="pinterest" src="../../images/icon/pinterest-type02.png"/></a></li>
+                        <li><a href="#"><img alt="link" src="../../images/icon/link-type02.png"/></a></li>
+                    </ul>
+                </section>
+
+                <section class="content v2-design-detail">
+                    <div class="d-video">
+                        <iframe src="https://www.youtube.com/embed/a3ZgjwP0-6o?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="d-sideCut">
+                        <figure>
+                            <img alt="thermal bottle photo 02" src="../../images/living-thermal-bottle-photo-02.png"/>
+                            <figcaption>thermal bottle photo</figcaption>
+                        </figure>
+                        <figure>
+                            <img alt="thermal bottle photo 01" src="../../images/living-thermal-bottle-photo-01.png"/>
+                            <figcaption>thermal bottle photo</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="d-fullCut">
+                        <figure>
+                            <img alt="thermal bottle photo 02" src="../../images/tea-infuser-cup-photo-05.png"/>
+                            <figcaption>thermal bottle photo</figcaption>
+                        </figure>
+                    </div>
+
+                    <article class="d-info design">
+                        <h2>Product Information</h2>
+                        <ul class="d-info">
+                            <li class="dimensions">
+                                <dl>
+                                    <dt>Product Dimensions</dt>
+                                    <dd>20.7 x 6.5 x 6.5cm (8.14 x 2.5 x 2.5 inches)</dd>
+                                </dl>
+                            </li>
+                            <li class="weight">
+                                <dl>
+                                    <dt>Product Weight</dt>
+                                    <dd>Weight: 290g / Capacity: 350ml</dd>
+                                </dl>
+                            </li>
+                            <li class="materials">
+                                <dl>
+                                    <dt>Product Materials</dt>
+                                    <dd>Stainless steel, PP, Silicon</dd>
+                                </dl>
+                            </li>
+                            <li class="box">
+                                <dl>
+                                    <dt>What’s in the Box</dt>
+                                    <dd>Thermal Bottle</dd>
+                                </dl>
+                            </li>
+                            <li class="features">
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>Bluetooth Tracker, External USB Port, Anti-theft Pocket, Mesh Backpanel Laptop Compartment, Luggage Strap</dd>
+                                </dl>
+                            </li>
+                            <li class="shipping detail">
+                                <dl>
+                                    <dt>Shipping Information</dt>
+                                    <dd class="arrival"><!--<img alt="timer-icon" src="images/icon/timer-icon.svg"/>-->Estimated Arrival : 3/8 ~ 4/10</dd>
+                                    <dd class="ems"><!--<img alt="truck" src="images/icon/truck.svg"/>-->EMS</dd>
+                                    <dd class="e-packet"><!--<img alt="box" src="images/icon/box.svg"/>-->E-packet</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="d-detail">
+                        <h2>Product Use Details</h2>
+                        <p>Your tea time made easy. With its simple and minimalistic look, this tea infuser cup will bring some warm scent to your daily life. Simply put some tea in the strainer and you're good to go! Now you don't need to worry about all the hassles when prepping your tea. The cup is lightweight and durable making it suitable for everyday use. Have a perfect relaxing time with your tea infuser cup.</p>
+                    </article>
+
+                    <article class="d-howWork design">
+                        <div class="howWork-box">
+                            <div class="title">
+                                <h2>How We Work</h2>
+                            </div>
+                            <div class="workImg">
+                                <img alt="how we work" src="../../images/icon/img-how-we-work.svg"/><!--0703-->
+                            </div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span class="step">Step1 : </span><span class="slogan">LIKE.</span><span class="comment">We award designs according to consumer preferences.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="step">Step2 : </span><span class="slogan">MAKE.</span><span class="comment">Awarded winning designs are produced by SHAPL.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="step">Step3 : </span><span class="slogan">SELL.</span><span class="comment">We sell directly to consumer with affordable price.</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+                    <article class="v2-d-review-design">
+                        <div class="v2-d-review-box">
+                            <div class="v2-d-review-title">
+                                <h2>Comment</h2>
+                            </div>
+                            <div class="v2-d-review-container">
+                                <table>
+                                    <tr class="write-tr">
+                                        <td class="comment-content" colspan="2">
+                                            <div class="v2-write-review-box">
+                                                <textarea></textarea>
+                                            </div>
+                                            <div class="v2-write-review-regist">
+                                                <button class="btn-v2-d-design-review">Leave a message</button>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="comment-profile">
+                                            <div class="v2-d-designerPic-review-box">
+                                                <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                            </div>
+                                        </td>
+                                        <td class="comment-content">
+                                            <div class="v2-write-review-box">
+                                                <textarea>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</textarea>
+                                            </div>
+                                            <div class="v2-create-review-box">
+                                                <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="comment-profile">
+                                            <div class="v2-d-designerPic-review-box">
+                                                <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                            </div>
+                                        </td>
+                                        <td class="comment-content">
+                                            <div class="v2-designer-review-box">
+                                                <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                            </div>
+                                            <div class="v2-text-review-box">
+                                                <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                            </div>
+                                            <div class="v2-create-review-box">
+                                                <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="comment-profile">
+                                            <div class="v2-d-designerPic-review-box">
+                                                <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                            </div>
+                                        </td>
+                                        <td class="comment-content">
+                                            <div class="v2-designer-review-box">
+                                                <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                            </div>
+                                            <div class="v2-text-review-box">
+                                                <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                            </div>
+                                            <div class="v2-create-review-box">
+                                                <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="comment-profile">
+                                            <div class="v2-d-designerPic-review-box">
+                                                <img alt="jooeun_oh" src="../../images/designer/jooeun_oh.png"/>
+                                            </div>
+                                        </td>
+                                        <td class="comment-content">
+                                            <div class="v2-designer-review-box">
+                                                <span class="v2-reviewer">designer name</span><span class="v2-review-day"><span>2</span>days ago</span>
+                                            </div>
+                                            <div class="v2-text-review-box">
+                                                <p>Nicely done! I’d like to buy one when it comes to the real one! Nicely done! I’d like to buy one when it comes to the real one!</p>
+                                            </div>
+                                            <div class="v2-create-review-box">
+                                                <span><a href="#">Edit</a></span><span><a href="#">Delete</a></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="v2-design-more-box">
+                                    <button class="btn-v2-more">More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer-wrapper">
+    <footer id="v2-footer">
+        <div class="v2-footer-top">
+            <div class="v2-footer-top-left">
+                <strong><a href="#"><img alt="shapl logo grey" src="../../images/logo/v2-1-logo.png"/></a></strong>
+                <p>©2019 SHAPL All Rights Reserved.</p>
+            </div>
+            <div class="v2-footer-top-right">
+                <p>(주) 샤플 | 대표이사 : 진창수</p>
+                <p>사업자번호 : 689-81-00933</p>
+                <p>통신판매업신고번호 : 2017-서울중구-1624</p>
+                <p>고객센터 : 1670 - 8490<br class="v2-footer-pc"/> (운영 시간 : 10:00 ~ 17:00)</p>
+                <p>이메일 : <a href="mailto:support@shapl.com">support@shapl.com</a></p>
+
+            </div>
+            <div class="v2-footer-top-center">
+                <p><strong>대한민국</strong>[04521] 서울 중구 청계천로 40, 1205호</p>
+            </div>
+        </div>
+        <div class="v2-footer-bottom">
+            <div class="v2-footer-bottom-center v2-footer-pc">
+                <p><a href="#">디자이너 정책</a></p>
+                <p><a href="#">이용 약관</a></p>
+                <p><a href="#">반품 정책</a></p>
+                <p><a href="#">개인정보 취급방침</a></p>
+                <p><a href="#">저작권 정책</a></p>
+            </div>
+
+            <div class="v2-footer-bottom-center-box v2-footer-mobile">
+                <a href="#">SHAPL 정책<span></span></a>
+                <div class="v2-footer-bottom-center">
+                    <p><a href="#">디자이너 정책</a></p>
+                    <p><a href="#">이용 약관</a></p>
+                    <p><a href="#">반품 정책</a></p>
+                    <p><a href="#">개인정보 취급방침</a></p>
+                    <p><a href="#">저작권 정책</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.v2-footer-bottom-center-box.v2-footer-mobile > a').on('click', function(){
+                $('.v2-footer-bottom-center').toggleClass('open');
+                $('.v2-footer-bottom-center-box.v2-footer-mobile > a span').toggleClass('on');
+
+            });
+        });
+    </script>
+</div>
+
+<div id="pop-v2-1-sign-in-wrap" class="sign-in-up-popup">
+    <div class="popup-background"></div>
+    <div id="v2-1-sign-in-outer">
+
+        <div class="v2-1-sign-in-close sign-in-up-close">
+            <img class="pc" alt="" src="../../images/icon/icn-delete-grey.svg"/>
+            <img class="mobile" alt="" src="../../images/icon/icn-close-type03.svg"/>
+        </div>
+
+        <div id="v2-1-sign-in-inner">
+            <div class="v2-1-sign-in-top">
+                <div class="v2-1-sign-in-ment">
+                    <div>
+                        <img alt="sign-in-kr-ment" src="../../images/sign_in_kr_ment.png"/>
+                    </div>
+                </div>
+                <div class="v2-1-sign-in-image">
+                    <img alt="" src="../../images/sign_in_product_img.png"/>
+                </div>
+                <p>Designed by <span>Ivan Zhurba</span></p>
+            </div>
+            <div class="v2-1-sign-in-middle-01">
+                    <span>
+                        <button class="btn-google-sign-in"><span>Google로 로그인 하기</span></button>
+                    </span>
+                <span>
+                        <button class="btn-naver-sign-in"><img alt="" src="../../images/icon/sign_naver.png"/></button>
+                        <button class="btn-kakao-sign-in"><img alt="" src="../../images/icon/sign_kakao.png"/></button>
+                        <button class="btn-facebook-sign-in"><img alt="" src="../../images/icon/sign_facebook.png"/></button>
+                        <button class="btn-twitter-sign-in"><img alt="" src="../../images/icon/sign_twitter.png"/></button>
+                    </span>
+            </div>
+            <div class="v2-1-sign-in-middle-02">
+                    <span>
+                       <input type="text" placeholder="이메일"/>
+                    </span>
+                <span>
+                       <input type="password" placeholder="비밀번호"/>
+                    </span>
+                <div>
+                    <button class="btn-v2-1-sign-in">로그인</button>
+
+                    <span class="v2-1-checkbox-box">
+                            <label class="v2-1-checkbox">
+                                <input type="checkbox" checked>
+                                <span class="v2-1-checkbox-checked"></span>
+                                <span class="v2-1-checkbox-text">자동로그인</span>
+                            </label>
+                        </span>
+                </div>
+
+            </div>
+            <div class="v2-1-sign-in-bottom">
+                <span><a href="#">비밀번호 찾기</a></span><span><a href="javascript:setSignUp();">회원가입</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pop-v2-1-sign-up-wrap" class="sign-in-up-popup">
+    <div class="popup-background"></div>
+    <div id="v2-1-sign-up-outer">
+
+        <div class="v2-1-sign-up-close sign-in-up-close">
+            <img class="pc" alt="" src="../../images/icon/icn-delete-grey.svg"/>
+            <img class="mobile" alt="" src="../../images/icon/icn-close-type03.svg"/>
+        </div>
+
+        <div id="v2-1-sign-up-inner">
+            <div class="v2-1-sign-in-top">
+                <div class="v2-1-sign-in-ment">
+                    <div>
+                        <img alt="sign-in-kr-ment" src="../../images/sign_in_kr_ment.png"/>
+                    </div>
+                </div>
+                <div class="v2-1-sign-in-image">
+                    <img alt="" src="../../images/sign_in_product_img.png"/>
+                </div>
+                <p>Designed by <span>Ivan Zhurba</span></p>
+            </div>
+            <div class="v2-1-sign-in-middle-01 sign-up">
+                <span>
+                    <button class="btn-google-sign-in"><span>Google로 회원가입 하기</span></button>
+                </span>
+                <span>
+                    <button class="btn-naver-sign-in"><img alt="" src="../../images/icon/sign_naver.png"/></button>
+                    <button class="btn-kakao-sign-in"><img alt="" src="../../images/icon/sign_kakao.png"/></button>
+                    <button class="btn-facebook-sign-in"><img alt="" src="../../images/icon/sign_facebook.png"/></button>
+                    <button class="btn-twitter-sign-in"><img alt="" src="../../images/icon/sign_twitter.png"/></button>
+                </span>
+            </div>
+            <div class="v2-1-sign-up-middle-01 sign-up-input-email">
+                <div class="v2-1-sign-up-or">
+                    <p>또는</p>
+                </div>
+                <div class="v2-1-sign-in-middle-02">
+                    <span>
+                       <input type="text" placeholder="이메일"/>
+                    </span>
+                    <span>
+                        <button class="btn-email-sign-up">이메일로 회원 가입하기</button>
+                    </span>
+
+                </div>
+                <div class="v2-1-sign-in-bottom sign-up">
+                    <span>이미 계정이 있으세요? <a href="#">로그인</a></span>
+                </div>
+            </div>
+            <div class="v2-1-sign-up-middle-02 sign-up-user-info" style="display: none">
+                <div class="v2-1-sign-up-middle-02-01">
+                    <span>
+                        <p>이메일</p>
+                        <input type="text"/>
+                    </span>
+                    <span>
+                        <p>사용자 이름</p>
+                        <input type="password"/>
+                    </span>
+                </div>
+                <div class="v2-1-sign-up-middle-02-02 kr">
+                    <span>
+                        <p>보안 코드</p>
+                        <input type="number"/>
+                    </span>
+                    <span>
+                        <p>아래 주소로 5자리 코드가 전송됨:<br/>shapl@shapl.com<br/><a href="#">보안 코드 재 전송하기</a> *먼저 스팸 메일함을 확인해보세요.</p>
+                    </span>
+                </div>
+                <div class="v2-1-sign-up-middle-02-03">
+                    <span>
+                        <p>비밀 번호</p>
+                        <input type="password"/>
+                    </span>
+                    <span>
+                        <p>영문과 숫자를 조합하여 6자리 이상</p>
+                    </span>
+                </div>
+                <div class="v2-1-sign-up-middle-02-04">
+                    <span class="v2-1-checkbox-box">
+                        <label class="v2-1-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="v2-1-checkbox-checked"></span>
+                            <span class="v2-1-checkbox-text">자동로그인</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="v2-1-sign-up-middle-02-05">
+                    <button class="btn-v2-1-sign-up">회원 가입</button>
+                </div>
+                <div class="v2-1-sign-up-middle-02-06">
+                    <span class="v2-1-checkbox-box">
+                        <label class="v2-1-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="v2-1-checkbox-checked"></span>
+                            <span class="v2-1-checkbox-text">2019년 최신 디자인 트렌드 정보와 샤플의 소식 등을 받겠습니다.</span>
+                        </label>
+                    </span>
+                    <span class="v2-1-sign-up-middle-02-06-comment">회원 가입시, 이용약관 및 개인 정보 취급 정책에 동의하게 됩니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+<script>
+    $(document).ready(function(){
+
+        $("#header-wrapper").load("page/header/header.html");
+
+        var swiper_img = new Swiper('.swiper-container.v2-1-img', {
+            loop: false,
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+        var swiper = new Swiper('.swiper-container.v2-1', {
+            loop: false,
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            spaceBetween: 70,
+            freeMode: false,
+            centeredSlides: true,
+            pagination: {
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+        $('.wf-box').on('click', function(){
+            $('#pop-v2-design-detail-wrap').fadeIn({"display":"block"}, 1300, "easeInOutExpo")
+            $('#v2-contest-menu-outer-section').addClass('v2-blur');
+        });
+
+        $('.pop-v2-design-detail-close').on('click', function(){
+            $('#pop-v2-design-detail-wrap').fadeOut({"display":"block"}, 1300, "easeInOutExpo")
+            $('#v2-contest-menu-outer-section').removeClass('v2-blur');
+        });
+
+
+        $(".swiper-wrapper.v2-1 .swiper-slide.white").each(function(){
+            if($(".swiper-slide.white.last").hasClass("swiper-slide-active")) {
+                $(".v2-swiper-img01").addClass("active");
+            }
+
+            if($(".swiper-slide.white.click").hasClass("swiper-slide-active")) {
+                $(".v2-swiper-img02").addClass("active");
+            }
+
+            if($(".swiper-slide.white.next").hasClass("swiper-slide-active")) {
+                $(".v2-swiper-img03").addClass("active");
+            }
+        });
+
+    });
+
+    //팝업 열기
+    function openSigninupPopup(id) {
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo")
+    }
+
+    //팝업 닫기
+    function closeSigninupPopup() {
+        $(".sign-in-up-popup").fadeOut({"display":"none"}, 1300, "easeInOutExpo")
+    }
+
+    $(".sign-in-up-close, .popup-background").click(function() {
+        closeSigninupPopup();
+    });
+
+    $(".btn-email-sign-up").click(function() {
+        emailSignup('input');
+    });
+
+    //회원가입
+    function setSignUp() {
+        closeSigninupPopup();
+        openSigninupPopup('pop-v2-1-sign-up-wrap');
+    }
+
+    //회원정보 입력
+    function emailSignup(type) {
+        if(type === 'input') {
+            $(".sign-up-input-email").hide();
+            $(".sign-up-user-info").show();
+        } else if(type === 'reset') {
+            $(".sign-up-input-email").show();
+            $(".sign-up-user-info").hide();
+        }
+    }
+
+</script>
+
+</html>

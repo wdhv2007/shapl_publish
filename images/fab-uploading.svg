@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="118px" viewBox="0 0 114 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>EE42807F-E29E-4891-8A13-2DE3F73A7F2A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="45" cy="45" r="45"></circle>
+        <filter x="-28.9%" y="-15.6%" width="157.8%" height="162.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.292629076 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="-0.000391608392 0 15.6647273 0 15.6647273 10.0004167 -0.000391608392 10.0004167"></polygon>
+    </defs>
+    <g id="3.1-SHOP-List-mobile768-Sticky-1a-TOY---90-x-90---test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-634.000000, -904.000000)">
+        <g id="FAB_uploading" transform="translate(646.000000, 904.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#58CDF9" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="icon_uploading" transform="translate(28.000000, 28.000000)">
+                <path d="M30.2272727,32 L4.77272727,32 C2.14136364,32 0,29.9062222 0,27.3333333 L0,19.5555556 C0,18.6968889 0.711136364,18 1.59090909,18 C2.47068182,18 3.18181818,18.6968889 3.18181818,19.5555556 L3.18181818,27.3333333 C3.18181818,28.1904444 3.89454545,28.8888889 4.77272727,28.8888889 L30.2272727,28.8888889 C31.1054545,28.8888889 31.8181818,28.1904444 31.8181818,27.3333333 L31.8181818,19.5555556 C31.8181818,18.6968889 32.5293182,18 33.4090909,18 C34.2888636,18 35,18.6968889 35,19.5555556 L35,27.3333333 C35,29.9062222 32.8586364,32 30.2272727,32" id="Fill-1" fill="#FFFFFF"></path>
+                <g id="Group-5" transform="translate(10.000000, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <path d="M14.0979021,10 C13.6968951,10 13.2958881,9.83666667 12.9904336,9.51166667 L7.83216783,4.02333333 L2.6739021,9.51166667 C2.06142657,10.1633333 1.07144056,10.1633333 0.458965035,9.51166667 C-0.15351049,8.86 -0.15351049,7.80666667 0.458965035,7.155 L6.7246993,0.488333333 C7.33717483,-0.163333333 8.32716084,-0.163333333 8.93963636,0.488333333 L15.2053706,7.155 C15.8178462,7.80666667 15.8178462,8.86 15.2053706,9.51166667 C14.8999161,9.83666667 14.4989091,10 14.0979021,10" id="Fill-3" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                </g>
+                <path d="M17.5,23 C16.6705,23 16,22.264 16,21.3571429 L16,1.64285714 C16,0.736 16.6705,0 17.5,0 C18.3295,0 19,0.736 19,1.64285714 L19,21.3571429 C19,22.264 18.3295,23 17.5,23" id="Fill-6" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

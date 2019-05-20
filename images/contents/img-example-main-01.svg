@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="186" viewBox="0 0 520 186">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="nonzero" stroke="#DADADA" d="M.5.5h519v185H.5z"/>
+        <path fill="#F46064" fill-rule="nonzero" d="M226 130h1v15h-1z"/>
+        <path stroke="#F46064" d="M118.5 100.5h283v29h-283z"/>
+        <text fill="#8D8C8C" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="16">
+            <tspan x="125.488" y="121">업로드 가능 용량 제한을 초과하였습니다.</tspan>
+        </text>
+        <text fill="#F46064" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="14" font-weight="bold">
+            <tspan x="235.151" y="152">실패 원인</tspan>
+        </text>
+        <circle cx="226.5" cy="146.5" r="2.5" fill="#F46064" fill-rule="nonzero"/>
+        <text fill="#464646" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="22" font-weight="bold">
+            <tspan x="143" y="56">업로드에 실패하였습니다.</tspan> <tspan x="173.36" y="87">다시 시도해주세요.</tspan>
+        </text>
+    </g>
+</svg>

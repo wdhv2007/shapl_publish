@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <g fill="none" fill-rule="nonzero">
+        <path d="M0 0h90v90H0z"/>
+        <g stroke="#DADADA" stroke-width="4" transform="translate(0 8)">
+            <rect width="86" height="56" x="2" y="16" rx="7.2"/>
+            <path d="M86.967 22H3.033L13.32 46H76.68l10.286-24zM28 16h34V6.3A4.3 4.3 0 0 0 57.7 2H32.3A4.3 4.3 0 0 0 28 6.3V16z"/>
+            <path d="M34 8v8h22V8H34zM32 47h26v5.7a4.3 4.3 0 0 1-4.3 4.3H36.3a4.3 4.3 0 0 1-4.3-4.3V47z"/>
+            <path fill="#FAFAFA" d="M39 43h12v8H39z"/>
+        </g>
+    </g>
+</svg>

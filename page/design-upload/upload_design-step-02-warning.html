@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title><!--추가 삽입 필요-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA_compatible" content="IE=edge"/>
+        <meta name="generator" content="brackets"/>
+        <meta name="author" content="shapl"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="../../css/common.css"/>
+        <link rel="stylesheet" href="../../css/style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="../../css/style.css"/>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+
+        <link rel="stylesheet" href="../../css/font.css"/>
+        <script src="../../js/main.js"></script>
+
+    </head>
+    <body class="main">
+
+        <div id="wrapper"> <!-- 가운데 정렬을 위한 wrapper START 차후 클래스로 변경 해야함 -->
+              
+            <!--<div class="submit-header">
+                <div class="l-wrapper">
+                    <a class="submit-header-logo" href=""><img src="../../images/logo/logo-shapl-k.svg"></a>
+                </div>
+            </div>-->
+               
+            <div class="submit-step-container"><!-- 추가 -->
+                <ol class="submit-step-box">
+                    <li class="submit-step01">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font">STEP 01</p>
+                            <p class="submit-txt step-txt-font upload-txt-01">콘테스트 정책 동의</p>
+                        </div>
+                    </li>
+                    <li class="submit-step02 active">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font">STEP 02</p>
+                            <p class="submit-txt step-txt-font upload-txt-02 active">디자인 업로드</p> <!-- active로 아이콘 조절 -->
+                        </div>
+                    </li>
+                    <li class="submit-step03">
+                        <div class="submit-txt-box">
+                            <p class="submit-step step-font">STEP 03</p>
+                            <p class="submit-txt step-txt-font upload-txt-03">제출</p>
+                        </div>
+                    </li>
+               </ol>
+            </div>
+               
+            <div class="contents submit-contents">
+                <div class="contents-input-inside submit">
+                    <div class="r-main">
+                        <div class="info-check-container">
+                            <div class="info-check-box profile">
+                                <div class="img-box">
+                                    <!--<img src="../../images/04_Two_Face_main.png">--><!-- 프로필 이미지:없으면 넣지 말 것 -->
+                                </div>
+                                <div class="profile-box">
+                                    <h2>Designer Alice</h2><!-- 브랜드 명 -->
+                                    <p>Jin-hee Park</p><!-- 유저 이름 -->
+                                </div>
+                            </div>
+                            <div class="info-check-box white-box">
+                                <p class="info-step step-font">STEP 01</p>
+                                <div class="info-step-box checked"><span class="info-check"><!-- info-check-box + checked, 여기는 checked default--></span><p class="info-step step-txt-font">콘테스트 출품 동의</p></div>
+                            </div>
+                            <div class="info-check-box white-box">
+                                <p class="info-step step-font">STEP 02</p>
+                                <div class="info-step-box checked"><span class="info-check"><!-- info-check-box + checked--></span><p class="info-step step-txt-font">카테고리</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">디자인 기본 정보</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">메인 이미지</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">상세 이미지</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">디자인 스토리</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">동영상</p></div>
+                                <div class="info-step-box"><span class="info-check"></span><p class="info-step step-txt-font">기타 코멘트</p></div>
+                            </div>
+                            <div class="info-check-box btn-box">
+                                <ul>
+                                    <li class="input-button-btn input-button-nonSkyblue"><a href="#">미리보기</a></li>
+                                    <li class="input-button-btn input-button-skyblue active"><a hre="#">제출</a></li><!-- class:active로 활성화 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info-text-box white-box">
+                            <p>※제출 이후에도 수정이 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div class="l-main">
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required">카테고리</h2>
+                            <p class="input-field-description">디자이너님의 프로젝트에 적합한 카테고리를 선택해주세요.</p>
+                            <div class="input-field-radio-label">
+                                <label><input type="radio" name="category" class="in-label" checked/><span>BEAUTY</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>ELECTRONICS</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>FASHION</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>KIDS</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>LIVING</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>MOBILE</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>OFFICE</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>OUTDOOR</span></label>
+                                <label><input type="radio" name="category" class="in-label"/><span>VEHICLES</span></label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required has-info">디자인 기본 정보</h2>
+                            <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                            <p class="input-field-description">프로젝트를 잘 설명할 수 있는 기본적인 정보를 입력해주세요.</p>
+                            <div class="input-field-container">
+                                <label class="left-label">제목</label>
+                                <div class="input-field-container-push right-input-150">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="30자 이내로 입력해 주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label">요약 설명</label>
+                                <div class="input-field-container-push right-input-150">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="프로젝트에 대해 간략하게 설명해주세요. (50~150자)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label">사이즈(cm)</label>
+                                <div class="input-field-container-push right-input-150">
+                                    <div class="input-field-input-box input-has col-3">
+                                        <input type="text" placeholder="너비(Width) cm">
+                                    </div>
+                                    <div class="input-field-input-box input-has col-3">
+                                        <input type="text" placeholder="깊이(Depth) cm">
+                                    </div>
+                                    <div class="input-field-input-box input-has col-3">
+                                        <input type="text" placeholder="높이(Height) cm">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label">소재</label>
+                                <div class="input-field-container-push right-input-150">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="생각하신 소재를 자유롭게 입력해주세요. 예) ABS, PP, Ceramic">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required has-popup">메인 이미지</h2>
+                            <a href="javascript:openPopup('popMainImage')"><img src="../../images/icon/icn-question.svg"></a>
+                            <p class="input-field-description">
+                                디자이너님의 제품이 삶에서 어떻게 사용되는지에 대한 이미지를 올려주세요.<br/>
+                                한눈에 사용성을 확인할 수 있는 디자인이 사람들에게 like를 얻기 쉽습니다.
+                            </p>
+                            <div class="input-upload-container">
+                                <div class="input-upload main warning"><!-- 경고창 생성 시 warning 생성 -->
+                                    <div class="input-upload-box">
+                                        <div class="input-upload-holder"></div>
+                                        <p>드래그 &amp; 드롭 또는</p>
+                                        <label class="input-button-btn input-button-round input-button-darkgray">파일 선택<input class="in-label" type="file"></label>
+                                    </div>
+                                    <!-- 미리보기 이미지 영역 -->
+                                    <div class="preview-img">
+                                        <!-- 미리보기 -->
+                                        <!--<div class="preview-box">-->
+                                            <!--<img src="../../images/04_Two_Face_main.png">-->
+                                            <!--<span class="close-btn"></span>--> <!-- 삭제 버튼 -->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+
+                                <div class="r-info">
+                                    <div class="input-info-box">
+                                        <dl>
+                                            <dt>해상도</dt>
+                                            <dd>1000 x 1000px (1:1 ratio)</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>업로드 가능한 파일 형식</dt>
+                                            <dd>png, jpg</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>업로드 가능 파일 크기</dt>
+                                            <dd>5mb</dd>
+                                        </dl>
+                                        <p class="input-field-description underline">
+                                            <a href="#">웹용으로 저장한 이미지를 권장합니다.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="input-field-warning main active"> <!-- 경고창 생성 시 active 추-->
+                                    <p>업로드하신 파일 크기가 너무 작습니다. 심사를 통과하지 못 할 가능성이 있습니다. </p>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required has-popup">상세 이미지</h2>
+                            <a href="javascript:openPopup('popDetailImage')"><img src="../../images/icon/icn-question.svg"></a>
+                            <p class="input-field-description">
+                                디자이너님의 프로젝트를 잘 설명해줄 수 있는 파워풀한 이미지를 올려주세요.<br/>
+                                최대 10장까지 업로드할 수 있습니다.
+                            </p>
+                            <div class="input-upload-container">
+                                <div class="input-info">
+                                    <div class="input-info-box">
+                                        <dl>
+                                            <dt>이미지 사이즈</dt>
+                                            <dd>너비 1440px, 높이 최대 2880px</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>업로드 가능한 파일 형식</dt>
+                                            <dd>png, jpg</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>업로드 가능 파일 크기</dt>
+                                            <dd>5mb</dd>
+                                        </dl>
+                                        <p class="input-field-description underline">
+                                            <a href="#">웹용으로 저장한 이미지를 권장합니다.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="input-upload">
+                                    <div class="input-upload-box">
+                                        <div class="input-upload-holder"></div>
+                                        <p>드래그 &amp; 드롭 또는</p>
+                                        <label class="input-button-btn input-button-round input-button-darkgray">파일 선택<input class="in-label" type="file"></label>
+                                    </div>
+                                    <!-- 미리보기 이미지 영역 -->
+                                    <div class="preview-img">
+                                       <!-- 미리보기 -->
+                                        <!--<div class="preview-box">-->
+                                        <!--<img src="../../images/banner/indiegogo_banner.png">-->
+                                        <!--<span class="close-btn"></span>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+
+                                <!-- 이후 생성되는 upload box들 -->
+                                <div class="input-upload">
+                                    <div class="input-upload-box">
+                                        <div class="input-upload-holder"></div>
+                                        <p>드래그 &amp; 드롭 또는</p>
+                                        <label class="input-button-btn input-button-round input-button-darkgray">파일 선택<input class="in-label" type="file"></label>
+                                        <span class="close-btn"></span> <!-- 삭제 버튼 -->
+                                    </div>
+                                    <!-- 미리보기 이미지 영역 -->
+                                    <div class="preview-img">
+                                        <!-- 미리보기 -->
+                                        <!--<div class="preview-box">-->
+                                            <!--<img src="../../images/04_Two_Face_main.png">-->
+                                            <!--<span class="close-btn"></span>--> <!-- 삭제 버튼 -->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <div class="input-upload">
+                                    <!--<div class="input-upload-box">-->
+                                        <!--<div class="input-upload-holder"></div>-->
+                                        <!--<p>드래그 &amp; 드롭 또는</p>-->
+                                        <!--<label class="input-button-btn input-button-round input-button-darkgray">파일 선택<input class="in-label" type="file"></label>-->
+                                        <!--<span class="close-btn"></span>-->
+                                    <!--</div>-->
+                                    <div class="preview-img">
+                                        <div class="preview-box">
+                                            <img src="../../images/04_Two_Face_main.png">
+                                            <span class="close-btn"></span> <!-- 삭제 버튼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-add-upload-container">
+                                <div class="input-add-upload">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title required has-info">디자인 스토리</h2>
+                            <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                            <p class="input-field-description">
+                                사람들에게 디자이너님이 어떻게 이 제품을 디자인하게 되었는지, 어떻게 제작하고 싶은지 등 디자인 동기 및 제품의 제작 방법에 대해 알려주세요.<br/>
+                                그 외 디자인에 대해 들려주고 싶은 이야기가 있으시다면 어떤 것이라도 좋습니다.
+                            </p>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <textarea placeholder="디자인에 대해 하고싶으신 말을 적어주세요. (최대 500자)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title">동영상</h2>
+                            <p class="input-field-description">
+                                디자이너님의 프로젝트를 설득적으로 보여줄 수 있는 동영상을 추가해보세요. 16:9비율로 제작된 동영상이어야 합니다.
+                            </p>
+                            <div class="input-field-container">
+                                <div class="input-field-container-push">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="Please enter your Youtube or Vimeo URL.">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="input-field-wrapper">
+                            <h2 class="input-field-title has-info">기타</h2>
+                            <p class="input-field-info">모든 정보는 영어로 기입해주세요.</p>
+                            <p class="input-field-description">디자이너님의 프로젝트에 대해 더 알려주고 싶은 내용이 있다면 여기에 적어주세요.  </p>
+                            <div class="input-field-container">
+                                <label class="left-label">제목</label>
+                                <div class="input-field-container-push right-input">
+                                    <div class="input-field-input-box">
+                                        <input type="text" placeholder="30자 이내로 입력해 주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field-container">
+                                <label class="left-label">내용</label>
+                                <div class="input-field-container-push right-input">
+                                    <div class="input-field-input-box">
+                                        <textarea placeholder="프로젝트에 대해 간략하게 설명해주세요. (50~150자)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 경고창 팝업 -->
+            <div id="popWarning" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container warning-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <img class="hold-img" src="../../images/contents/icn-x.svg">
+                    <div class="popup-content-title warning-box">
+                        업로드를 실패하였습니다.<br>
+                        다시 시도해 주세요
+                    </div>
+                    <p class="common">업로드 가능 용량 제한을 초과하였습니다.</p><!-- 경고 원인 -->
+                    <div class="input-button-btn input-button-black input-button-wide">
+                        <a href="#">확인</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 경고창 팝업 -->
+
+            <!-- 메인 이미지 주의사항 팝업 -->
+            <div id="popMainImage" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container info-box">
+                    <div class="popup-delete">
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title">
+                        메인 이미지 업로드 시 주의 사항
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">이미지 등록방법</div>
+                        <ul>
+                            <li>
+                                드래그 & 드롭하시거나, 컴퓨터에서 파일을 선택해주세요.
+                            </li>
+                            <li>
+                                업로드에 실패한 경우는 아래와 같이 표시됩니다.<br>
+                                실패 원인을 확인하시고 다시 시도해 주세요.
+                            </li>
+                        </ul>
+                        <div class="popup-content-image">
+                            <img src="../../images/contents/img-example-main-01.svg">
+                        </div>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">업로드 가능한 파일 조건</div>
+                        <ul>
+                            <li>형식 : 웹용으로 저장된 jpg, png</li>
+                            <li>용량 : 최대 50mb</li>
+                            <li>이미지 비율 : 1:1</li>
+                        </ul>
+                    </div>
+                    <div class="popup-content-box last">
+                        <div class="popup-content-subTitle">Tip</div>
+                        <ul>
+                            <li>메인 이미지는 디자이너님의 프로젝트의 핵심이 한 장으로 잘 표현된 이미지로 등록하시는 것이 좋습니다.</li>
+                        </ul>
+                        <div class="popup-content-image">
+                            <img src="../../images/contents/img-example-main-02@3x.png">
+                        </div>
+                        <ul>
+                            <li>사이즈나 용량이 너무 작은 이미지를 등록하시는 경우 심사를 통과하지 못할 가능성이 있습니다. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 메인 이미지 주의사항 팝업 -->
+
+            <!-- 상세 이미지 주의사항 팝업 -->
+            <div id="popDetailImage" class="popup-wrapper">
+                <div class="popup-bg"></div>
+                <div class="popup-container info-box">
+                    <div class="popup-delete"><!-- 팝업 닫기 -->
+                        <img src="../../images/icon/icn-delete.svg">
+                    </div>
+                    <div class="popup-content-title">
+                        상세 이미지 업로드 시 주의 사항
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">이미지 등록방법</div>
+                        <ul>
+                            <li>드래그 & 드롭하시거나, 컴퓨터에서 파일을 선택해주세요. </li>
+                            <li>
+                                업로드에 실패한 경우는 아래와 같이 표시됩니다.<br>
+                                실패 원인을 확인하시고 다시 시도해 주세요.
+                            </li>
+                        </ul>
+                        <div class="popup-content-image">
+                            <img src="../../images/contents/img-example-main-01.svg">
+                        </div>
+                    </div>
+                    <div class="popup-content-box">
+                        <div class="popup-content-subTitle">업로드 가능한 파일 조건</div>
+                        <ul>
+                            <li>형식 : 웹용으로 저장된 jpg, png<a class="underline" href="#">웹용으로 저장하는 방법 보기</a></li>
+                            <li>용량 : 최대 50mb</li>
+                            <li>이미지 비율 : 1:1</li>
+                        </ul>
+                    </div>
+                    <div class="popup-content-box last">
+                        <div class="popup-content-subTitle">Tip</div>
+                        <ul>
+                            <li>상세 이미지는 디자이너님의 프로젝트를 가장 잘 설명해줄 수 있는 이미지(들)로 등록하시는 것이 좋습니다.</li>
+                            <li>높이가 긴 이미지 하나를 등록하시는 것 보다는, 가로가 넓은 직사각형 형태의 이미지를 여러장 등록하시는 것이 더 좋습니다. </li>
+                        </ul>
+                        <div class="popup-content-image">
+                            <img src="../../images/contents/img-example-sub-02.svg">
+                        </div>
+                        <ul>
+                            <li>사이즈나 용량이 너무 작은 이미지를 등록하시는 경우 심사를 통과하지 못할 가능성이 있습니다. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 상세 이미지 주의사항 팝업 -->
+
+        </div>
+    </body>
+<script>
+
+    $(function(){
+        radioCheck();
+    })
+
+    // 카테고리 선택 시
+    $("input[type=radio]").click(function(){
+        radioCheck();
+    })
+
+    //카테고리 radiobox -> label의 css 조절
+    function radioCheck(){
+        $("input[type=radio]").each(function(){
+            if($(this).is(":checked") ){
+                $(this).closest('label').addClass('checked');
+            } else {
+                $(this).closest('label').removeClass('checked');
+            }
+        })
+    }
+
+    $(window).scroll(function(){ /* 체크 확인창 따라오기 */
+        if($(window).scrollTop() > 159) {
+            $(".r-main").css('top', $(window).scrollTop());
+        } else {
+            $(".r-main").css('top', 'inherit');
+        }
+    });
+
+    $('.popup-bg').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+
+    function openPopup(id) {//팝업을 여는 function, 필요한 아이디 값을 넣어준다.
+        $("#"+id).fadeIn({"display":"block"}, 1300, "easeInOutExpo");
+    }
+
+    function closePopup() {//팝업을 닫는 function
+        $(".popup-wrapper").fadeOut({"display":"none"}, 1300, "easeInOutExpo");
+    }
+
+    $('.popup-bg, .popup-delete').click(function(){ // x버튼과 배경을 선택 시 삭제되도록 설정
+        closePopup();
+    })
+
+</script>
+</html>
